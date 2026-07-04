@@ -10,7 +10,7 @@
 ![Status](https://img.shields.io/badge/Status-Exam%20Ready-success?style=flat-square)
  
 </div>
----
+
  
 ## 📑 Table of Contents
 - [🌐 OSI Model (7 Layers)](#osi-model-7-layers)
@@ -55,7 +55,7 @@
  
 <a id="layer-7-application"></a>
 
-### Layer 7: Application Layer
+#### Layer 7: Application Layer
  
 <details>
 <summary><b>📖 Click to expand details</b></summary>
@@ -76,7 +76,7 @@ The **Application Layer** is the closest layer to the user. It allows applicatio
 
 <a id="layer-6-presentation"></a>
 
-### Layer 6: Presentation Layer
+#### Layer 6: Presentation Layer
  
 <details>
 <summary><b>📖 Click to expand details</b></summary>
@@ -99,7 +99,7 @@ The **Presentation Layer** ensures that data is in a format both devices can und
 
 <a id="layer-5-session"></a>
 
-### Layer 5: Session Layer
+#### Layer 5: Session Layer
  
 <details>
 <summary><b>📖 Click to expand details</b></summary>
@@ -121,7 +121,7 @@ The **Session Layer** manages communication sessions between applications.
 
 <a id="layer-4-transport"></a>
 
-### Layer 4: Transport Layer
+#### Layer 4: Transport Layer
  
 <details>
 <summary><b>📖 Click to expand details</b></summary>
@@ -147,7 +147,7 @@ The **Transport Layer** provides reliable communication between sender and recei
 
 <a id="layer-3-network"></a>
 
-### Layer 3: Network Layer
+#### Layer 3: Network Layer
  
 <details>
 <summary><b>📖 Click to expand details</b></summary>
@@ -168,7 +168,7 @@ The **Network Layer** is responsible for routing data between different networks
 
 <a id="layer-2-data-link"></a>
 
-### Layer 2: Data Link Layer
+#### Layer 2: Data Link Layer
  
 <details>
 <summary><b>📖 Click to expand details</b></summary>
@@ -191,7 +191,7 @@ The **Data Link Layer** provides communication between devices connected to the 
 
 <a id="layer-1-physical"></a>
 
-### Layer 1: Physical Layer
+#### Layer 1: Physical Layer
  
 <details>
 <summary><b>📖 Click to expand details</b></summary>
@@ -247,4 +247,23 @@ The **Physical Layer** is responsible for transmitting raw bits through a physic
 | 🗺️ Internet | IP addressing and routing |
 | 🔗 Network Access (Link) | Physical transmission and framing |
  
+---
+
+#### 1. Application Layer
+ 
+<details>
+<summary><b>📖 Click to expand details</b></summary>
+
+Combines the functions of:
+- OSI Application Layer
+- OSI Presentation Layer
+- OSI Session Layer
+
+**Protocols**
+- HTTP
+- HTTPS
+- FTP
+- SMTP
+- DNS
+</details>
 ---
