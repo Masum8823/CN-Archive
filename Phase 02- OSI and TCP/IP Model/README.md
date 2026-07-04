@@ -304,3 +304,21 @@ Equivalent to the OSI Network Layer.
  
 </details>
 ---
+
+### 4. Network Access (Link) Layer
+ 
+<details>
+<summary><b>📖 Click to expand details</b></summary>
+Combines:
+- OSI Data Link Layer
+- OSI Physical Layer
+**Functions**
+- Framing
+- MAC Addressing
+- Physical transmission
+**Technologies**
+- Ethernet
+- Wi-Fi
+</details>
+---
+ 
