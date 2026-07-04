@@ -48,3 +48,28 @@
 | 1 | ⚡ Physical | Transmits raw bits through cables or wireless signals |
  
 ---
+
+<a id="osi-layers-explained"></a>
+
+## 🔟 OSI Layers Explained
+ 
+<a id="layer-7-application"></a>
+
+### Layer 7: Application Layer
+ 
+<details>
+<summary><b>📖 Click to expand details</b></summary>
+
+The **Application Layer** is the closest layer to the user. It allows applications to access network services.
+ 
+**Functions**
+- Provides services to user applications
+- Supports web browsing, email, and file transfer
+- Acts as the interface between software and the network
+**Examples**
+- HTTP (Web)
+- HTTPS (Secure Web)
+- SMTP (Email)
+- FTP (File Transfer)
+
+</details>
