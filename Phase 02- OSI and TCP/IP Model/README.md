@@ -266,4 +266,22 @@ Combines the functions of:
 - SMTP
 - DNS
 </details>
+
+---
+
+### 2. Transport Layer
+ 
+<details>
+<summary><b>📖 Click to expand details</b></summary>
+Provides communication between processes.
+ 
+**Protocols**
+- TCP
+- UDP
+**Functions**
+- Segmentation
+- Error control
+- Reliability
+- Port addressing
+</details>
 ---
