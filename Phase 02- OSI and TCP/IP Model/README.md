@@ -213,3 +213,20 @@ The **Physical Layer** is responsible for transmitting raw bits through a physic
  
 </details>
 
+---
+
+<a id="how-osi-layers-work-together"></a>
+## 🔄 How OSI Layers Work Together
+ 
+> When data is sent from one device to another:
+ 
+```text
+1. Data starts at the Application Layer.
+2. It moves downward through all layers.
+3. Each layer adds its own information (Encapsulation).
+4. Data travels through the network.
+5. At the receiver side, layers remove the added information (Decapsulation).
+6. The original message reaches the destination application.
+```
+ 
+---
