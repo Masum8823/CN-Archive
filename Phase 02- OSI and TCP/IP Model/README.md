@@ -97,3 +97,24 @@ The **Presentation Layer** ensures that data is in a format both devices can und
 
 </details>
 
+<a id="layer-5-session"></a>
+
+### Layer 5: Session Layer
+ 
+<details>
+<summary><b>📖 Click to expand details</b></summary>
+
+The **Session Layer** manages communication sessions between applications.
+ 
+**Functions**
+- Starts communication sessions
+- Maintains active sessions
+- Ends sessions properly
+- Provides synchronization and checkpoints
+
+**Example**
+- Video conferences
+- Online meetings
+- Long file transfers
+
+</details>
