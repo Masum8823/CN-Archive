@@ -322,3 +322,15 @@ Combines:
 </details>
 ---
  
+<a id="osi-vs-tcpip"></a>
+## ⚖️ OSI vs TCP/IP
+ 
+| Feature | OSI Model | TCP/IP Model |
+|:---|:---|:---|
+| **Number of Layers** | 7 | 4 |
+| **Purpose** | Conceptual Model | Practical Model |
+| **Internet Usage** | Rarely implemented directly | Used by the Internet |
+| **Application Layer** | Separate | Combines Layers 5, 6, and 7 |
+| **Lower Layers** | Separate Data Link & Physical | Combined into Link Layer |
+ 
+---
