@@ -188,3 +188,28 @@ The **Data Link Layer** provides communication between devices connected to the 
 **PDU:** `Frame`
  
 </details>
+
+<a id="layer-1-physical"></a>
+
+### Layer 1: Physical Layer
+ 
+<details>
+<summary><b>📖 Click to expand details</b></summary>
+
+The **Physical Layer** is responsible for transmitting raw bits through a physical medium.
+ 
+**Functions**
+- Signal transmission
+- Cable and connector management
+- Bit synchronization
+- Transmission modes
+
+**Transmission Modes**
+- Simplex
+- Half-Duplex
+- Full-Duplex
+
+**PDU:** `Bits`
+ 
+</details>
+
