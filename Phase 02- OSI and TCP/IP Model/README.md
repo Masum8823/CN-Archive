@@ -73,3 +73,27 @@ The **Application Layer** is the closest layer to the user. It allows applicatio
 - FTP (File Transfer)
 
 </details>
+
+<a id="layer-6-presentation"></a>
+
+### Layer 6: Presentation Layer
+ 
+<details>
+<summary><b>📖 Click to expand details</b></summary>
+
+The **Presentation Layer** ensures that data is in a format both devices can understand.
+ 
+**Functions**
+- Data translation
+- Data compression
+- Data encryption and decryption
+- Character encoding
+
+**Examples**
+- SSL/TLS
+- JPEG
+- ASCII
+- Unicode
+
+</details>
+
