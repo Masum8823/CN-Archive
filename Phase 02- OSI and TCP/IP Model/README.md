@@ -145,3 +145,23 @@ The **Transport Layer** provides reliable communication between sender and recei
  
 </details>
 
+<a id="layer-3-network"></a>
+
+### Layer 3: Network Layer
+ 
+<details>
+<summary><b>📖 Click to expand details</b></summary>
+
+The **Network Layer** is responsible for routing data between different networks.
+ 
+**Functions**
+- Logical addressing
+- Path determination
+- Routing packets
+- Network-to-network delivery
+
+**Protocol:** IP (Internet Protocol)
+ 
+**PDU:** `Packet`
+ 
+</details>
