@@ -284,4 +284,23 @@ Provides communication between processes.
 - Reliability
 - Port addressing
 </details>
+
+---
+
+### 3. Internet Layer
+ 
+<details>
+<summary><b>📖 Click to expand details</b></summary>
+Equivalent to the OSI Network Layer.
+ 
+**Functions**
+- IP Addressing
+- Routing
+- Packet forwarding
+**Protocols**
+- IPv4
+- IPv6
+**PDU:** `Packet`
+ 
+</details>
 ---
