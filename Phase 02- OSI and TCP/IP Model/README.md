@@ -165,3 +165,26 @@ The **Network Layer** is responsible for routing data between different networks
 **PDU:** `Packet`
  
 </details>
+
+<a id="layer-2-data-link"></a>
+
+### Layer 2: Data Link Layer
+ 
+<details>
+<summary><b>📖 Click to expand details</b></summary>
+
+The **Data Link Layer** provides communication between devices connected to the same network.
+ 
+**Functions**
+- Framing
+- MAC addressing
+- Error detection
+- Flow control
+- Media access control
+**Example:** Ethernet
+ 
+**MAC Address:** Data Link Layer identifier
+ 
+**PDU:** `Frame`
+ 
+</details>
