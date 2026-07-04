@@ -351,3 +351,35 @@ Combines:
 > At the receiver side, the process happens in **reverse order** until the email reaches the destination application.
  
 ---
+
+<a id="exam-tips"></a>
+## 🎯 Exam Tips
+ 
+### OSI Layer Order (Top → Bottom)
+ 
+```text
+Application → Presentation → Session → Transport → Network → Data Link → Physical
+```
+ 
+> 💡 **Mnemonic:** *All People Seem To Need Data Processing*
+ 
+### Important PDU Names
+ 
+| Layer | PDU |
+|:---|:---:|
+| Application, Presentation, Session | Data |
+| Transport | Segment |
+| Network | Packet |
+| Data Link | Frame |
+| Physical | Bits |
+ 
+### ✅ Remember
+ 
+- **OSI Model** = 7 Layers = Theory/Conceptual
+- **TCP/IP Model** = 4 Layers = Real Internet
+- **TCP** = Reliable
+- **UDP** = Faster but Less Reliable
+- **IP** = Addressing & Routing
+- **MAC Address** = Data Link Layer
+- **Physical Layer** = Cables, Signals, Bits
+---
