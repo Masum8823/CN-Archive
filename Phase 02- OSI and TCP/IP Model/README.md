@@ -118,3 +118,30 @@ The **Session Layer** manages communication sessions between applications.
 - Long file transfers
 
 </details>
+
+<a id="layer-4-transport"></a>
+
+### Layer 4: Transport Layer
+ 
+<details>
+<summary><b>📖 Click to expand details</b></summary>
+
+The **Transport Layer** provides reliable communication between sender and receiver.
+ 
+**Functions**
+- Segmentation and reassembly
+- Error control
+- Flow control
+- Port addressing
+- End-to-end delivery
+
+**Protocols**
+| Protocol | Description |
+|:---|:---|
+| **TCP** (Transmission Control Protocol) | Reliable and connection-oriented |
+| **UDP** (User Datagram Protocol) | Faster but connectionless |
+ 
+**PDU:** `Segment`
+ 
+</details>
+
