@@ -216,6 +216,7 @@ The **Physical Layer** is responsible for transmitting raw bits through a physic
 ---
 
 <a id="how-osi-layers-work-together"></a>
+
 ## 🔄 How OSI Layers Work Together
  
 > When data is sent from one device to another:
@@ -228,5 +229,22 @@ The **Physical Layer** is responsible for transmitting raw bits through a physic
 5. At the receiver side, layers remove the added information (Decapsulation).
 6. The original message reaches the destination application.
 ```
+ 
+---
+
+<a id="tcpip-model"></a>
+
+## 📶 TCP/IP Model
+ 
+> The **TCP/IP Model** is the practical networking model used on the Internet. It contains **4 layers**.
+ 
+### TCP/IP Layers (Top → Bottom)
+ 
+| Layer | Function |
+|:---|:---|
+| 🖥️ Application | User services and network applications |
+| 🚚 Transport | End-to-end communication |
+| 🗺️ Internet | IP addressing and routing |
+| 🔗 Network Access (Link) | Physical transmission and framing |
  
 ---
