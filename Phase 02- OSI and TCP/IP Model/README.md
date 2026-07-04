@@ -28,3 +28,23 @@
 - [✉️ Example: Sending an Email](#example-sending-an-email)
 - [🎯 Exam Tips](#exam-tips)
 ---
+
+<a id="osi-model-7-layers"></a>
+
+## 🌐 OSI Model (7 Layers)
+ 
+> The **OSI (Open Systems Interconnection) Model** is a framework that explains how data travels from one device to another through a network. It has **7 layers**, and each layer performs a specific task.
+ 
+### OSI Layers (Top → Bottom)
+ 
+| Layer | Name | Main Function |
+|:---:|:---|:---|
+| 7 | 🖥️ Application | Provides network services to users and applications |
+| 6 | 🔐 Presentation | Translates, compresses, and encrypts data |
+| 5 | 🔄 Session | Establishes, manages, and terminates communication sessions |
+| 4 | 🚚 Transport | Provides end-to-end communication and reliability |
+| 3 | 🗺️ Network | Handles logical addressing and routing |
+| 2 | 🔗 Data Link | Provides communication between devices on the same network |
+| 1 | ⚡ Physical | Transmits raw bits through cables or wireless signals |
+ 
+---
