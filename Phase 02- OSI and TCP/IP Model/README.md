@@ -334,3 +334,20 @@ Combines:
 | **Lower Layers** | Separate Data Link & Physical | Combined into Link Layer |
  
 ---
+
+<a id="example-sending-an-email"></a>
+## ✉️ Example: Sending an Email
+ 
+```text
+1. Application Layer   → creates the email.
+2. Presentation Layer  → encrypts and formats the data.
+3. Session Layer       → manages the communication session.
+4. Transport Layer     → (TCP) divides data into segments and adds port numbers.
+5. Network Layer       → (IP) adds source and destination IP addresses.
+6. Data Link Layer     → creates frames and adds MAC addresses.
+7. Physical Layer      → sends bits through the network medium.
+```
+ 
+> At the receiver side, the process happens in **reverse order** until the email reaches the destination application.
+ 
+---
