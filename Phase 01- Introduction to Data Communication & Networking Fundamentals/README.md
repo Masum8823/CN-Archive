@@ -151,3 +151,49 @@ Sender  --[Protocol Rules]-->  Message  -->  Transmission Medium  -->  Message  
 - MCQ: "Which component ensures both devices understand each other?" → Protocol.
 
 ---
+
+<a id="topic-data-representation"></a>
+
+## 4. 🔢 Data Representation
+
+### Definition
+Information can come in 5 different forms — **Text, Numbers, Images, Audio, and Video** — and each is represented differently as bits (0s and 1s) inside a computer.
+
+### Why Important?
+Understanding how different data types are turned into binary helps you understand storage, compression, and transmission concepts later in the course.
+
+### Easy Explanation
+
+**1. Text** 📝
+Every letter/character is stored as a bit pattern using **Unicode** (32 bits per character). ASCII is actually just a small part of Unicode — the first 127 characters.
+
+**2. Numbers** 🔢
+Numbers are converted directly into binary. No need for ASCII-style encoding — pure math conversion.
+
+**3. Images** 🖼️
+An image is made of tiny dots called **pixels**. More pixels = better quality (higher resolution). How many bits each pixel needs depends on color depth:
+- Black & White → 1 bit
+- Grayscale → 2+ bits
+- Color → RGB (Red, Green, Blue) or YCM (Yellow, Cyan, Magenta)
+
+**4. Audio** 🎵
+Sound is a continuous (analog) signal, captured by a microphone, then converted into digital form for computers to process.
+
+**5. Video** 🎬
+Video is just a sequence of images (frames) played quickly to show motion — can be continuous (live TV) or made of individual frames (movies).
+
+### Key Points
+- Text → Unicode (32-bit), ASCII is a subset (first 127 characters).
+- Numbers → direct binary conversion.
+- Images → pixel-based, bit depth depends on color type.
+- Audio → analog to digital conversion.
+- Video → sequence of frames.
+
+### Remember
+**"TNIAV"** মনে রাখো — Text, Numbers, Images, Audio, Video।
+
+### Exam Focus
+- MCQ: "How many bits does Unicode use per character?" → 32 bits.
+- Short: "Is ASCII part of Unicode?" → Yes, first 127 characters.
+
+---
