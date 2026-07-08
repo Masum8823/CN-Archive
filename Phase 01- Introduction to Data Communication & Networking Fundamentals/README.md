@@ -275,3 +275,41 @@ Think of a network like a group of friends connected by phone lines:
 - MCQ: "Which aspect describes how data flows through a network?" → Logical Connection.
 
 ---
+
+<a id="topic-why-network"></a>
+
+## 7. 💼 Why Build a Computer Network?
+
+### Definition
+Computer networks are built because they provide major benefits to both **businesses** and **individuals** — connecting devices, systems, and services behind the scenes of almost everything we do today.
+
+### Why Important?
+This topic shows the real-world importance/motivation behind networking — often asked as a short or broad "explain the importance of networks" question.
+
+### Easy Explanation
+
+**Business Benefits** 🏢
+- Instant Communication & Collaboration — email, video calls, real-time teamwork across offices worldwide.
+- Supports Cloud Computing — access apps, storage, computing power from anywhere.
+- Enables Remote & Hybrid Work — smooth working from home or office.
+- Drives Modern Business Operations — supports digital transformation, agility, and competitiveness.
+
+**Personal Benefits** 🏠
+- Everyday Convenience — online shopping, banking, streaming.
+- Smart Home & IoT Devices — smart speakers, thermostats, cameras, wearables.
+- Staying Connected — social media, messaging, video calls.
+- Access to Information & Entertainment — learning, browsing, and entertainment anywhere.
+
+### Key Points
+| Business Benefits | Personal Benefits |
+|---|---|
+| Instant Communication & Collaboration | Everyday Convenience |
+| Supports Cloud Computing | Smart Home & IoT Devices |
+| Remote & Hybrid Work | Staying Connected |
+| Drives Modern Business Operations | Access to Information & Entertainment |
+
+### Exam Focus
+- Broad question: "Why do we need computer networks? Explain with business and personal examples."
+- Viva: Give one real-life example from your own daily life (e.g., mobile banking, online class).
+
+---
