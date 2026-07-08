@@ -249,3 +249,29 @@ Full-Duplex:  A ◀──────────▶ B   (same time, both direct
 - Data flow: Simplex (1-way), Half-Duplex (2-way, one at a time), Full-Duplex (2-way, same time).
 
 ---
+
+<a id="topic-what-is-network"></a>
+
+## 6. 🖧 What is a Network?
+
+### Definition
+In its simplest form, a network is just **"two connected computers sharing resources with one another."** It has two main aspects: Physical Connection and Logical Connection.
+
+### Why Important?
+This is the base definition — examiners expect you to know this word-for-word or in your own simple words.
+
+### Easy Explanation
+Think of a network like a group of friends connected by phone lines:
+
+- **Physical Connection** = the actual wires, cables, or wireless signals connecting them (like the phone lines)
+- **Logical Connection** = how the actual conversation/data moves across those wires (like the rules of how they talk)
+
+### Key Points
+- Simplest network = 2 connected computers sharing resources.
+- Two aspects: Physical Connection (wires/cables/wireless) + Logical Connection (data transport across media).
+
+### Exam Focus
+- Short question: "Define a computer network."
+- MCQ: "Which aspect describes how data flows through a network?" → Logical Connection.
+
+---
