@@ -313,3 +313,48 @@ This topic shows the real-world importance/motivation behind networking — ofte
 - Viva: Give one real-life example from your own daily life (e.g., mobile banking, online class).
 
 ---
+
+## 8. 📊 Networking Criteria (Performance, Reliability, Security)
+
+### Definition
+A good network must satisfy three key criteria: **Performance, Reliability, and Security.**
+
+### Why Important?
+This is one of the most frequently asked topics — both as MCQ and broad questions. Examiners love asking about the sub-metrics under Performance.
+
+### Easy Explanation
+
+**1. Performance** 🚀 — measures how fast and efficiently data travels.
+- **Transit time**: Time for a message to travel between devices.
+- **Response time**: Time between a request and getting its reply.
+- **Throughput**: Amount of data successfully delivered per second.
+- **Delay**: Time taken for data to reach its destination.
+- ⚠️ Trade-off: Higher throughput can increase delay because of congestion (like more cars on a road = more traffic jam).
+
+**2. Reliability** 🛡️ — ensures accurate, continuous delivery.
+- Measured by: frequency of failures, recovery time after failure, robustness during disasters.
+
+**3. Security** 🔒 — protects the network and data from:
+- Unauthorized access
+- Damage or corruption
+- Breaches and data loss
+- Involves policies, procedures, and recovery plans.
+
+### Key Points
+| Criteria | Focus |
+|---|---|
+| Performance | Speed & efficiency (transit time, response time, throughput, delay) |
+| Reliability | Accuracy & continuity (failure frequency, recovery time) |
+| Security | Protection from unauthorized access, damage, breaches |
+
+### Remember
+**Summary line to remember**: *"A good network is fast, dependable, and secure."*
+
+### Shortcut Memory Trick
+**"PRS"** — **P**erformance, **R**eliability, **S**ecurity.
+
+### Exam Focus
+- MCQ: "Which metric measures data successfully delivered per second?" → Throughput.
+- Broad: "Explain the three criteria of a good network with examples."
+
+---
