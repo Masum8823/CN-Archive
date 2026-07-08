@@ -35,3 +35,36 @@
 - [🎯 Exam Tips](#exam-tips)
 
 ---
+
+<a id="topic-data-comm"></a>
+
+## 1. 📡 Data Communications
+
+### Definition
+Data communication means sending data between two devices through some kind of transmission medium, like a wire cable. It also connects to the word **telecommunication**, which simply means "communication at a distance."
+
+### Why Important?
+This is the foundation of the whole course. Every network concept you'll learn later builds on top of this basic idea: data moving from one device to another.
+
+### Easy Explanation
+Think of **Data Communication** like sending a letter to your friend.
+
+- **Data** = the message you wrote (in whatever format you both understand)
+- **Telecommunication** = sending that message over a distance
+- **Data Communications** = the actual process of the letter travelling from your hand to your friend's hand through some medium (postman, courier, wire, etc.)
+
+So whenever two devices exchange information over a cable, wireless signal, or any medium — that's data communication.
+
+### Key Points
+- Telecommunication = communication at a distance.
+- Data = information in an agreed-upon format between sender and receiver.
+- Data Communications = exchange of data between two devices via a transmission medium.
+
+### Remember
+Exam-এ প্রায়ই আসে: **Definition of Data, Telecommunication, and Data Communications** — এই তিনটা term আলাদা করে লিখতে বলতে পারে।
+
+### Exam Focus
+- Short question: "Define Data Communication."
+- Viva: They may ask you to explain the difference between Data and Telecommunication.
+
+---
