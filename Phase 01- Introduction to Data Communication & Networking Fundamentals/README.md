@@ -68,3 +68,41 @@ Exam-এ প্রায়ই আসে: **Definition of Data, Telecommunicatio
 - Viva: They may ask you to explain the difference between Data and Telecommunication.
 
 ---
+
+<a id="topic-fundamental-char"></a>
+
+## 2. ✅ Fundamental Characteristics of Data Communication
+
+### Definition
+For any data communication system to be considered "good," it must have four fundamental characteristics: **Delivery, Accuracy, Timeliness, and Jitter.**
+
+### Why Important?
+This is a very common exam question — "What are the fundamental characteristics of data communication?" Examiners love this because it's short but tests real understanding.
+
+### Easy Explanation
+Imagine you're a delivery boy delivering food:
+
+1. **Delivery** – The food must reach the *correct* house. If wrong address, it's useless.
+2. **Accuracy** – The food must arrive exactly as ordered, not damaged or mixed up.
+3. **Timeliness** – The food must arrive while it's hot, not 3 hours late.
+4. **Jitter** – This is about how *consistent* your delivery time is. If sometimes you deliver in 10 mins and sometimes in 40 mins (random variation), that inconsistency is called jitter. This matters a lot in video calls or live streaming — if packets arrive at uneven speed, video/audio will lag and stutter.
+
+### Key Points
+| Characteristic | Meaning |
+|---|---|
+| Delivery | Data must reach the correct destination only |
+| Accuracy | Data must not be altered/corrupted during transmission |
+| Timeliness | Data must arrive on time (late data = useless data) |
+| Jitter | Variation in packet arrival time |
+
+### Remember
+**"DATJ"** মনে রাখো — **D**elivery, **A**ccuracy, **T**imeliness, **J**itter।
+
+### Shortcut Memory Trick
+Think: **"DATJ = Delivery Accuracy Timeliness Jitter"** — remember it like a short code name.
+
+### Exam Focus
+- Very common **4-mark short question**.
+- Viva favorite: "What is Jitter and why does it matter in video calls?"
+
+---
