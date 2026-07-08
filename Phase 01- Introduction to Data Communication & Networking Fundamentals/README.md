@@ -106,3 +106,48 @@ Think: **"DATJ = Delivery Accuracy Timeliness Jitter"** — remember it like a s
 - Viva favorite: "What is Jitter and why does it matter in video calls?"
 
 ---
+
+<a id="topic-components"></a>
+
+## 3. 🧩 Data Communication Components
+
+### Definition
+A complete data communication system needs **5 components**: Message, Sender, Receiver, Transmission Medium, and Protocol.
+
+### Why Important?
+Without any one of these 5 parts, communication is not possible. This is a classic diagram-based exam question.
+
+### Easy Explanation
+Imagine making a phone call:
+
+- **Message** = what you're saying (the actual content)
+- **Sender** = you, the person speaking
+- **Receiver** = your friend, listening on the other end
+- **Transmission Medium** = the mobile network/signal carrying your voice
+- **Protocol** = the language rule both of you follow (e.g., both speaking Bangla, so you understand each other)
+
+**Protocol** is the most important one to understand — it's basically a rulebook that both sender and receiver agree to follow so the message makes sense on both ends.
+
+### Key Points
+
+| Component | Description | Examples |
+|---|---|---|
+| **Message** | The information/data being communicated | Text, numbers, pictures, audio, video |
+| **Sender** | Device that originates the message | Computer, workstation, phone, camera |
+| **Receiver** | Device that accepts the message | Computer, workstation, phone, TV |
+| **Transmission Medium** | Physical path the message travels | Twisted-pair wire, coaxial cable, fiber-optic, radio waves |
+| **Protocol** | Rules governing communication | Rules so devices "speak the same language" |
+
+### Diagram
+```
+Sender  --[Protocol Rules]-->  Message  -->  Transmission Medium  -->  Message  --[Protocol Rules]-->  Receiver
+```
+
+### Shortcut Memory Trick
+**"MSRTP"** — **M**essage, **S**ender, **R**eceiver, **T**ransmission medium, **P**rotocol.
+
+### Exam Focus
+- Draw the 5-component diagram (Figure 1.1 style) — very common in written exams.
+- MCQ: "Which component ensures both devices understand each other?" → Protocol.
+
+---
