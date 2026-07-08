@@ -197,3 +197,55 @@ Video is just a sequence of images (frames) played quickly to show motion — ca
 - Short: "Is ASCII part of Unicode?" → Yes, first 127 characters.
 
 ---
+
+<a id="topic-data-flow"></a>
+
+## 5. 🔄 Data Flow (Simplex, Half-Duplex, Full-Duplex)
+
+### Definition
+Data flow describes the direction in which data travels between two connected devices. There are three types: **Simplex, Half-Duplex, and Full-Duplex.**
+
+### Why Important?
+This topic is asked almost every semester — usually as a comparison table or diagram question.
+
+### Easy Explanation
+
+- **Simplex** → One-way road. Data flows only in one direction, never back. *(Example: Keyboard to Computer, Mainframe to Monitor)*
+- **Half-Duplex** → Walkie-talkie style. Both can talk, but not at the same time — only one direction at a time.
+- **Full-Duplex** → Phone call style. Both people can talk and listen at the same time, in both directions simultaneously.
+
+### Key Points / Comparison Table
+
+| Type | Direction | Example |
+|---|---|---|
+| **Simplex** | One-way only | Keyboard → Computer, TV Broadcast |
+| **Half-Duplex** | Both ways, one at a time | Walkie-talkie |
+| **Full-Duplex** | Both ways, at the same time | Telephone call |
+
+### Diagram
+```
+Simplex:      A ───────────▶ B
+
+Half-Duplex:  A ───────────▶ B
+              A ◀─────────── B   (not at same time)
+
+Full-Duplex:  A ◀──────────▶ B   (same time, both directions)
+```
+
+### Shortcut Memory Trick
+- **Simplex = Single direction**
+- **Half = Half the time each direction**
+- **Full = Full-time both directions**
+
+### Exam Focus
+- Very common: Draw and explain all three data flow types.
+- MCQ: "Which type does a telephone use?" → Full-duplex.
+
+### 📝 Quick Revision (Section 1)
+- Data Communication = exchange of data via transmission medium.
+- 4 characteristics: Delivery, Accuracy, Timeliness, Jitter.
+- 5 components: Message, Sender, Receiver, Medium, Protocol.
+- Data types: Text, Numbers, Images, Audio, Video — each represented differently in bits.
+- Data flow: Simplex (1-way), Half-Duplex (2-way, one at a time), Full-Duplex (2-way, same time).
+
+---
