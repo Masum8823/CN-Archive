@@ -568,3 +568,23 @@ By the **early 1990s**, the world started running out of public IP addresses. To
 - Public vs Private comparison table — common short question
 
 ---
+
+<a id="16-private-ranges"></a>
+
+## 16. Private IP Address Ranges
+
+### Definition (Memorize This Table!)
+| Class | IP Address Range | Network ID(s) (CIDR) | Number of Addresses |
+|---|---|---|---|
+| **A** | 10.0.0.0 – 10.255.255.255 | 10.0.0.0 /8 (1 network) | 16,777,216 per Network ID |
+| **B** | 172.16.0.0 – 172.31.255.255 | 172.16.0.0 – 172.31.0.0 /16 (16 networks) | 65,534 per Network ID |
+| **C** | 192.168.0.0 – 192.168.255.255 | 192.168.0.0 – 192.168.255.0 /24 (256 networks) | 254 per Network ID |
+
+### Shortcut Memory Trick
+**"10, 172.16-31, 192.168"** — the 3 famous private ranges. Almost every home router uses **192.168.x.x**.
+
+### Exam Focus
+- Memorize these 3 private ranges exactly (very high chance of MCQ/short question)
+- Know how many private networks exist per class (1 for A, 16 for B, 256 for C)
+
+---
