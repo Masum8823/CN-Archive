@@ -470,3 +470,28 @@ Instead of writing `255.255.255.0`, you can just write `/24` — meaning "24 bit
 - Convert CIDR (/24, /16, /8, /25) to dotted-decimal subnet mask and vice versa — **guaranteed question type**
 
 ---
+
+<a id="13-power-of-2"></a>
+
+## 13. The Power of 2
+
+### Why Important?
+Subnetting math is **built entirely on powers of 2** — you cannot calculate number of networks/hosts without memorizing this table.
+
+### Table (Memorize This!)
+| Power | Value | Power | Value |
+|---|---|---|---|
+| 2¹ | 2 | 2⁷ | 128 |
+| 2² | 4 | 2⁸ | 256 |
+| 2³ | 8 | 2⁹ | 512 |
+| 2⁴ | 16 | 2¹⁰ | 1,024 |
+| 2⁵ | 32 | 2¹¹ | 2,048 |
+| 2⁶ | 64 | 2¹² | 4,096 |
+
+### Shortcut Memory Trick
+Just remember: **double the previous number each time** → 2, 4, 8, 16, 32, 64, 128, 256, 512, 1024, 2048, 4096...
+
+### Exam Focus
+- Memorize at least up to 2¹² — subnetting problems depend on quick recall of these values
+
+---
