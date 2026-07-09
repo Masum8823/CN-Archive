@@ -495,3 +495,37 @@ Just remember: **double the previous number each time** → 2, 4, 8, 16, 32, 64,
 - Memorize at least up to 2¹² — subnetting problems depend on quick recall of these values
 
 ---
+
+
+<a id="14-hosts-per-network"></a>
+
+## 14. Calculating Hosts Per Network
+
+### Definition
+The formula to calculate how many usable host addresses exist in a network:
+```
+Hosts Per Network = 2^h − 2
+```
+where **h** = number of host bits available.
+
+### Why subtract 2?
+Because every network reserves **2 special addresses** that can't be assigned to a device:
+1. **Network Address** (identifies the network itself, all host bits = 0)
+2. **Broadcast Address** (used to send to everyone on that network, all host bits = 1)
+
+### Example Table
+| Class | Host Bits (h) | Formula | Result |
+|---|---|---|---|
+| **A** | 24 | 2²⁴ − 2 | 16,777,214 |
+| **B** | 16 | 2¹⁶ − 2 | 65,534 |
+| **C** | 8 | 2⁸ − 2 | 254 |
+
+### Key Points
+- Always subtract 2 from the raw power-of-2 result
+- The 2 reserved addresses are: **Network Address** and **Broadcast Address**
+
+### Exam Focus
+- This formula (2^h − 2) is a **must-memorize** — appears in almost every subnetting numerical
+- Be ready to explain *why* we subtract 2 (not just apply the formula blindly)
+
+---
