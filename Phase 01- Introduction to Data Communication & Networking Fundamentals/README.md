@@ -529,3 +529,42 @@ Because every network reserves **2 special addresses** that can't be assigned to
 - Be ready to explain *why* we subtract 2 (not just apply the formula blindly)
 
 ---
+
+
+<a id="15-public-vs-private"></a>
+
+## 15. Public vs Private IP Addresses
+
+### Definition
+- **Public IP Address**: "Registered," globally unique, assigned by an ISP, used to communicate over the internet.
+- **Private IP Address**: "Unregistered," free for anyone to use inside their own internal network, not routable on the public internet directly.
+
+### Easy Explanation
+Think of a private IP like your **internal office extension number** (e.g., "Dial 105 for Accounts") — it only works inside your building. A public IP is like your **full mobile number** that anyone in the world can dial.
+
+### Comparison Table
+| Feature | Public IP | Private IP |
+|---|---|---|
+| Registration | Registered (via ISP) | Unregistered (free for anyone) |
+| Uniqueness | Must be globally unique | Can be reused in different networks |
+| Usage | Web servers, DNS servers, Routers | Internal home/office devices |
+| Routable on Internet? | Yes | No (needs NAT) |
+| Example | 140.100.100.150 | 192.168.1.10 |
+
+### Why Private IPs Exist
+By the **early 1990s**, the world started running out of public IP addresses. To solve this, **Private IP Addresses + NAT (Network Address Translation)** were introduced — letting multiple private devices share one public IP when accessing the internet.
+
+### Easy Diagram
+```
+[Private Network: 192.168.100.x devices] --- Router (NAT) --- [Public IP: 140.100.100.150] --- Internet
+```
+
+### Key Points
+- Private IPs use **NAT** to communicate with public networks
+- Private IPs can be reused in millions of different homes/offices without conflict — because they never leave their own local network
+
+### Exam Focus
+- Explain why NAT was invented (running out of public IPs)
+- Public vs Private comparison table — common short question
+
+---
