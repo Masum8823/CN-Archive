@@ -358,3 +358,36 @@ This is one of the most frequently asked topics — both as MCQ and broad questi
 - Broad: "Explain the three criteria of a good network with examples."
 
 ---
+
+
+<a id="9-classes-detailed"></a>
+
+## 9. IPv4 Address Classes (Detailed)
+
+### Full Table
+| Class | Leading Bits | Network Bits | Host Bits | Number of Networks | Hosts Per Network | Default Subnet Mask |
+|---|---|---|---|---|---|---|
+| **A** | 0 (1–126) | 8 | 24 | 128 (2⁷) | 16,777,216 (2²⁴) | 255.0.0.0 |
+| **B** | 10 (128–191) | 16 | 16 | 16,384 (2¹⁴) | 65,536 (2¹⁶) | 255.255.0.0 |
+| **C** | 110 (192–223) | 24 | 8 | 2,097,152 (2²¹) | 256 (2⁸) | 255.255.255.0 |
+| **D (multicast)** | 1110 (224–239) | Not Defined | Not Defined | Not Defined | Not Defined | Not Defined |
+| **E (reserved)** | 1111 (240–255) | Not Defined | Not Defined | Not Defined | Not Defined | Not Defined |
+
+### Easy Explanation
+- **Leading bits** are like a "signature" at the very start of the first octet that tells you which class an IP belongs to just by looking at the first few bits
+- **Class D** is reserved for **multicast** (one sender, many receivers — like streaming to a group)
+- **Class E** is **reserved** for experimental/future use — you'll basically never see it used
+
+### Key Points
+- Class A starts with a leading bit **0**
+- Class B starts with leading bits **10**
+- Class C starts with leading bits **110**
+- Class D starts with **1110** (multicast)
+- Class E starts with **1111** (reserved)
+
+### Exam Focus
+- Memorize leading bits per class — **very common in MCQ**
+- Know that D = multicast, E = reserved (not used for regular host addressing)
+
+---
+

@@ -269,10 +269,11 @@ Combines the functions of:
 
 ---
 
-### 2. Transport Layer
+#### 2. Transport Layer
  
 <details>
 <summary><b>📖 Click to expand details</b></summary>
+
 Provides communication between processes.
  
 **Protocols**
@@ -287,10 +288,11 @@ Provides communication between processes.
 
 ---
 
-### 3. Internet Layer
+#### 3. Internet Layer
  
 <details>
 <summary><b>📖 Click to expand details</b></summary>
+
 Equivalent to the OSI Network Layer.
  
 **Functions**
@@ -303,26 +305,32 @@ Equivalent to the OSI Network Layer.
 **PDU:** `Packet`
  
 </details>
+
 ---
 
-### 4. Network Access (Link) Layer
+#### 4. Network Access (Link) Layer
  
 <details>
 <summary><b>📖 Click to expand details</b></summary>
+
 Combines:
 - OSI Data Link Layer
 - OSI Physical Layer
+
 **Functions**
 - Framing
 - MAC Addressing
 - Physical transmission
+
 **Technologies**
 - Ethernet
 - Wi-Fi
 </details>
+
 ---
  
 <a id="osi-vs-tcpip"></a>
+
 ## ⚖️ OSI vs TCP/IP
  
 | Feature | OSI Model | TCP/IP Model |
@@ -336,6 +344,7 @@ Combines:
 ---
 
 <a id="example-sending-an-email"></a>
+
 ## ✉️ Example: Sending an Email
  
 ```text
@@ -353,6 +362,7 @@ Combines:
 ---
 
 <a id="exam-tips"></a>
+
 ## 🎯 Exam Tips
  
 ### OSI Layer Order (Top → Bottom)
@@ -383,3 +393,6 @@ Application → Presentation → Session → Transport → Network → Data Link
 - **MAC Address** = Data Link Layer
 - **Physical Layer** = Cables, Signals, Bits
 ---
+
+
+
