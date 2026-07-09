@@ -391,3 +391,31 @@ This is one of the most frequently asked topics — both as MCQ and broad questi
 
 ---
 
+
+<a id="10-default-subnet-masks"></a>
+
+## 10. Default Subnet Masks
+
+### Definition
+The **Subnet Mask** tells you which part of the IP address is the Network portion and which part is the Host portion. Each class has its own **default** subnet mask.
+
+### Easy Explanation & Example
+
+| Class | Example IP | Subnet Mask (Decimal) | Subnet Mask (Binary) |
+|---|---|---|---|
+| **A** | 10.0.0.15 | 255.0.0.0 | 11111111.00000000.00000000.00000000 |
+| **B** | 172.16.0.110 | 255.255.0.0 | 11111111.11111111.00000000.00000000 |
+| **C** | 192.168.1.50 | 255.255.255.0 | 11111111.11111111.11111111.00000000 |
+
+### Key Points
+- Wherever the subnet mask has **255 (all 1s)** → that octet is **Network**
+- Wherever the subnet mask has **0 (all 0s)** → that octet is **Host**
+
+### Shortcut Memory Trick
+**"255 = Network, 0 = Host"** — just look at the subnet mask pattern to instantly know the class.
+
+### Exam Focus
+- Given an IP + subnet mask, identify which octets are network vs host
+- Memorize default subnet masks for A, B, C exactly
+
+---
