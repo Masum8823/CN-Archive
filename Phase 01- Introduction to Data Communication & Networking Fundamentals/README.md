@@ -588,3 +588,35 @@ By the **early 1990s**, the world started running out of public IP addresses. To
 - Know how many private networks exist per class (1 for A, 16 for B, 256 for C)
 
 ---
+
+<a id="17-loopback"></a>
+
+## 17. The Loopback Address
+
+### Definition
+The range **127.0.0.0 to 127.255.255.255** is reserved as the **loopback address** — meaning a host's own address, also called **localhost**.
+
+### Why Important?
+It's used to test whether **TCP/IP is correctly installed and working** on your own computer — without needing any actual network connection.
+
+### Easy Explanation
+Think of loopback like talking to yourself in a mirror — the data never actually leaves your computer. It goes out, and immediately "loops back" to itself, without ever touching the physical network card (NIC).
+
+### Key Points
+- Default loopback address = **127.0.0.1**
+- Data sent to loopback is forwarded to a **virtual network interface** inside the OS — the real network card (NIC) is never involved
+- If you can successfully ping the loopback, your TCP/IP stack is **working correctly**
+
+### How to Test It
+```
+ping 127.0.0.1
+ping localhost
+ping loopback
+```
+
+### Exam Focus
+- What is the default loopback address? → **127.0.0.1**
+- What is loopback used for? → **Testing/diagnosing TCP/IP installation on your own machine**
+- Understand that loopback traffic never touches the actual NIC (network card)
+
+---
