@@ -419,3 +419,23 @@ The **Subnet Mask** tells you which part of the IP address is the Network portio
 - Memorize default subnet masks for A, B, C exactly
 
 ---
+
+<a id="11-practice-class"></a>
+
+## 11. Practice — Identify the Class
+
+### Practice Questions (from the slides)
+
+| IP Address | Subnet Mask | Class |
+|---|---|---|
+| 9.10.40.15 | 255.0.0.0 | **A** (first octet 1-126, mask 255.0.0.0) |
+| 135.240.110.100 | 255.255.0.0 | **B** (first octet 128-191, mask 255.255.0.0) |
+| 196.200.10.5 | 255.255.255.0 | **C** (first octet 192-223, mask 255.255.255.0) |
+
+### Easy Explanation
+The fastest way to identify a class: **just look at the first octet number** and match it against the ranges in Section 8/9. The subnet mask is a second confirmation.
+
+### Exam Focus
+- This exact style of question ("what class is this IP?") is **very likely** to appear — practice recognizing ranges instantly
+
+---
