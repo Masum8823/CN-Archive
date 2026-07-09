@@ -439,3 +439,34 @@ The fastest way to identify a class: **just look at the first octet number** and
 - This exact style of question ("what class is this IP?") is **very likely** to appear — practice recognizing ranges instantly
 
 ---
+
+<a id="12-cidr"></a>
+
+## 12. CIDR Notation
+
+### Definition
+**CIDR (Classless Inter-Domain Routing)** is a method of subnetting that uses **"slash" notation** to show how many bits belong to the Subnet Mask — instead of writing the full dotted-decimal mask.
+
+### Easy Explanation
+Instead of writing `255.255.255.0`, you can just write `/24` — meaning "24 bits are set to 1 in the subnet mask." It's a shortcut.
+
+### Examples
+| CIDR | Equivalent Subnet Mask |
+|---|---|
+| /8 | 255.0.0.0 |
+| /16 | 255.255.0.0 |
+| /24 | 255.255.255.0 |
+| /25 | 255.255.255.128 |
+
+### More Examples
+- `192.168.1.0 /24` = `255.255.255.0`
+- `10.1.0.0 /16` = `255.255.0.0`
+- `196.10.10.0 /25` = `255.255.255.128`
+
+### Shortcut Memory Trick
+**"/number = how many 1s from the left"** — `/8` means the first 8 bits are 1 (11111111.00000000.00000000.00000000).
+
+### Exam Focus
+- Convert CIDR (/24, /16, /8, /25) to dotted-decimal subnet mask and vice versa — **guaranteed question type**
+
+---
