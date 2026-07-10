@@ -729,3 +729,16 @@ Think of it like a government structure:
 
 ---
 
+## 🧠 Most Important Comparisons (All in One Place)
+
+| Comparison | Key Difference |
+|---|---|
+| **Physical vs Logical Topology** | Physical = device placement/wiring; Logical = how data actually flows |
+| **Ring vs Star vs Mesh** | Ring = circular/repeater; Star = central switch; Mesh = multiple direct links |
+| **Ad hoc vs Infrastructure** | Ad hoc = no central device; Infrastructure = uses a WAP |
+| **Circuit vs Packet Switching** | Circuit = dedicated path, ordered delivery; Packet = shared path, may arrive out of order |
+| **PVC vs SVC** | PVC = always exists (permanent); SVC = created on-demand |
+| **internet vs Internet** | lowercase = any connected networks; uppercase = the one global network |
+| **LAN vs MAN vs WAN** | LAN = building; MAN = city; WAN = countries/continents |
+
+---
