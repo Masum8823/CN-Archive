@@ -591,6 +591,54 @@ The entire message is stored at intermediate nodes and forwarded later — calle
 - Viva: "What is the difference between PVC and SVC?"
 
 ---
+
+
+<a id="topic-internet"></a>
+
+## 14. 🌐 The Internet
+
+### Definition
+- **internet** (lowercase i) = two or more networks that can communicate with each other.
+- **Internet** (uppercase I) = the single global network made up of thousands of interconnected networks.
+
+### Why Important?
+Understanding the layered structure of the Internet (Backbone → Provider → Customer) is essential and directly connects to real-world context in Bangladesh — often asked with local examples.
+
+### Easy Explanation
+Think of the Internet like a country's road system:
+
+- **Backbone Networks** 🛣️ — the international highways connecting Bangladesh to the rest of the world. Examples: BSCCL (SEA-ME-WE 4 & 5 submarine cables), Link3 Technologies. Also called **international ISPs**.
+- **Provider Networks** 🛤️ — the regional roads that use the highways (backbones) for a fee, connecting to backbones or other providers. Examples: Grameenphone, Banglalink, Aamra Networks, Infolink. Also called **national/regional ISPs**.
+- **Customer Networks** 🏠 — the small local streets — the edge networks that actually use Internet services. Examples: Homes, offices, schools, universities. They pay provider networks for connectivity.
+
+Globally, the same hierarchy exists: **Customer networks → Provider networks → Backbones**, connected through special meeting points called **Peering Points** and **IXPs (Internet Exchange Points)**, where different networks exchange traffic directly.
+
+### Key Points
+- **internet** (lowercase) = any interconnected networks.
+- **Internet** (uppercase) = the one global network of networks.
+- Bangladesh's Internet structure: Backbone (BSCCL, Link3) → Provider (Grameenphone, Banglalink) → Customer (homes, schools, offices).
+- Globally: Backbones + Provider networks + Peering points + IXPs + Customer networks.
+- Physical connection uses undersea (submarine) cables across oceans, connecting countries worldwide.
+
+### Diagram
+```
+[Global Backbone Cables] 
+        │
+[Provider Network (ISP)] ---- Peering Point ---- [Another Provider Network]
+        │
+[Customer Network: Home / School / Office]
+```
+
+### Remember
+Bangladesh-specific example is a **favorite exam/viva question** — make sure you remember BSCCL and at least 2 provider names (Grameenphone, Banglalink).
+
+### Exam Focus
+- Short: "Differentiate between internet and Internet."
+- Broad: "Explain the structure of the Internet in Bangladesh with examples."
+- Viva: "What is an IXP / Peering Point?"
+
+---
+
 <a id="9-classes-detailed"></a>
 
 ## 9. IPv4 Address Classes (Detailed)
