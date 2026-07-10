@@ -1,3 +1,41 @@
+# 🌐 Understanding IPv4 Addresses & Binary Math — Complete Exam Notes
+
+![Course](https://img.shields.io/badge/Course-Data%20Communications%20(CSE%203227)-blue)
+![Topic](https://img.shields.io/badge/Chapter-IPv4%20%26%20Binary%20Math-green)
+![Level](https://img.shields.io/badge/Level-Exam%20Ready-orange)
+![Made%20with](https://img.shields.io/badge/Made%20with-%E2%9D%A4%EF%B8%8F%20Easy%20English-red)
+
+> This README covers everything about **IPv4 addresses, binary math, IP classes, subnet masks, CIDR notation, public/private IPs, and the loopback address**. Read this once before exam and you're fully covered.
+
+---
+
+## 📑 Table of Contents
+
+* [1. What is an IP Address?](#1-what-is-ip)
+* [2. IPv4 Address Anatomy](#2-ipv4-anatomy)
+* [3. Network Portion vs Host Portion](#3-network-host)
+* [4. IPv4 Address Components (IP, Subnet Mask, Gateway)](#4-ipv4-components)
+* [5. Binary Math Basics — Binary to Decimal](#5-binary-to-decimal)
+* [6. Binary Math Basics — Decimal to Binary](#6-decimal-to-binary)
+* [7. IP Address Conversion Process](#7-ip-conversion-process)
+* [8. IPv4 Address Classes (Simplified)](#8-classes-simplified)
+* [9. IPv4 Address Classes (Detailed)](#9-classes-detailed)
+* [10. Default Subnet Masks](#10-default-subnet-masks)
+* [11. Practice — Identify the Class](#11-practice-class)
+* [12. CIDR Notation](#12-cidr)
+* [13. The Power of 2](#13-power-of-2)
+* [14. Calculating Hosts Per Network](#14-hosts-per-network)
+* [15. Public vs Private IP Addresses](#15-public-vs-private)
+* [16. Private IP Address Ranges](#16-private-ranges)
+* [17. The Loopback Address](#17-loopback)
+* [18. Quick Revision (Whole Chapter)](#18-quick-revision)
+* [19. Frequently Asked Exam Questions](#19-faq)
+* [20. Common Mistakes](#20-common-mistakes)
+* [21. Memory Tricks](#21-memory-tricks)
+* [22. Exam Tips](#22-exam-tips)
+
+---
+
 <a id="9-classes-detailed"></a>
 
 ## 9. IPv4 Address Classes (Detailed)
