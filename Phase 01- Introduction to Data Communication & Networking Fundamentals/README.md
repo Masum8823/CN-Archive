@@ -358,7 +358,34 @@ This is one of the most frequently asked topics — both as MCQ and broad questi
 - Broad: "Explain the three criteria of a good network with examples."
 
 ---
+<a id="topic-phy-log-topology"></a>
 
+## 9. 🗺️ Physical vs Logical Topologies
+
+### Definition
+**Physical topology** describes how network devices are physically placed and connected. **Logical topology** describes how data actually flows through the network.
+
+### Why Important?
+Students often confuse these two — a classic "difference between" exam question.
+
+### Easy Explanation
+Think of a school building:
+
+- **Physical Topology** = how classrooms are physically arranged in the building (like rows of rooms).
+- **Logical Topology** = how information/announcements actually travel between classrooms (maybe through the PA system, not room by room).
+
+A network can *look* like a Star physically (all devices connected to one switch) but *behave* logically like Ethernet or Wi-Fi rules for how data moves.
+
+### Key Points / Comparison Table
+| Physical Topology | Logical Topology |
+|---|---|
+| Placement of devices & physical connections | How data flows across the network |
+| Example: Star-shaped wiring | Example: 802.3 Ethernet, 802.11 Wi-Fi rules |
+
+### Exam Focus
+- Difference-type question: "Physical vs Logical Topology" — very likely to appear.
+
+---
 
 <a id="9-classes-detailed"></a>
 
@@ -620,3 +647,4 @@ ping loopback
 - Understand that loopback traffic never touches the actual NIC (network card)
 
 ---
+
