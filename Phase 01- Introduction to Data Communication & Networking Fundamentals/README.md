@@ -639,6 +639,74 @@ Bangladesh-specific example is a **favorite exam/viva question** — make sure y
 
 ---
 
+<a id="topic-internet-admin"></a>
+
+## 15. 🏛️ Internet Standards and Administration
+
+### Definition
+Internet Standards are thoroughly tested specifications that must be followed for interoperability. Internet Administration refers to the various global organizations that manage, develop, and oversee these standards.
+
+### Why Important?
+This topic is often tested through MCQs asking "which organization does what" — so knowing the full-forms and roles is key.
+
+### Easy Explanation
+
+**Standards Process** 📋
+1. **Internet Draft** — a work-in-progress document (valid for about 6 months).
+2. **RFC (Request for Comment)** — once published, it becomes a numbered, public document.
+
+**RFC Maturity Levels** (like growing up stages):
+`Proposed → Draft → Internet Standard → Historic / Experimental / Informational`
+
+**Requirement Levels**: Required, Recommended, Elective, Limited Use, Not Recommended.
+
+**Global Administration Organizations** 🌍
+
+| Organization | Full Form | Role |
+|---|---|---|
+| **ISOC** | Internet Society | Supports Internet standards, research, and education |
+| **IAB** | Internet Architecture Board | Technical advisor to ISOC; oversees TCP/IP, manages RFC editorial work |
+| **IETF** | Internet Engineering Task Force | Develops and reviews Internet standards through working groups |
+| **IRTF** | Internet Research Task Force | Long-term research on protocols, applications, architecture |
+| **IESG** | Internet Engineering Steering Group | Manages IETF working groups, approves standards |
+| **IRSG** | Internet Research Steering Group | Manages IRTF research groups |
+
+**IP Address & Domain Administration** 🌐
+
+| Organization | Full Form | Role |
+|---|---|---|
+| **IANA** | Internet Assigned Numbers Authority | Allocates IP addresses, domain names, protocol numbers |
+| **ICANN** | Internet Corporation for Assigned Names and Numbers | Oversees IANA and global DNS policies |
+
+**Regional Internet Registries (RIRs)** 🗺️
+
+| RIR | Region |
+|---|---|
+| APNIC | Asia-Pacific |
+| RIPE NCC | Europe, Middle East |
+| ARIN | North America |
+| LACNIC | Latin America & Caribbean |
+| AFRINIC | Africa |
+
+**Other Supporting Organizations**
+- **W3C** (World Wide Web Consortium) — develops web standards (HTML, CSS, XML).
+- **ETSI** (European Telecommunications Standards Institute) — telecom/internet-related standards.
+- **ITU** (International Telecommunication Union) — global telecom & internet policy coordination.
+
+### Shortcut Memory Trick
+Think of it like a government structure:
+- **ISOC** = the "parent organization" (guides everything).
+- **IAB** = the "technical advisor."
+- **IETF/IRTF** = the "working teams" (engineering vs research).
+- **IANA/ICANN** = the "record keepers" (IPs, domains, names).
+- **RIRs** = the "regional offices" (one per continent).
+
+### Exam Focus
+- MCQ: "Which organization allocates IP addresses?" → IANA.
+- MCQ: "Which RIR covers Asia-Pacific?" → APNIC.
+- Broad: "Explain the RFC process and its maturity levels."
+
+---
 <a id="9-classes-detailed"></a>
 
 ## 9. IPv4 Address Classes (Detailed)
