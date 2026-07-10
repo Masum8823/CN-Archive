@@ -99,6 +99,33 @@ Binary:   11000000 . 10101000  . 00000001   . 10000011
 
 ---
 
+<a id="3-network-host"></a>
+
+## 3. Network Portion vs Host Portion
+
+### Definition
+Every IP address has two parts: the **Network Address** (identifies the network) and the **Host Address** (identifies the specific device on that network).
+
+### Easy Explanation
+Think of your home address: **"7682 Wilshire Drive"**
+- **Wilshire Drive** = the **Network** (the street — shared by many houses)
+- **7682** = the **Host** (your specific house number on that street)
+
+So: **Network Address + Host Address = Full IP Address**
+
+The **Subnet Mask** is what tells the device where the network portion ends and the host portion begins.
+
+### Key Points
+- Network portion = identifies which network the device belongs to
+- Host portion = identifies the specific device within that network
+- Subnet Mask decides the split between the two
+
+### Exam Focus
+- Explain the street/house analogy in your own words (viva-friendly)
+- "What determines the network vs host portion of an IP?" → **Subnet Mask**
+
+---
+
 
 <a id="9-classes-detailed"></a>
 
