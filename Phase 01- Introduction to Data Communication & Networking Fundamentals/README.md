@@ -742,3 +742,21 @@ Think of it like a government structure:
 | **LAN vs MAN vs WAN** | LAN = building; MAN = city; WAN = countries/continents |
 
 ---
+
+## 🏛️ Most Important Organizations (Quick Table)
+
+| Short Form | Full Form |
+|---|---|
+| ISOC | Internet Society |
+| IAB | Internet Architecture Board |
+| IETF | Internet Engineering Task Force |
+| IRTF | Internet Research Task Force |
+| IESG | Internet Engineering Steering Group |
+| IRSG | Internet Research Steering Group |
+| IANA | Internet Assigned Numbers Authority |
+| ICANN | Internet Corporation for Assigned Names and Numbers |
+| W3C | World Wide Web Consortium |
+| ETSI | European Telecommunications Standards Institute |
+| ITU | International Telecommunication Union |
+
+---
