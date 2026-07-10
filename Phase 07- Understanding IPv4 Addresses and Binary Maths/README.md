@@ -62,6 +62,44 @@ Think of an IP address like your home's postal address — it tells the network 
 
 ---
 
+<a id="2-ipv4-anatomy"></a>
+
+## 2. IPv4 Address Anatomy
+
+### Definition
+An IPv4 address is made up of **32 binary bits**, divided into **4 octets** (1 octet = 8 bits). Each octet is converted into decimal and separated by dots — this is why it's called **dotted decimal format**.
+
+### Easy Explanation
+Think of an IP address like a 4-part code, where each part is a number between 0-255, separated by dots. Behind the scenes, computers see it all in binary (1s and 0s); we just convert it to decimal so it's easier for humans to read and remember.
+
+### Example
+```
+Decimal:  192      .   168      .    1       .   131
+Binary:   11000000 . 10101000  . 00000001   . 10000011
+```
+
+### Table View
+| First Octet | Second Octet | Third Octet | Fourth Octet |
+|---|---|---|---|
+| 192 | 168 | 1 | 131 |
+| 11000000 | 10101000 | 00000001 | 10000011 |
+| 8 bits | 8 bits | 8 bits | 8 bits |
+
+### Key Points
+- 8 bits = 1 byte = 1 octet
+- 32 bits = 4 bytes = 4 octets
+- Format: **dotted decimal** (e.g., 192.168.1.131)
+
+### Shortcut Memory Trick
+**"8-8-8-8 = 32"** — each of the 4 octets is 8 bits, total 32 bits.
+
+### Exam Focus
+- Convert a given decimal IP to binary and vice versa (guaranteed numerical question)
+- Know exact terms: octet, byte, dotted decimal format
+
+---
+
+
 <a id="9-classes-detailed"></a>
 
 ## 9. IPv4 Address Classes (Detailed)
