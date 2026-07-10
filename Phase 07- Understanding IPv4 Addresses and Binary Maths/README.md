@@ -36,6 +36,32 @@
 
 ---
 
+<a id="1-what-is-ip"></a>
+
+## 1. What is an IP Address?
+
+### Definition
+An **IP Address** is a **logical address** used to uniquely identify a device on an IP network. It works at the **Network Layer** of the OSI model.
+
+### Why Important?
+Without an IP address, no device could be found or reached on a network — it's literally the "home address" of every device on the internet.
+
+### Easy Explanation
+Think of an IP address like your home's postal address — it tells the network exactly where to deliver data, just like a postman needs your address to deliver a letter.
+
+### Key Points
+- IP Address = **logical address** (not physical, can change)
+- Works at the **Network Layer**
+- Two versions exist:
+  - **IPv4** (this chapter)
+  - **IPv6** (covered later in the course)
+
+### Exam Focus
+- Which OSI layer does IP address belong to? → **Network Layer**
+- IPv4 vs IPv6 — just know these are two versions, IPv6 covered separately
+
+---
+
 <a id="9-classes-detailed"></a>
 
 ## 9. IPv4 Address Classes (Detailed)
