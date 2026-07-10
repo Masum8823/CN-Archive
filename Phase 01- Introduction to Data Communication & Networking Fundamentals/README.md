@@ -387,6 +387,60 @@ A network can *look* like a Star physically (all devices connected to one switch
 
 ---
 
+<a id="topic-wired-topology"></a>
+
+## 10. 🔌 Wired Network Topologies (Ring, Star, Mesh)
+
+### Definition
+Wired networks mainly use three topologies: **Ring, Star, and Mesh.**
+
+### Why Important?
+This is one of the biggest topics in Chapter 1 — expect a diagram + explanation + comparison question combo.
+
+### Easy Explanation
+
+**Ring Topology** 🔁
+All devices connect in a circle, each linked to two neighbors. Data passes node to node, and each device acts like a repeater (regenerates the signal). WAN technologies like SONET/SDH use **dual rings** (sending data in opposite directions) for backup — if one path fails, data just goes the other way. High availability, popular in high-speed carrier networks.
+
+**Star Topology** ⭐
+All devices connect to one central device — almost always a **switch** today. The switch receives data and forwards it only to the correct destination device (not everyone). This is the standard topology for nearly all modern LANs — homes, offices, everywhere. Downside: if the central switch fails, the whole network can go down (single point of failure) — but modern setups often use backup/redundant switches to fix this.
+
+**Mesh Topology** 🕸️
+Devices connect to multiple other devices, creating backup paths:
+- **Full Mesh**: Every device connects to every other device (max redundancy, but very expensive — rarely used).
+- **Partial Mesh**: Devices connect to *some*, not all, others (balances cost and reliability).
+Commonly used in WANs and critical infrastructure. Modern networks usually use partial mesh only for the "core" (most important) parts.
+
+### Key Points / Comparison Table
+
+| Topology | Connection Style | Best For |
+|---|---|---|
+| **Ring** | Circular, node to node | WAN backbones (SONET/SDH), high redundancy |
+| **Star** | All devices → central switch | Modern LANs (homes, offices) |
+| **Mesh** | Multiple direct connections | WANs, critical infrastructure |
+
+### Diagram
+```
+Ring:                Star:                  Mesh (partial):
+  A---B                  A                     A---B
+ /     \                 |                     |\ /|
+D       C          D-----X-----B               | X |
+ \     /                 |                     |/ \|
+  --- (circular)          C                    D---C
+```
+
+### Shortcut Memory Trick
+- **Ring** = circle, repeater chain.
+- **Star** = everyone talks through one switch.
+- **Mesh** = many-to-many, backup paths everywhere.
+
+### Exam Focus
+- Draw all three topologies with labels.
+- MCQ: "Which topology is standard for modern LANs?" → Star.
+- Broad: "Explain Full Mesh vs Partial Mesh with trade-offs."
+
+---
+
 <a id="9-classes-detailed"></a>
 
 ## 9. IPv4 Address Classes (Detailed)
