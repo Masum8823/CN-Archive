@@ -790,3 +790,13 @@ Think of it like a government structure:
 
 ---
 
+## ⚠️ Common Mistakes Students Make
+
+- Confusing **Physical Topology** with **Logical Topology** — remember: physical = wiring, logical = data flow rules.
+- Mixing up **Circuit Switching** and **Packet Switching** order of delivery — Circuit = always ordered, Packet = may be out of order.
+- Thinking **internet** and **Internet** are the same thing — case matters here!
+- Forgetting that **ASCII is part of Unicode**, not a separate system.
+- Mixing up **PVC** (permanent) and **SVC** (on-demand).
+- Forgetting the size order of networks: PAN < LAN < CAN < MAN < WAN.
+
+---
