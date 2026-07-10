@@ -486,6 +486,53 @@ Common in larger homes and businesses (e.g., mesh Wi-Fi systems).
 ---
 
 
+<a id="topic-network-types"></a>
+
+## 12. 🌍 Types of Networks by Size
+
+### Definition
+Networks are categorized by their geographical size: **PAN, LAN, WLAN, CAN, MAN, and WAN** — from the smallest (personal) to the largest (global).
+
+### Why Important?
+This is one of the most commonly asked topics — usually as a comparison table, MCQ, or "define with example" question.
+
+### Easy Explanation
+Think of it like zooming out on a map — starting from your own body, then your room, then your building, then your city, then the whole world:
+
+- **PAN (Personal Area Network)** 👤 — Ultra-small, personal devices sharing data. Example: Smartphone to Smartwatch, Heart Rate Monitor to Phone.
+- **LAN (Local Area Network)** 🏠 — A network within a small area like one room, building, or a group of buildings. Example: Home network, small office network.
+- **WLAN (Wireless LAN)** 📶 — A LAN that depends on wireless connectivity, or a wired LAN extended wirelessly. Most home networks today are actually WLANs.
+- **CAN (Campus Area Network)** 🏫 — Multiple interconnected LANs within a limited area like a university campus, government agency, or business park. Usually owned by a single entity.
+- **MAN (Metropolitan Area Network)** 🏙️ — Connects users and resources across a whole city. Bigger than CAN, smaller than WAN.
+- **WAN (Wide Area Network)** 🌐 — Extends over a large geographical distance — multiple cities, states, or countries. Example: The Internet itself, or a company's offices in different states/countries.
+
+### Key Points / Comparison Table
+
+| Network Type | Coverage Area | Example |
+|---|---|---|
+| **PAN** | Personal devices (very small) | Smartwatch ↔ Phone |
+| **LAN** | Single room/building | Home or office network |
+| **WLAN** | Wireless version of LAN | Home Wi-Fi |
+| **CAN** | Group of buildings (campus) | University campus |
+| **MAN** | Whole city | City-wide ISP network |
+| **WAN** | Multiple cities/countries | The Internet |
+
+### Diagram
+```
+PAN  <  LAN/WLAN  <  CAN  <  MAN  <  WAN
+(smallest)                          (largest, e.g. The Internet)
+```
+
+### Shortcut Memory Trick
+**"Please Let Wireless Cats Meow Wildly"** → PAN, LAN, WLAN, CAN, MAN, WAN (size order, smallest to largest).
+
+### Exam Focus
+- Very high chance of a comparison table question: "Differentiate between LAN, MAN, and WAN."
+- MCQ: "The Internet is an example of which network type?" → WAN.
+
+---
+
+
 <a id="9-classes-detailed"></a>
 
 ## 9. IPv4 Address Classes (Detailed)
