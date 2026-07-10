@@ -800,3 +800,48 @@ Think of it like a government structure:
 - Forgetting the size order of networks: PAN < LAN < CAN < MAN < WAN.
 
 ---
+
+---
+
+## 🧩 Memory Tricks (All Together)
+
+- **DATJ** → Delivery, Accuracy, Timeliness, Jitter (4 characteristics)
+- **MSRTP** → Message, Sender, Receiver, Transmission medium, Protocol (5 components)
+- **TNIAV** → Text, Numbers, Images, Audio, Video (data types)
+- **PRS** → Performance, Reliability, Security (networking criteria)
+- **"Please Let Wireless Cats Meow Wildly"** → PAN, LAN, WLAN, CAN, MAN, WAN (size order)
+
+---
+
+## ⏱️ Last Minute Revision Sheet (10-Minute Read)
+
+1. Data Communication needs: Delivery + Accuracy + Timeliness + low Jitter.
+2. 5 components: Message, Sender, Receiver, Medium, Protocol.
+3. Data types → bits: Text (Unicode 32-bit), Numbers (binary), Images (pixels), Audio (analog→digital), Video (frames).
+4. Data flow: Simplex (1-way) / Half-Duplex (2-way, alternating) / Full-Duplex (2-way, same time).
+5. Network = 2+ devices sharing resources (physical + logical connection).
+6. 3 Networking criteria: Performance, Reliability, Security.
+7. Wired topologies: Ring, Star (most common today), Mesh (full/partial).
+8. Wireless topologies: Ad hoc (no AP), Infrastructure (has WAP), Mesh (multiple APs).
+9. Network sizes (small→large): PAN, LAN/WLAN, CAN, MAN, WAN.
+10. Switching: Circuit (dedicated), Packet (Internet's backbone), Virtual Circuit (PVC/SVC), Message (store-and-forward).
+11. Internet = global network of networks; Bangladesh structure = Backbone → Provider → Customer.
+12. Standards: Draft → RFC → Maturity levels; Key orgs: ISOC, IETF, IANA, ICANN.
+
+---
+
+<a id="exam-tips"></a>
+
+## 🎯 Final Exam Tips
+
+- **Most Important Topics to Prioritize**: Data Communication Components, Networking Criteria, Topologies (Wired + Wireless), Switching Types, and Network Types by Size — these get asked almost every semester.
+- **Read First**: Start with Components → Topologies → Switching → Internet Structure, since these build on each other logically.
+- **Viva Impression Tip**: When explaining a concept, always give one real-life analogy (like Router = traffic police) — examiners love hearing that you truly understand, not just memorized.
+- **MCQ Prep**: Focus on full-forms (IANA, ICANN, RIRs) and "which type does X use" style questions (e.g., Internet uses Packet Switching).
+- **Written Exam Prep**: Practice drawing the 5-component diagram, all 3 wired topologies, and the Circuit vs Packet Switching comparison — diagrams score easy marks.
+- **Common Mistake Zone**: Don't mix up internet vs Internet, or PVC vs SVC — double-check these in your final revision.
+- **Short Revision Strategy**: Read the "Quick Revision" and "Most Important Comparisons" sections first if you're short on time.
+- **One Night Before Exam Strategy**: Just read the "Last Minute Revision Sheet" — it covers the entire chapter in 10 minutes.
+- **Exam Hall Tips**: If a question asks to "differentiate," always answer in table format — it looks organized and earns full marks faster than paragraph writing.
+
+---
