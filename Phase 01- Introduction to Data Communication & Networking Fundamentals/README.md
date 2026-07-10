@@ -533,6 +533,64 @@ PAN  <  LAN/WLAN  <  CAN  <  MAN  <  WAN
 ---
 
 
+<a id="topic-switching"></a>
+
+## 13. 🔀 Switching (Circuit, Packet, Virtual Circuit, Message)
+
+### Definition
+An internet is a **switched network**, where a switch connects two or more links. The main switching types are: **Circuit-Switched, Packet-Switched, Virtual Circuit, and Message Switching (legacy).**
+
+### Why Important?
+This is a core networking concept — the foundation of how the Internet actually moves your data. Frequently asked as a comparison question (Circuit vs Packet Switching).
+
+### Easy Explanation
+
+**Circuit-Switched Connection** ☎️
+The oldest method (designed in 1878) — originally built for telephone calls. It creates a **dedicated point-to-point path** with fixed bandwidth between two devices.
+- Nobody else can use that path while you're connected (can waste bandwidth if you're not using it fully).
+- Data always arrives **in order** (unlike packet switching).
+- Example: Dedicated Leased-Lines, old-school Dial-Up connections.
+
+Think of it like booking an entire private road just for your car — nobody else can drive on it while you're using it, even if you're driving slowly.
+
+**Packet-Switched Connection** 📦
+Data gets broken into small **packets**, and each packet can travel a different path/route to reach the destination.
+- The best route is chosen at the time each packet is sent.
+- Packets might arrive **out of order** and need to be reassembled at the destination.
+- Unlike circuit switching, bandwidth and paths are **shared** with other users.
+- This is the core technology behind the Internet and most LANs.
+
+Think of it like sending puzzle pieces of a letter through different couriers — they might arrive in a different order, but get reassembled at the end.
+
+**Virtual Circuit** 🔗
+A special type of **connection-oriented packet-switching** that makes it *feel* like there's a dedicated physical link between source and destination — even though it's really packet-switched underneath. Useful for offering better Quality of Service (QoS) through Service Level Agreements (SLAs). Two types:
+- **PVC (Permanent Virtual Circuit)** — always exists, like a pre-booked path.
+- **SVC (Switched Virtual Circuit)** — created only on-demand when needed.
+
+**Message Switching (Legacy)** 📨
+The entire message is stored at intermediate nodes and forwarded later — called **store-and-forward**. No dedicated path is created. Works fine when real-time delivery isn't required. Example: Early email systems.
+
+### Key Points / Comparison Table
+
+| Type | Dedicated Path? | Order of Arrival | Example |
+|---|---|---|---|
+| **Circuit-Switched** | Yes (fixed bandwidth) | In order | Telephone calls, Leased lines |
+| **Packet-Switched** | No (shared) | Can be out of order | The Internet |
+| **Virtual Circuit** | Feels dedicated (logical) | In order (usually) | SLA-based services |
+| **Message Switching** | No (store-and-forward) | Whole message together | Early email systems |
+
+### Shortcut Memory Trick
+- **Circuit = one private road**
+- **Packet = puzzle pieces via different roads**
+- **Virtual Circuit = "feels" private, but shared underneath**
+- **Message = store now, forward later**
+
+### Exam Focus
+- Very likely broad question: "Differentiate between Circuit Switching and Packet Switching."
+- MCQ: "Which switching type is used by the Internet?" → Packet Switching.
+- Viva: "What is the difference between PVC and SVC?"
+
+---
 <a id="9-classes-detailed"></a>
 
 ## 9. IPv4 Address Classes (Detailed)
