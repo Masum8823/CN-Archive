@@ -441,6 +441,51 @@ D       C          D-----X-----B               | X |
 
 ---
 
+<a id="topic-wireless-topology"></a>
+
+## 11. 📶 Wireless Network Topologies (Ad hoc, Infrastructure, Mesh)
+
+### Definition
+Wireless networks use radio frequencies (RF) instead of cables. There are three specific wireless topologies: **Ad hoc, Infrastructure, and Mesh.**
+
+### Why Important?
+Modern devices (phones, smartwatches, laptops) all rely on these — very practical and commonly tested topic.
+
+### Easy Explanation
+
+**Ad hoc** 📱↔️📱
+A peer-to-peer (P2P) wireless network with **no** central access point. Devices talk directly to each other. Personal Area Networks (PANs) are a common example — like your smartwatch talking straight to your phone.
+
+**Infrastructure** 📡
+Uses a **Wireless Access Point (WAP)** as the central connecting device. This is exactly how home Wi-Fi and small office wireless networks (WLANs) work — your router is the WAP, and all devices connect through it.
+
+**Mesh** 🕸️📶
+Like the wired mesh, but using multiple wireless access points (nodes) working together to create a network that is:
+- **Scalable** (easy to expand)
+- **Self-Healing** (if one node fails, others take over)
+- **Reliable** (redundancy built in)
+Common in larger homes and businesses (e.g., mesh Wi-Fi systems).
+
+### Key Points / Comparison Table
+
+| Topology | Central Device? | Example |
+|---|---|---|
+| **Ad hoc** | No | Smartwatch ↔ Phone (PAN) |
+| **Infrastructure** | Yes (WAP) | Home Wi-Fi, office WLAN |
+| **Mesh** | Multiple WAPs | Large homes/offices with mesh Wi-Fi |
+
+### Shortcut Memory Trick
+- **Ad hoc = direct, no boss**
+- **Infrastructure = one boss (router/WAP)**
+- **Mesh = many bosses working together**
+
+### Exam Focus
+- MCQ: "Which wireless topology has no access point?" → Ad hoc.
+- Viva: "Give a real-life example of an Ad hoc wireless network." → Smartwatch to phone.
+
+---
+
+
 <a id="9-classes-detailed"></a>
 
 ## 9. IPv4 Address Classes (Detailed)
