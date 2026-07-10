@@ -760,3 +760,33 @@ Think of it like a government structure:
 | ITU | International Telecommunication Union |
 
 ---
+
+## ❓ Frequently Asked Exam Questions
+
+**Short Questions**
+- Define Data Communication.
+- What are the fundamental characteristics of data communication?
+- Differentiate between internet and Internet.
+- What is Jitter?
+
+**Broad Questions**
+- Explain the 5 components of data communication with a diagram.
+- Explain the three wired topologies (Ring, Star, Mesh) with diagrams.
+- Explain Circuit Switching vs Packet Switching in detail.
+- Explain the structure of the Internet in Bangladesh.
+- Explain the Internet standards process (Draft → RFC → Maturity levels).
+
+**Viva Questions**
+- What is the difference between Ad hoc and Infrastructure wireless networks?
+- What is a Virtual Circuit? Explain PVC and SVC.
+- Name two Bangladeshi ISPs and their category (backbone/provider).
+- Which organization allocates IP addresses globally?
+
+**MCQ Focus**
+- Which topology is the standard for modern LANs? → Star
+- Which switching type powers the Internet? → Packet Switching
+- Which network type covers the widest area? → WAN
+- Full form of IANA, ICANN, APNIC.
+
+---
+
