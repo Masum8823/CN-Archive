@@ -158,6 +158,56 @@ Default Gateway . . . . . . . . . : 192.168.0.1
 ---
 
 
+<a id="5-binary-to-decimal"></a>
+
+## 5. Binary Math Basics — Binary to Decimal
+
+### Why Important?
+Binary math is the **foundation** for subnetting and understanding how IPv4 addresses actually work internally. You cannot solve subnetting problems without this.
+
+### The Magic Formula to Remember
+```
+128 + 64 + 32 + 16 + 8 + 4 + 2 + 1 = 255
+```
+These 8 numbers represent the **place values** of each bit position in one octet (8 bits).
+
+### Easy Explanation
+For any 8-bit binary number, write down the place values above each bit:
+```
+128  64  32  16  8  4  2  1
+```
+Then: **add the place value wherever there's a "1"**, and **add 0 wherever there's a "0"**.
+
+### Example 1 — Convert `11111111` to decimal
+| 128 | 64 | 32 | 16 | 8 | 4 | 2 | 1 |
+|---|---|---|---|---|---|---|---|
+| 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 |
+
+**128+64+32+16+8+4+2+1 = 255**
+
+### Example 2 — Convert `10101010` to decimal
+| 128 | 64 | 32 | 16 | 8 | 4 | 2 | 1 |
+|---|---|---|---|---|---|---|---|
+| 1 | 0 | 1 | 0 | 1 | 0 | 1 | 0 |
+
+**128+0+32+0+8+0+2+0 = 170**
+
+### Example 3 — Convert `10000011` to decimal
+| 128 | 64 | 32 | 16 | 8 | 4 | 2 | 1 |
+|---|---|---|---|---|---|---|---|
+| 1 | 0 | 0 | 0 | 0 | 0 | 1 | 1 |
+
+**128+0+0+0+0+0+2+1 = 131**
+
+### Key Points
+- Always write the place value row (128, 64, 32, 16, 8, 4, 2, 1) first
+- Add the place value only where the bit is **1**
+
+### Exam Focus
+- Practice converting at least 5 different binary numbers to decimal — this is a **guaranteed question**
+
+---
+
 <a id="9-classes-detailed"></a>
 
 ## 9. IPv4 Address Classes (Detailed)
