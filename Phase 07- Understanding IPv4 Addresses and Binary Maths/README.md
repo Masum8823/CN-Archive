@@ -208,6 +208,42 @@ Then: **add the place value wherever there's a "1"**, and **add 0 wherever there
 
 ---
 
+<a id="6-decimal-to-binary"></a>
+
+## 6. Binary Math Basics — Decimal to Binary
+
+### Easy Explanation
+This is the reverse process. Start from the **left** (128) and keep subtracting the biggest place value that still fits into your number, marking a "1" each time you use it, and "0" when you skip it — until you reach your target decimal number.
+
+### Example 1 — Convert 192 to binary
+| 128 | 64 | 32 | 16 | 8 | 4 | 2 | 1 |
+|---|---|---|---|---|---|---|---|
+| 1 | 1 | 0 | 0 | 0 | 0 | 0 | 0 |
+
+**128 + 64 = 192** → Binary = **11000000**
+
+### Example 2 — Convert 202 to binary
+| 128 | 64 | 32 | 16 | 8 | 4 | 2 | 1 |
+|---|---|---|---|---|---|---|---|
+| 1 | 1 | 0 | 0 | 1 | 0 | 1 | 0 |
+
+**128 + 64 + 8 + 2 = 202** → Binary = **11001010**
+
+### Example 3 — Convert 54 to binary
+| 128 | 64 | 32 | 16 | 8 | 4 | 2 | 1 |
+|---|---|---|---|---|---|---|---|
+| 0 | 0 | 1 | 1 | 0 | 1 | 1 | 0 |
+
+**32 + 16 + 4 + 2 = 54** → Binary = **00110110**
+
+### Shortcut Memory Trick
+**"Start big, go left to right"** — always start checking from 128 downward; if the number fits, mark 1 and subtract it; if not, mark 0 and move to the next smaller value.
+
+### Exam Focus
+- Practice converting decimal numbers (like router/subnet-related numbers: 192, 224, 240, 248, 252, 254) to binary — these come up a LOT in subnetting problems later
+
+---
+
 <a id="9-classes-detailed"></a>
 
 ## 9. IPv4 Address Classes (Detailed)
