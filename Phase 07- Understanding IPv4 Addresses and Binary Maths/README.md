@@ -579,3 +579,34 @@ ping loopback
 - Loopback = 127.0.0.0 – 127.255.255.255, default = 127.0.0.1, tests local TCP/IP
 
 ---
+
+<a id="19-faq"></a>
+
+## 19. Frequently Asked Exam Questions
+
+### Short Questions
+- What is an IP address, and which OSI layer does it belong to?
+- What is the default subnet mask for Class B?
+- What is CIDR notation, and what does /24 mean?
+- What is the loopback address used for?
+
+### Broad Questions
+- Explain IPv4 address classes with ranges, network bits, and host bits.
+- Explain the difference between public and private IP addresses with examples.
+- Explain the process of converting a decimal IP address to binary (with example).
+- Derive the formula for hosts per network and explain why we subtract 2.
+
+### Viva Questions
+- Why do we need NAT?
+- What is a socket... wait, what is a default gateway used for?
+- Why is 127.0.0.1 special?
+- Convert 202 to binary right now (quick mental math check)
+
+### MCQ Focus
+- Class ranges (A: 1-126, B: 128-191, C: 192-223)
+- Default subnet masks per class
+- Private IP ranges (10.x, 172.16-31.x, 192.168.x)
+- Power of 2 values (memorize up to 4096)
+- CIDR to subnet mask conversions
+
+---
