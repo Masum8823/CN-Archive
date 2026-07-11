@@ -562,3 +562,20 @@ ping loopback
 
 ---
 
+## 18. Quick Revision (Whole Chapter)
+
+- IP Address = logical address, Network Layer, IPv4/IPv6 versions exist
+- IPv4 = 32 bits = 4 octets = dotted decimal format
+- Network portion + Host portion = full IP; Subnet Mask decides the split
+- 3 key components per device: IP Address, Subnet Mask, Default Gateway
+- Binary math: memorize 128+64+32+16+8+4+2+1 = 255
+- Classes: A (1-126), B (128-191), C (192-223); D = multicast, E = reserved
+- Default subnet masks: A=255.0.0.0, B=255.255.0.0, C=255.255.255.0
+- CIDR = slash notation shortcut for subnet mask (e.g., /24 = 255.255.255.0)
+- Power of 2 must be memorized up to 2¹²
+- Hosts Per Network = 2^h − 2 (subtract network address & broadcast address)
+- Public IP = globally unique, registered; Private IP = free, reusable, needs NAT
+- Private ranges: 10.x.x.x (A), 172.16-31.x.x (B), 192.168.x.x (C)
+- Loopback = 127.0.0.0 – 127.255.255.255, default = 127.0.0.1, tests local TCP/IP
+
+---
