@@ -610,3 +610,17 @@ ping loopback
 - CIDR to subnet mask conversions
 
 ---
+
+<a id="20-common-mistakes"></a>
+
+## 20. Common Mistakes
+
+- ❌ Forgetting that Class A range starts at 1 (not 0) and ends at 126 (127 is reserved for loopback!)
+- ❌ Mixing up which private range belongs to which class (10=A, 172.16-31=B, 192.168=C)
+- ❌ Forgetting to subtract 2 in the Hosts Per Network formula
+- ❌ Confusing CIDR notation direction — `/24` means 24 bits are **1**, not 24 zeros
+- ❌ Thinking Class D and E have host/network bits like A, B, C — they **don't**, they're special-purpose
+
+---
+
+<a id="21-memory-tricks"></a>
