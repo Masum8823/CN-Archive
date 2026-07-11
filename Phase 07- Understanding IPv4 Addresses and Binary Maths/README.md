@@ -243,6 +243,30 @@ This is the reverse process. Start from the **left** (128) and keep subtracting 
 - Practice converting decimal numbers (like router/subnet-related numbers: 192, 224, 240, 248, 252, 254) to binary — these come up a LOT in subnetting problems later
 
 ---
+<a id="7-ip-conversion-process"></a>
+
+## 7. IP Address Conversion Process
+
+### Definition
+When converting a full IP address between dotted-decimal and binary, you do the **binary-to-decimal or decimal-to-binary process octet by octet**, one at a time.
+
+### Example
+```
+Dotted Decimal:  192.       168.        32.         4
+Binary:          11000000.  10101000.   00100000.   00000100
+                 (1st Octet)(2nd Octet)(3rd Octet)(4th Octet)
+```
+
+### Key Points
+- Never try to convert the whole 32-bit number at once — always break it into **4 separate 8-bit octets**
+- Whether going binary→decimal or decimal→binary, the process is applied **per octet**
+
+### Exam Focus
+- This is basically Sections 5 & 6 applied together for a full IP address — expect a "convert this IP to binary" or "convert this binary to an IP" question
+
+---
+
+
 
 <a id="9-classes-detailed"></a>
 
