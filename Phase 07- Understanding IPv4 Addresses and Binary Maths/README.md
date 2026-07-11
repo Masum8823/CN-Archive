@@ -266,6 +266,39 @@ Binary:          11000000.  10101000.   00100000.   00000100
 
 ---
 
+<a id="8-classes-simplified"></a>
+
+## 8. IPv4 Address Classes (Simplified)
+
+### Definition
+IPv4 addresses are divided into **Classes (A, B, C — and D, E for special use)** based on how many bits are used for Network vs Host.
+
+### Table (Simplified — Class A, B, C)
+| Class | Network Bits | Host Bits | Address Range |
+|---|---|---|---|
+| **A** | 8 | 24 | 1.0.0.0 – 126.255.255.255 |
+| **B** | 16 | 16 | 128.0.0.0 – 191.255.255.255 |
+| **C** | 24 | 8 | 192.0.0.0 – 223.255.255.255 |
+
+### Easy Explanation
+Think of it like slicing a 4-piece cake (32 bits = 4 octets of 8 bits each):
+- **Class A** → gives away only 1 slice (8 bits) to Network, keeps 3 slices (24 bits) for Hosts → good for **huge** networks
+- **Class B** → splits evenly, 2 slices Network, 2 slices Host → medium networks
+- **Class C** → gives 3 slices to Network, keeps only 1 slice for Host → good for **small** networks
+
+### Diagram (ASCII)
+```
+Class A: [Network][ Host ][ Host ][ Host ]
+Class B: [Network][Network][ Host ][ Host ]
+Class C: [Network][Network][Network][ Host ]
+          8 bits   8 bits   8 bits   8 bits
+```
+
+### Exam Focus
+- Memorize the address ranges exactly — this is a **very common MCQ**
+- Know Network bits/Host bits per class
+
+---
 
 
 <a id="9-classes-detailed"></a>
