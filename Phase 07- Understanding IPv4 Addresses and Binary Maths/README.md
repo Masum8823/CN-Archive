@@ -127,6 +127,37 @@ The **Subnet Mask** is what tells the device where the network portion ends and 
 ---
 
 
+## 4. IPv4 Address Components (IP, Subnet Mask, Gateway)
+
+### Definition
+Every device on a network needs **three** pieces of configuration to properly communicate:
+
+| Component | Purpose |
+|---|---|
+| **IP Address** | Unique logical address assigned to the device |
+| **Subnet Mask** | Tells the device which part of the IP is network vs host |
+| **Default Gateway** | The router's IP — lets the device talk to *other* networks (like the internet) |
+
+### Easy Explanation
+Imagine your computer needs to send a letter outside its own street (network). It needs:
+1. **Its own address** (IP Address)
+2. **To know where its street ends** (Subnet Mask)
+3. **The address of the local post office** that forwards mail elsewhere (Default Gateway)
+
+### Example (from `ipconfig` command)
+```
+IPv4 Address. . . . . . . . . . . : 192.168.0.254
+Subnet Mask . . . . . . . . . . . : 255.255.255.0
+Default Gateway . . . . . . . . . : 192.168.0.1
+```
+
+### Exam Focus
+- Know the exact purpose of each of the 3 components
+- `ipconfig` (Windows) is the command to check these values — may appear in viva
+
+---
+
+
 <a id="9-classes-detailed"></a>
 
 ## 9. IPv4 Address Classes (Detailed)
