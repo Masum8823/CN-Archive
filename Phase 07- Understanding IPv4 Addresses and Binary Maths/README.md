@@ -624,3 +624,28 @@ ping loopback
 ---
 
 <a id="21-memory-tricks"></a>
+
+## 21. Memory Tricks
+
+- **255 = 11111111** — memorize this single fact, it unlocks all subnet mask conversions
+- **"10, 172.16-31, 192.168"** — the 3 private ranges, said like a phone number
+- **Hosts = 2^h − 2 ("minus the two VIPs")** — minus Network Address and Broadcast Address
+- **127 = "Talking to Myself"** — loopback/localhost
+
+---
+
+<a id="22-exam-tips"></a>
+
+## 22. Exam Tips
+
+* **সবচেয়ে বেশি গুরুত্বপূর্ণ Topic:** Binary ↔ Decimal conversion, IP Classes with ranges, CIDR notation, Hosts per network formula
+* **আগে যা পড়া উচিত:** Binary math (Section 5-6) আগে ভালোভাবে practice করো, কারণ পুরো chapter এর উপরে dependent
+* **Viva-তে ভালো Impression পেতে:** Street/House analogy আর "talking to yourself" (loopback) analogy ব্যবহার করো — সহজ ভাষায় বুঝাতে পারলে ভালো marks পাবে
+* **MCQ-এর জন্য মনে রাখো:** Class ranges, default subnet masks, private IP ranges, power of 2 values
+* **Written Exam-এর জন্য:** Binary conversion + Hosts per network numerical practice করে যাও — exact slide-এর মতো প্রশ্ন আসতে পারে
+* **কোথায় Student-রা বেশি ভুল করে:** Class A range 1-126 (127 বাদ, loopback-এর জন্য reserved) — এটা প্রায় সবাই ভুলে যায়
+* **Short Revision Strategy:** Section 18 (Quick Revision) আরেকবার পড়ে নাও exam-এর ঠিক আগে
+* **One Night Before Exam:** Section 8-9 (Classes), Section 12 (CIDR), Section 14 (Hosts formula), Section 16 (Private ranges) — এই চারটা পড়লেই যথেষ্ট
+* **Exam Hall Tips:** Binary math করার সময় সবসময় 128 64 32 16 8 4 2 1 — এই line টা আগে লিখে ফেলো, তারপর calculate করো, ভুল কম হবে
+
+---
