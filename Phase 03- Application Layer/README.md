@@ -62,3 +62,56 @@ This chapter covers protocols in 5 groups:
 > 💡 **Exam Tip:** Almost every protocol here has a fixed **Port Number** and a **Transport Layer Protocol (TCP/UDP)**. These two things get asked A LOT in MCQ and Viva — memorize them first.
 
 ---
+
+<a id="2-management-protocols"></a>
+
+## 2. Management Protocols
+
+These protocols help manage and organize how devices and networks operate — like resolving names, assigning addresses, syncing time, and monitoring devices.
+
+---
+
+<a id="21-dns-domain-name-system"></a>
+
+### 2.1 DNS – Domain Name System
+
+#### Definition
+DNS is a protocol that turns a **domain name** (like `google.com`) into its actual **IP address** (like `142.250.194.78`), so your computer knows where to send the request.
+
+#### Why Important?
+Computers don't understand names like "google.com" — they only understand IP addresses. DNS is the bridge between human-friendly names and machine-friendly numbers.
+
+#### Easy Explanation
+Think of DNS like a **Phone Contact List** on your mobile. You don't remember everyone's phone number — you just save their name, and your phone looks up the number for you. DNS does exactly that for websites: you type a name, DNS finds the number (IP address).
+
+#### Key Points
+- Converts domain name → IP address
+- Works behind the scenes every time you visit a website
+- Detailed topics (Hierarchy, Record Types, Name Resolution) are covered separately in the DNS Network Services section
+
+#### Remember
+- `google.com` → `142.250.194.78` (name → number)
+
+#### Diagram
+```
+User types: google.com
+        │
+        ▼
+   [ DNS Server ]
+        │
+        ▼
+ Returns IP: 142.250.194.78
+        │
+        ▼
+ Browser connects using IP
+```
+
+#### Memory Trick
+**DNS = "Digital Name Sorter"** — sorts names into numbers.
+
+#### Exam Focus
+- MCQ: "DNS converts domain name to ___" → IP Address
+- Viva: Be ready to explain with the phonebook analogy
+- Remember DNS itself doesn't have a fixed port shown here — it's expanded in a separate section
+
+---
