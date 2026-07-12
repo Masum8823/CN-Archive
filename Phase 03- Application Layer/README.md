@@ -162,3 +162,47 @@ Your phone connects to WiFi and instantly gets internet access without you typin
 - Common confusion: DHCP is **UDP**, not TCP
 
 ---
+
+<a id="23-ntp-network-time-protocol"></a>
+
+### 2.3 NTP – Network Time Protocol
+
+| Port | Transport Layer Protocol |
+|---|---|
+| 123 | TCP |
+
+#### Definition
+NTP automatically synchronizes a computer's clock/time with a network time server, so all devices agree on the exact same time.
+
+#### Why Important?
+Many network services (especially authentication/login systems) fail if the time on a device is wrong. Correct time = smooth network operation.
+
+#### Easy Explanation
+Think of NTP like a **wall clock in a school** — every classroom clock is synced to the main office clock so that all classes start and end at the same time. NTP keeps every device's "clock" in sync across the whole network.
+
+#### Key Points
+- Keeps system time accurate automatically
+- Important for time-sensitive apps and protocols
+- Wrong time on a device can block access to network services
+- Authentication often fails if time isn't synced properly between devices
+
+#### Remember
+- Uses **TCP port 123**
+
+#### Example
+Windows "Date & Time" settings have an option "Set time automatically" using a time server like `time.windows.com` — that's NTP at work.
+
+#### Diagram
+```
+[ Time Server ] --- Correct Time ---> [ Your PC's Clock ]
+```
+
+#### Memory Trick
+**NTP = "Never (be) Time-off Protocol"** — keeps time always correct.
+
+#### Exam Focus
+- MCQ: NTP port → 123 (TCP)
+- Viva: Why does wrong time break authentication?
+- Remember: Time mismatch = login/authentication failure risk
+
+---
