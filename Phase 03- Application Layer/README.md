@@ -251,3 +251,53 @@ Think of SNMP like a **fitness tracker watch**. It doesn't control your body, bu
 - **SNMP** → Device monitoring, TCP 161
 
 ---
+
+<a id="3-remote-communication-protocols"></a>
+
+## 3. Remote Communication Protocols
+
+These protocols let you connect to and control another computer or device remotely — as if you were sitting right in front of it.
+
+---
+
+<a id="31-telnet"></a>
+
+### 3.1 Telnet
+
+| Port | Transport Layer Protocol |
+|---|---|
+| 23 | TCP |
+
+#### Definition
+Telnet is an old (legacy) protocol used to connect to a remote host — but it sends all data **without encryption**, in plain/clear text.
+
+#### Why Important?
+It's largely outdated now, but still important to know because it's a classic example of an **insecure** protocol — a favorite exam comparison topic against SSH.
+
+#### Easy Explanation
+Imagine sending a **postcard** instead of a sealed letter — anyone who touches it along the way can read every word. That's Telnet: your username, password, and commands travel in plain text, so anyone snooping on the network can see them.
+
+#### Key Points
+- Legacy protocol, considered insecure
+- Data transferred in **clear text**
+- Largely replaced by SSH
+- Today mainly used to access managed network devices (like routers) via serial connection
+
+#### Remember
+- Uses **TCP port 23**
+
+#### Diagram
+```
+[ Your PC ] ---(plain text data)---> [ Remote Host ]
+      ⚠️ Anyone snooping can read this!
+```
+
+#### Memory Trick
+**Telnet = "Tell-Net"** — it literally "tells" your data to the whole network in plain text (insecure).
+
+#### Exam Focus
+- MCQ: Telnet port → 23 (TCP)
+- Viva: Why is Telnet insecure?
+- Common comparison: Telnet vs SSH (see comparison table below)
+
+---
