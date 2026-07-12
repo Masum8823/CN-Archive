@@ -115,3 +115,50 @@ User types: google.com
 - Remember DNS itself doesn't have a fixed port shown here — it's expanded in a separate section
 
 ---
+
+<a id="22-dhcp-dynamic-host-configuration-protocol"></a>
+
+### 2.2 DHCP – Dynamic Host Configuration Protocol
+
+| Port | Transport Layer Protocol |
+|---|---|
+| 67 (Server), 68 (Client) | UDP |
+
+#### Definition
+DHCP automatically assigns important network settings to a device when it joins a network — no manual setup needed.
+
+#### Why Important?
+Without DHCP, every device joining a network would need someone to **manually** type in an IP address, subnet mask, gateway, and DNS server. DHCP does all this automatically.
+
+#### Easy Explanation
+Imagine you check into a hotel. Instead of you choosing your own room number, the **reception desk automatically assigns you a room**. DHCP works the same way — it automatically "assigns a room" (IP address) to your device the moment it connects.
+
+#### Key Points
+DHCP automatically assigns:
+- IP Address
+- Subnet Mask
+- Default Gateway
+- DNS Server
+
+#### Remember
+- Uses **two UDP ports**: 67 (Server side) and 68 (Client side)
+- Detailed working is discussed in the "Assigning IP Addresses" section
+
+#### Example
+Your phone connects to WiFi and instantly gets internet access without you typing any IP address — that's DHCP working in the background.
+
+#### Diagram
+```
+[ New Device ]  --- "I need an IP!" --->  [ DHCP Server ]
+[ New Device ]  <--- IP + Subnet + Gateway + DNS ---  [ DHCP Server ]
+```
+
+#### Memory Trick
+**DHCP = "Digital Hotel Check-in Process"** — auto-assigns your room (IP) at check-in.
+
+#### Exam Focus
+- MCQ: DHCP uses which ports? → 67 and 68 (UDP)
+- Viva: Explain the 4 things DHCP assigns
+- Common confusion: DHCP is **UDP**, not TCP
+
+---
