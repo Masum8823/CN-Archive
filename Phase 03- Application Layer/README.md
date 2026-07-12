@@ -301,3 +301,46 @@ Imagine sending a **postcard** instead of a sealed letter — anyone who touches
 - Common comparison: Telnet vs SSH (see comparison table below)
 
 ---
+
+<a id="32-ssh-secure-shell"></a>
+
+### 3.2 SSH – Secure Shell
+
+| Port | Transport Layer Protocol |
+|---|---|
+| 22 | TCP |
+
+#### Definition
+SSH is a cryptographic (encrypted) protocol used to securely connect to and control a remote host through a terminal console.
+
+#### Why Important?
+SSH is the **secure replacement** for Telnet — it's the standard way admins connect to servers and network devices today.
+
+#### Easy Explanation
+If Telnet is like sending a postcard, SSH is like sending a **locked, sealed envelope** that only the receiver has the key to open. SSH encrypts everything using Public Key Infrastructure (PKI), so even if someone intercepts the data, they can't read it.
+
+#### Key Points
+- Cryptographic (encrypted) protocol
+- Uses a terminal console
+- Common on Unix/Linux, but also available on Windows and Mac OS
+- Encrypts data using **Public Key Infrastructure (PKI)**
+- Secure replacement for Telnet
+
+#### Remember
+- Uses **TCP port 22**
+
+#### Diagram
+```
+[ Your PC ] ---(🔒 encrypted data)---> [ Remote Host ]
+      ✅ Safe even if intercepted
+```
+
+#### Memory Trick
+**SSH = "Safely Shielded Host access"** — locked and safe.
+
+#### Exam Focus
+- MCQ: SSH port → 22 (TCP)
+- Viva: What makes SSH secure? (PKI encryption)
+- Very common comparison question: Telnet vs SSH
+
+---
