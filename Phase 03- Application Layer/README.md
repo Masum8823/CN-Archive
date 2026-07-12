@@ -206,3 +206,48 @@ Windows "Date & Time" settings have an option "Set time automatically" using a t
 - Remember: Time mismatch = login/authentication failure risk
 
 ---
+<a id="24-snmp-simple-network-management-protocol"></a>
+
+### 2.4 SNMP – Simple Network Management Protocol
+
+| Port | Transport Layer Protocol |
+|---|---|
+| 161 | TCP |
+
+#### Definition
+SNMP is used to **monitor and manage** network devices — checking their health, status, and performance from a central point.
+
+#### Why Important?
+Network admins need to know if a device is overloaded, running low on memory, or facing high traffic — SNMP gives them that visibility without physically checking each device.
+
+#### Easy Explanation
+Think of SNMP like a **fitness tracker watch**. It doesn't control your body, but it constantly reports your heart rate, steps, and stats to an app. SNMP does the same for network devices — it reports memory, CPU, and bandwidth usage to the admin's monitoring tool.
+
+#### Key Points
+- Lets admins **monitor and manage** devices and traffic
+- Devices report their state: Memory, CPU, Bandwidth
+- Example tool: **PRTG Network Monitoring**
+
+#### Remember
+- Uses **TCP port 161**
+
+#### Diagram
+```
+[ Router/Switch ] --- Memory, CPU, Bandwidth data ---> [ SNMP Monitoring Tool ]
+```
+
+#### Memory Trick
+**SNMP = "System's Nerve Monitoring Protocol"** — like a nerve system reporting device health.
+
+#### Exam Focus
+- MCQ: SNMP port → 161 (TCP)
+- Viva: Give an example SNMP tool (PRTG)
+- Remember: SNMP monitors, doesn't just connect — think "network health checkup"
+
+### 📝 Quick Revision — Management Protocols
+- **DNS** → Name to IP (no fixed port covered here, detailed later)
+- **DHCP** → Auto IP config, UDP 67/68
+- **NTP** → Time sync, TCP 123
+- **SNMP** → Device monitoring, TCP 161
+
+---
