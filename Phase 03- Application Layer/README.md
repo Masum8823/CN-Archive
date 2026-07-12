@@ -42,3 +42,23 @@ A simple, easy-to-read, exam-focused guide to the **Application Layer** protocol
   - [14. Final Exam Tips](#14-final-exam-tips)
 
 ---
+
+<a id="1-introduction"></a>
+
+## 1. Introduction
+
+The **Application Layer** is the top layer of the network model — it's the layer closest to *you*, the user. Every time you open a browser, send an email, or connect to a remote server, an Application Layer protocol is working behind the scenes.
+
+This chapter covers protocols in 5 groups:
+
+| Group | Protocols |
+|---|---|
+| 🛠️ Management | DNS, DHCP, NTP, SNMP |
+| 🖥️ Remote Communication | Telnet, SSH, RDP |
+| 📁 File Transfer | FTP, SFTP, TFTP |
+| 📧 Email | SMTP, POP3, IMAP |
+| 🌍 Web Browsing | HTTP, HTTPS |
+
+> 💡 **Exam Tip:** Almost every protocol here has a fixed **Port Number** and a **Transport Layer Protocol (TCP/UDP)**. These two things get asked A LOT in MCQ and Viva — memorize them first.
+
+---
