@@ -344,3 +344,47 @@ If Telnet is like sending a postcard, SSH is like sending a **locked, sealed env
 - Very common comparison question: Telnet vs SSH
 
 ---
+
+<a id="33-rdp-remote-desktop-protocol"></a>
+
+### 3.3 RDP – Remote Desktop Protocol
+
+| Port | Transport Layer Protocol |
+|---|---|
+| 3389 | TCP |
+
+#### Definition
+RDP is a Microsoft protocol that lets you remotely connect to, view, and fully control another Windows computer's desktop.
+
+#### Why Important?
+It's the built-in way Windows machines allow remote access — commonly used by IT support and remote workers.
+
+#### Easy Explanation
+Imagine controlling a TV with a **remote control** — you're not physically touching the TV, but you can change channels, volume, etc. from anywhere in the room. RDP works similarly — you control someone's Windows desktop screen from your own PC.
+
+#### Key Points
+- Microsoft protocol
+- Lets you view and control a remote Windows desktop
+- Built directly into the Windows operating system
+
+#### Remember
+- Uses **TCP port 3389**
+
+#### Diagram
+```
+[ Your PC ] ---(view & control)---> [ Remote Windows Desktop ]
+```
+
+#### Memory Trick
+**RDP = "Remote Desktop = Port 3-3-8-9"** — just link the "3389" digits to "RDP" since it's a Microsoft-only feature.
+
+#### Exam Focus
+- MCQ: RDP port → 3389 (TCP)
+- Viva: Is RDP available on Linux? (No, it's built for Microsoft OS, though clients exist for other OS)
+
+### 📝 Quick Revision — Remote Communication Protocols
+- **Telnet** → Insecure, plain text, TCP 23
+- **SSH** → Secure, encrypted, TCP 22
+- **RDP** → Microsoft desktop remote control, TCP 3389
+
+---
