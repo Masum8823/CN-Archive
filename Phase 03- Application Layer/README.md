@@ -388,3 +388,56 @@ Imagine controlling a TV with a **remote control** — you're not physically tou
 - **RDP** → Microsoft desktop remote control, TCP 3389
 
 ---
+
+<a id="4-file-transfer-protocols"></a>
+
+## 4. File Transfer Protocols
+
+These protocols are used to move files between computers/servers.
+
+---
+
+<a id="41-ftp-file-transfer-protocol"></a>
+
+### 4.1 FTP – File Transfer Protocol
+
+| Ports | Transport Layer Protocol |
+|---|---|
+| 20 (Data), 21 (Control) | TCP |
+
+#### Definition
+FTP is a legacy protocol used to transfer files between systems — supporting full file operations like viewing, listing, adding, and deleting files.
+
+#### Why Important?
+It's one of the oldest and most well-known file transfer methods, and it's a common exam topic because of its two-port system and its insecurity.
+
+#### Easy Explanation
+Think of FTP like an **old delivery service** that doesn't seal packages — anyone along the delivery route can open and see what's inside. FTP sends data in **clear text**, so it's insecure, similar to Telnet.
+
+#### Key Points
+- Legacy protocol, being replaced by SFTP
+- Can authenticate with username/password OR allow anonymous login
+- Data sent in **clear text** (insecure)
+- Full-featured: view, list, add, delete files and folders
+- Uses **two TCP ports**:
+  - **Port 20** → Data transfer
+  - **Port 21** → Control (commands)
+
+#### Remember
+- Two ports: 20 for Data, 21 for Control
+
+#### Diagram
+```
+[ Client ] ---Port 21 (Commands)---> [ FTP Server ]
+[ Client ] ---Port 20 (File Data)---> [ FTP Server ]
+```
+
+#### Memory Trick
+**FTP = "20 for File, 21 for Formal command"**
+
+#### Exam Focus
+- MCQ: FTP uses which 2 ports? → 20 and 21
+- Viva: Which port is for data, which is for control?
+- Common confusion: FTP is insecure (clear text) — don't mix up with SFTP
+
+---
