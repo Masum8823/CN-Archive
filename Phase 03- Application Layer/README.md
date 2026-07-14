@@ -609,3 +609,48 @@ Think of POP3 like **collecting your letters from the post office and taking the
 - Viva: Difference between POP3 and IMAP? (see comparison table)
 
 ---
+
+<a id="53-imap-internet-message-access-protocol"></a>
+
+### 5.3 IMAP – Internet Message Access Protocol
+
+| Port | Transport Layer Protocol |
+|---|---|
+| 143 | TCP |
+
+#### Definition
+IMAP is another email protocol (replacing POP3) that lets users access email directly on the server — either reading it there or downloading it, while keeping it synced across devices.
+
+#### Why Important?
+Modern email use (checking mail on phone, laptop, tablet all at once) depends on IMAP — this is why services like Gmail use it.
+
+#### Easy Explanation
+Think of IMAP like reading your mail **directly at the post office through a window**, without taking it home — so no matter which "window" (device) you check from, you see the same mail, same status (read/unread).
+
+#### Key Points
+- Quickly replacing POP3
+- Lets users read on server OR download to device
+- Popular for multi-device access (phone + laptop + tablet)
+- Web-based clients like **Gmail** use IMAP
+
+#### Remember
+- Uses **TCP port 143**
+
+#### Diagram
+```
+[ Mail Server ] <--- synced access ---> [ Phone, Laptop, Tablet ]
+```
+
+#### Memory Trick
+**IMAP = "I Manage All Places"** — same inbox synced everywhere.
+
+#### Exam Focus
+- MCQ: IMAP port → 143 (TCP)
+- Viva: Why is IMAP better for multi-device use than POP3?
+
+### 📝 Quick Revision — Email Protocols
+- **SMTP** → Sending emails, TCP 25
+- **POP3** → Downloading emails (usually removes from server), TCP 110
+- **IMAP** → Syncs emails across devices, TCP 143
+
+---
