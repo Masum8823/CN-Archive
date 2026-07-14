@@ -480,3 +480,49 @@ If FTP is an open delivery box, SFTP is the same delivery but now inside a **loc
 - Viva: Why does SFTP use SSH's port? (Because it transfers files through the SSH secure tunnel)
 
 ---
+
+<a id="43-tftp-trivial-file-transfer-protocol"></a>
+
+### 4.3 TFTP – Trivial File Transfer Protocol
+
+| Port | Transport Layer Protocol |
+|---|---|
+| 69 | UDP |
+
+#### Definition
+TFTP is a very basic, "bare-bones" version of FTP used only for simple file downloads — with no authentication and no folder browsing.
+
+#### Why Important?
+It's commonly used in real networking work to push software/firmware updates to routers and switches.
+
+#### Easy Explanation
+Think of TFTP like a **vending machine** — you must know the exact item number (exact file and location) to get something. There's no browsing around like a store (no directory navigation), and no ID check (no authentication).
+
+#### Key Points
+- Bare-bones version of FTP
+- **No authentication** support
+- **No directory navigation** — must request the exact file and location
+- Often used to transfer router/switch software images during upgrades
+
+#### Remember
+- Uses **UDP port 69**
+
+#### Diagram
+```
+[ Client: "Give me exact file X" ] ---> [ TFTP Server ] ---> [ Sends file directly ]
+```
+
+#### Memory Trick
+**TFTP = "Tiny File Transfer, Please"** — small and simple, UDP 69.
+
+#### Exam Focus
+- MCQ: TFTP port → 69 (UDP)
+- Viva: How is TFTP different from FTP? (No authentication, no navigation, UDP not TCP)
+- Common trick question: TFTP is the ONLY file transfer protocol here using **UDP**
+
+### 📝 Quick Revision — File Transfer Protocols
+- **FTP** → Insecure, 2 ports (20 Data, 21 Control), TCP
+- **SFTP** → Secure (via SSH), port 22, TCP
+- **TFTP** → Basic, no auth, no navigation, UDP port 69
+
+---
