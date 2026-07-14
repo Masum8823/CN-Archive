@@ -746,3 +746,25 @@ If HTTP is an unsealed package, HTTPS is the same package now inside a **tamper-
 - **HTTPS** → Encrypted browsing (SSL/TLS + PKI), TCP 443
 
 ---
+
+<a id="7-complete-course-quick-revision"></a>
+
+## 7. Complete Course Quick Revision
+
+- **DNS** → Name → IP address resolution (like a phonebook)
+- **DHCP** → Auto-assigns IP, Subnet, Gateway, DNS (UDP 67/68)
+- **NTP** → Syncs device time (TCP 123)
+- **SNMP** → Monitors device health: CPU, memory, bandwidth (TCP 161)
+- **Telnet** → Insecure remote access, plain text (TCP 23)
+- **SSH** → Secure remote access, encrypted with PKI (TCP 22)
+- **RDP** → Microsoft remote desktop control (TCP 3389)
+- **FTP** → File transfer, insecure, 2 ports: 20 Data / 21 Control (TCP)
+- **SFTP** → Secure file transfer over SSH (TCP 22)
+- **TFTP** → Basic file transfer, no auth/navigation (UDP 69)
+- **SMTP** → Sends email (TCP 25)
+- **POP3** → Downloads email, usually removes from server (TCP 110)
+- **IMAP** → Syncs email across devices (TCP 143)
+- **HTTP** → Plain text web browsing (TCP 80)
+- **HTTPS** → Encrypted web browsing with SSL/TLS (TCP 443)
+
+---
