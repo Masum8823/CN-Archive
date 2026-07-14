@@ -702,3 +702,47 @@ Think of HTTP like ordering food **without a sealed delivery bag** — the deliv
 - Viva: Why is HTTP considered insecure?
 
 ---
+
+<a id="62-https"></a>
+
+### 6.2 HTTPS – HTTP Secure
+
+| Port | Transport Layer Protocol |
+|---|---|
+| 443 | TCP |
+
+#### Definition
+HTTPS is the secure version of HTTP — it uses SSL/TLS encryption to protect the data being exchanged between your browser and the website.
+
+#### Why Important?
+It's the standard today for any website handling sensitive data (logins, payments, personal info) — recognized by the padlock icon in your browser.
+
+#### Easy Explanation
+If HTTP is an unsealed package, HTTPS is the same package now inside a **tamper-proof sealed box** — using SSL/TLS encryption and Public Key Infrastructure (PKI) so no one in between can read or alter your data.
+
+#### Key Points
+- HTTP over **SSL (Secure Socket Layer)** or **TLS (Transport Layer Security)**
+- Encrypts HTTP content
+- Utilizes **Public Key Infrastructure (PKI)**
+
+#### Remember
+- Uses **TCP port 443**
+
+#### Diagram
+```
+[ Browser ] ---(🔒 encrypted HTTPS)---> [ Web Server ]
+```
+
+#### Memory Trick
+**HTTPS = "HTTP That's Properly Secured"**
+
+#### Exam Focus
+- MCQ: HTTPS port → 443 (TCP)
+- Viva: What does HTTPS use for security? (SSL/TLS + PKI)
+- Very common comparison: HTTP vs HTTPS
+
+### 📝 Quick Revision — Web Browser Protocols
+- **HTTP** → Plain text browsing, TCP 80
+- **HTTPS** → Encrypted browsing (SSL/TLS + PKI), TCP 443
+
+---
