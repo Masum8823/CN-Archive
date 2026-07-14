@@ -571,3 +571,41 @@ Think of SMTP like the **postman who picks up your letter** and delivers it to t
 - Viva: Is SMTP for sending or receiving? → Sending only
 
 ---
+
+<a id="52-pop3-post-office-protocol-v3"></a>
+
+### 5.2 POP3 – Post Office Protocol v3
+
+| Port | Transport Layer Protocol |
+|---|---|
+| 110 | TCP |
+
+#### Definition
+POP3 is used to **retrieve/download** emails from an email server to your device.
+
+#### Why Important?
+It's one of the two major protocols (along with IMAP) for reading your received emails — a very common exam comparison topic.
+
+#### Easy Explanation
+Think of POP3 like **collecting your letters from the post office and taking them all home** — once collected, they're usually removed from the post office and now live only on your device.
+
+#### Key Points
+- Retrieves emails from a mail server
+- Can use encryption (recommended) or plain text
+
+#### Remember
+- Uses **TCP port 110**
+
+#### Diagram
+```
+[ Mail Server ] ---POP3 (download & often remove)---> [ Client Device ]
+```
+
+#### Memory Trick
+**POP3 = "Pick uP & Own"** — you pick it up and it becomes yours (downloaded locally).
+
+#### Exam Focus
+- MCQ: POP3 port → 110 (TCP)
+- Viva: Difference between POP3 and IMAP? (see comparison table)
+
+---
