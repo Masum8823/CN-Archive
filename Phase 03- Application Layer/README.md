@@ -526,3 +526,48 @@ Think of TFTP like a **vending machine** — you must know the exact item number
 - **TFTP** → Basic, no auth, no navigation, UDP port 69
 
 ---
+
+## 5. Email Protocols
+
+These protocols handle sending and receiving emails.
+
+---
+
+<a id="51-smtp-simple-mail-transfer-protocol"></a>
+
+### 5.1 SMTP – Simple Mail Transfer Protocol
+
+| Port | Transport Layer Protocol |
+|---|---|
+| 25 | TCP |
+
+#### Definition
+SMTP is used to **send/deliver** emails from an email client (like Outlook) to a destination email server.
+
+#### Why Important?
+Every email you send goes through SMTP first — it's the "sending" half of the email system.
+
+#### Easy Explanation
+Think of SMTP like the **postman who picks up your letter** and delivers it to the correct post office. It only handles sending — not reading or storing your inbox.
+
+#### Key Points
+- Delivers emails from client → destination email server
+- Can use encryption (recommended) or plain text
+
+#### Remember
+- Uses **TCP port 25**
+- SMTP = **Sending** emails only
+
+#### Diagram
+```
+[ Email Client (Outlook) ] ---SMTP (send)---> [ Destination Mail Server ]
+```
+
+#### Memory Trick
+**SMTP = "Sending Mail To People"**
+
+#### Exam Focus
+- MCQ: SMTP port → 25 (TCP)
+- Viva: Is SMTP for sending or receiving? → Sending only
+
+---
