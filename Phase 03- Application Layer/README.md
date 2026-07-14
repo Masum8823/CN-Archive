@@ -441,3 +441,42 @@ Think of FTP like an **old delivery service** that doesn't seal packages — any
 - Common confusion: FTP is insecure (clear text) — don't mix up with SFTP
 
 ---
+
+<a id="42-sftp-secure-file-transfer-protocol"></a>
+
+### 4.2 SFTP – Secure File Transfer Protocol
+
+| Port | Transport Layer Protocol |
+|---|---|
+| 22 | TCP |
+
+#### Definition
+SFTP is the secure, encrypted version of FTP — it uses SSH to protect the file transfer.
+
+#### Why Important?
+It solves FTP's biggest weakness (no encryption) by riding on top of SSH's secure tunnel.
+
+#### Easy Explanation
+If FTP is an open delivery box, SFTP is the same delivery but now inside a **locked security van** (SSH) — nobody can peek inside during transit.
+
+#### Key Points
+- Secure cryptographic version of FTP
+- Provides file transfer **over SSH**
+- Uses the **same port as SSH**
+
+#### Remember
+- Uses **TCP port 22** — exactly the same as SSH
+
+#### Diagram
+```
+[ Client ] ---(🔒 encrypted file transfer via SSH)---> [ SFTP Server ]
+```
+
+#### Memory Trick
+**SFTP = "Secure FTP shares SSH's home"** (same port 22).
+
+#### Exam Focus
+- MCQ: SFTP port → 22 (TCP) — same as SSH!
+- Viva: Why does SFTP use SSH's port? (Because it transfers files through the SSH secure tunnel)
+
+---
