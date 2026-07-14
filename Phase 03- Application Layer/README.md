@@ -654,3 +654,51 @@ Think of IMAP like reading your mail **directly at the post office through a win
 - **IMAP** → Syncs emails across devices, TCP 143
 
 ---
+
+<a id="6-web-browser-protocols"></a>
+
+## 6. Web Browser Protocols
+
+These protocols power your everyday web browsing.
+
+---
+
+<a id="61-http"></a>
+
+### 6.1 HTTP – Hypertext Transfer Protocol
+
+| Port | Transport Layer Protocol |
+|---|---|
+| 80 | TCP |
+
+#### Definition
+HTTP provides browsing services for the World Wide Web — it retrieves web page content from a web server and delivers it to your browser.
+
+#### Why Important?
+It's the foundation protocol of the entire web — every website request without "S" (secure) uses this.
+
+#### Easy Explanation
+Think of HTTP like ordering food **without a sealed delivery bag** — the delivery guy (and anyone nearby) could see exactly what you ordered. Requests and pages are sent in **plain text**, which means anyone snooping can read them.
+
+#### Key Points
+- Retrieves web page content from a web server
+- Requests/responses are made in **HTML** format
+- Data is sent in **plain text**
+
+#### Remember
+- Uses **TCP port 80**
+
+#### Diagram
+```
+[ Browser ] ---HTTP request---> [ Web Server ]
+[ Browser ] <---HTML page (plain text)--- [ Web Server ]
+```
+
+#### Memory Trick
+**HTTP = "Handled Text Transfer, Plainly"** — plain text, no lock.
+
+#### Exam Focus
+- MCQ: HTTP port → 80 (TCP)
+- Viva: Why is HTTP considered insecure?
+
+---
