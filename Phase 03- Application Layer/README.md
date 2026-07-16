@@ -768,3 +768,28 @@ If HTTP is an unsealed package, HTTPS is the same package now inside a **tamper-
 - **HTTPS** → Encrypted web browsing with SSL/TLS (TCP 443)
 
 ---
+
+<a id="8-most-important-port-numbers"></a>
+
+## 8. Most Important Port Numbers
+
+| Protocol | Port(s) | TCP/UDP |
+|---|---|---|
+| DHCP | 67 (Server), 68 (Client) | UDP |
+| NTP | 123 | TCP |
+| SNMP | 161 | TCP |
+| Telnet | 23 | TCP |
+| SSH | 22 | TCP |
+| RDP | 3389 | TCP |
+| FTP | 20 (Data), 21 (Control) | TCP |
+| SFTP | 22 | TCP |
+| TFTP | 69 | UDP |
+| SMTP | 25 | TCP |
+| POP3 | 110 | TCP |
+| IMAP | 143 | TCP |
+| HTTP | 80 | TCP |
+| HTTPS | 443 | TCP |
+
+> ⚠️ **Note:** Only **DHCP** and **TFTP** use UDP in this chapter. All other protocols listed use TCP. This is a favorite MCQ trap — remember these two!
+
+---
