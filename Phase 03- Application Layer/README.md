@@ -793,3 +793,43 @@ If HTTP is an unsealed package, HTTPS is the same package now inside a **tamper-
 > ⚠️ **Note:** Only **DHCP** and **TFTP** use UDP in this chapter. All other protocols listed use TCP. This is a favorite MCQ trap — remember these two!
 
 ---
+
+<a id="9-most-important-comparisons"></a>
+
+## 9. Most Important Comparisons
+
+### Telnet vs SSH
+
+| Telnet | SSH |
+|---|---|
+| Insecure, plain text | Secure, encrypted (PKI) |
+| Port 23 | Port 22 |
+| Legacy, mostly replaced | Modern standard |
+
+### FTP vs SFTP vs TFTP
+
+| Feature | FTP | SFTP | TFTP |
+|---|---|---|---|
+| Security | Insecure (plain text) | Secure (via SSH) | Insecure, very basic |
+| Authentication | Yes (or anonymous) | Yes | No |
+| Directory Navigation | Yes | Yes | No |
+| Port | 20, 21 | 22 | 69 |
+| Protocol | TCP | TCP | UDP |
+
+### POP3 vs IMAP
+
+| POP3 | IMAP |
+|---|---|
+| Downloads emails, usually removes from server | Keeps emails synced on server |
+| Best for single-device use | Best for multi-device use |
+| Port 110 | Port 143 |
+
+### HTTP vs HTTPS
+
+| HTTP | HTTPS |
+|---|---|
+| Plain text | Encrypted (SSL/TLS) |
+| Port 80 | Port 443 |
+| No PKI | Uses PKI |
+
+---
