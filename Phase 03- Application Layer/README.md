@@ -833,3 +833,35 @@ If HTTP is an unsealed package, HTTPS is the same package now inside a **tamper-
 | No PKI | Uses PKI |
 
 ---
+
+<a id="10-frequently-asked-exam-questions"></a>
+
+## 10. Frequently Asked Exam Questions
+
+### Short Questions
+- What is DNS and why is it needed?
+- What does DHCP automatically assign?
+- Why is Telnet considered insecure?
+- What port does SSH use and why is it secure?
+- What are the two ports used by FTP and what does each do?
+- How is TFTP different from FTP?
+- What is the difference between POP3 and IMAP?
+- Why is HTTPS more secure than HTTP?
+
+### Broad Questions
+- Explain any 3 Application Layer management protocols with their ports.
+- Compare Telnet and SSH in terms of security.
+- Explain FTP, SFTP, and TFTP with their differences.
+- Explain the working of SMTP, POP3, and IMAP together in the email delivery process.
+
+### Viva Questions
+- "Which protocol would you use to securely connect to a remote router?" → SSH
+- "Which email protocol lets you check the same inbox from your phone and laptop?" → IMAP
+- "Why does a wrong system clock cause login failures?" → NTP/time sync issue
+
+### MCQ Focus
+- Match protocol → port number
+- Match protocol → TCP or UDP
+- Identify secure vs insecure protocol pairs (Telnet/SSH, FTP/SFTP, HTTP/HTTPS)
+
+---
