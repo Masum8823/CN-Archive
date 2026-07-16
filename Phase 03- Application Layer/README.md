@@ -926,3 +926,21 @@ If HTTP is an unsealed package, HTTPS is the same package now inside a **tamper-
 > 🔑 **Golden Rule:** Only **DHCP** and **TFTP** use UDP — every other protocol here uses TCP.
 
 ---
+
+<a id="14-final-exam-tips"></a>
+
+## 14. Final Exam Tips
+
+- 📌 **Most Important Topics:** Port numbers + TCP/UDP for every protocol, and the security comparisons (Telnet vs SSH, HTTP vs HTTPS, FTP vs SFTP).
+- 📌 **Read First:** Start with the Email protocols and Web Browser protocols — they're most commonly asked.
+- 📌 **Viva Strategy:** Use the real-life analogies (phonebook, hotel check-in, sealed envelope) to explain concepts confidently — examiners like clear, simple explanations.
+- 📌 **MCQ Strategy:** Focus on matching protocol ↔ port ↔ TCP/UDP; this is the easiest guaranteed marks section.
+- 📌 **Written Exam Strategy:** For each protocol, write Definition → Key Point → Port/Protocol — that structure alone covers most marks.
+- 📌 **Where Students Lose Marks:** Forgetting FTP has 2 ports, confusing POP3/IMAP, and mixing up which protocols use UDP.
+- 📌 **Short Revision Strategy:** Just go through Section 7 (Quick Revision) and Section 8 (Port Table) — that covers 80% of exam needs.
+- 📌 **One Night Before Exam:** Read Section 13 (Last Minute Revision Sheet) only — it's designed exactly for this.
+- 📌 **Exam Hall Tip:** If unsure about a port number, remember the "UDP exceptions" rule (only DHCP & TFTP are UDP) — that alone helps you eliminate wrong MCQ options.
+
+---
+
+✅ **End of Application Layer Notes — Good luck**
