@@ -32,3 +32,48 @@ A deep-dive, easy-to-read, exam-focused guide to **DNS** — how it works step b
   - [19. Final Exam Tips](#19-final-exam-tips)
 
 ---
+
+<a id="1-why-dns-exists"></a>
+
+## 1. Why DNS Exists
+
+#### Definition
+DNS (Domain Name System) is a system that maps a **domain name** (like `google.com`) to an **IP address** (or a collection of IP addresses), so people don't have to remember number strings.
+
+#### Why Important?
+Humans are bad at remembering numbers but great at remembering names. DNS makes the internet usable for normal people, not just machines.
+
+#### Easy Explanation
+Think about how hard it would be to visit your favorite website if you had to type `142.250.193.110` every time instead of just `google.com`. DNS is like a **giant, organized phonebook** for the internet — you look up a name, it gives you the number.
+
+#### Key Points
+- People can't remember IP addresses easily
+- A domain is just text that **points to** an IP or a collection of IPs
+- This "pointing" system adds an extra layer of abstraction — and that's a good thing
+- The IP behind a domain **can change** while the domain name itself **stays the same**
+- DNS can serve the **closest IP** to a client requesting the same domain (better speed)
+- This closest-IP feature enables **Load Balancing** — spreading traffic across multiple servers
+
+#### Remember
+- Domain = Name (fixed) → IP = Number (can change anytime)
+
+#### Diagram
+```
+ User types:  google.com
+        │
+        ▼
+ [ DNS System ] --- looks up ---> IP Address
+        │
+        ▼
+ Browser connects using the IP
+```
+
+#### Memory Trick
+**DNS = "Doesn't Need numberS"** — you don't need to remember numbers anymore.
+
+#### Exam Focus
+- MCQ: Why is DNS needed? → Because humans can't remember IP addresses
+- Viva: How does DNS help with load balancing? (serves closest/different IP to different clients)
+- Remember: Domain stays the same even if the underlying IP changes — this is the "abstraction" benefit
+
+---
