@@ -877,3 +877,27 @@ If HTTP is an unsealed package, HTTPS is the same package now inside a **tamper-
 - ❌ Forgetting FTP needs **two separate ports** (20 for data, 21 for control) — students often write just one port.
 
 ---
+
+<a id="12-memory-tricks-all-protocols"></a>
+
+## 12. Memory Tricks (All Protocols)
+
+| Protocol | Trick |
+|---|---|
+| DNS | "Digital Name Sorter" |
+| DHCP | "Digital Hotel Check-in Process" |
+| NTP | "Never (be) Time-off Protocol" |
+| SNMP | "System's Nerve Monitoring Protocol" |
+| Telnet | "Tell-Net" (tells data in plain text) |
+| SSH | "Safely Shielded Host access" |
+| RDP | Link "3389" digits to Remote Desktop |
+| FTP | "20 for File, 21 for Formal command" |
+| SFTP | "Secure FTP shares SSH's home" (port 22) |
+| TFTP | "Tiny File Transfer, Please" |
+| SMTP | "Sending Mail To People" |
+| POP3 | "Pick uP & Own" |
+| IMAP | "I Manage All Places" |
+| HTTP | "Handled Text Transfer, Plainly" |
+| HTTPS | "HTTP That's Properly Secured" |
+
+---
