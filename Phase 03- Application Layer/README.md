@@ -865,3 +865,15 @@ If HTTP is an unsealed package, HTTPS is the same package now inside a **tamper-
 - Identify secure vs insecure protocol pairs (Telnet/SSH, FTP/SFTP, HTTP/HTTPS)
 
 ---
+
+<a id="11-common-mistakes"></a>
+
+## 11. Common Mistakes
+
+- ❌ Mixing up **SFTP's port (22)** with **FTP's ports (20, 21)** — SFTP shares SSH's port, not FTP's.
+- ❌ Forgetting that **DHCP** and **TFTP** are the only **UDP** protocols in this chapter — students often assume everything is TCP.
+- ❌ Confusing **POP3** (downloads & removes) with **IMAP** (keeps synced) — a very common exam trap.
+- ❌ Thinking Telnet is still commonly used for general remote access — it's mostly used today only for serial connections to network devices.
+- ❌ Forgetting FTP needs **two separate ports** (20 for data, 21 for control) — students often write just one port.
+
+---
