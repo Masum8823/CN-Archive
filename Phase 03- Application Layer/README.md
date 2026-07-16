@@ -901,3 +901,28 @@ If HTTP is an unsealed package, HTTPS is the same package now inside a **tamper-
 | HTTPS | "HTTP That's Properly Secured" |
 
 ---
+
+<a id="13-last-minute-revision-sheet"></a>
+
+## 13. Last Minute Revision Sheet
+
+**10-Minute Before Exam Checklist:**
+
+- [ ] DNS = Name → IP (phonebook)
+- [ ] DHCP = Auto IP config, UDP 67/68
+- [ ] NTP = Time sync, TCP 123
+- [ ] SNMP = Device monitoring, TCP 161
+- [ ] Telnet (TCP 23, insecure) vs SSH (TCP 22, secure)
+- [ ] RDP = Microsoft remote desktop, TCP 3389
+- [ ] FTP = TCP 20 (data) + 21 (control), insecure
+- [ ] SFTP = TCP 22 (same as SSH), secure
+- [ ] TFTP = UDP 69, no auth/navigation
+- [ ] SMTP = Send email, TCP 25
+- [ ] POP3 = Download email, TCP 110
+- [ ] IMAP = Sync email, TCP 143
+- [ ] HTTP = TCP 80, plain text
+- [ ] HTTPS = TCP 443, encrypted (SSL/TLS + PKI)
+
+> 🔑 **Golden Rule:** Only **DHCP** and **TFTP** use UDP — every other protocol here uses TCP.
+
+---
