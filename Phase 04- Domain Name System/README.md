@@ -259,3 +259,38 @@ Imagine ordering food through multiple people: you ask the restaurant's front de
 - Remember: The **TCP handshake** happens AFTER DNS resolves the IP — DNS's job ends at Step 8
 
 ---
+
+<a id="6-dns-packet-structure"></a>
+
+## 6. DNS Packet Structure
+
+#### Definition
+A DNS query/response travels inside a packet that has multiple layered headers — an IP header, a UDP header, and finally the DNS header itself.
+
+#### Why Important?
+This shows how DNS actually rides on top of the Transport and Network layers — useful for understanding protocol layering questions.
+
+#### Easy Explanation
+Think of a DNS packet like a **nested set of envelopes** — the outer envelope (IP header) has the delivery address, the middle envelope (UDP header) tells which "door" (port) to deliver to, and the innermost envelope (DNS header) has the actual question/answer.
+
+#### Key Points
+The packet has 3 layered sections:
+
+| Layer | Fields |
+|---|---|
+| **IP Header** | Version, IHL, Type of Service, Total Length, Identification, Flags, Fragment Offset, TTL, Protocol, Header Checksum, Source Address, Destination Address |
+| **UDP Header** | Source Port, Destination Port, Length, Checksum |
+| **DNS Header** | Transaction ID, QR flag, Opcode, Flags, Z, RCODE, QDCOUNT, ANCOUNT, NSCOUNT, ARCOUNT |
+
+#### Remember
+- DNS normally runs over **UDP** (fits into the UDP header section shown above)
+- Reference RFC: **RFC 1035**
+
+#### Memory Trick
+**"IP wraps UDP, UDP wraps DNS"** — layered like an onion.
+
+#### Exam Focus
+- MCQ: DNS packets are wrapped inside which transport protocol's header? → UDP
+- Viva: Name the 3 layers seen in a DNS packet (IP, UDP, DNS)
+
+---
