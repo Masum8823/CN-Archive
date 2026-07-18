@@ -562,3 +562,22 @@ Think of DNSSEC like a **wax seal on an important letter** — the sender signs 
 - Remember: DNSSEC does **NOT encrypt** the DNS data — it only **verifies authenticity** (this is a common exam trap!)
 
 ---
+
+<a id="13-complete-chapter-quick-revision"></a>
+
+## 13. Complete Chapter Quick Revision
+
+- **Why DNS** → Converts domain names to IPs; enables abstraction, IP changes, and load balancing
+- **Building Blocks** → Resolver (cache) → ROOT → TLD → ANS
+- **Hierarchy** → Root → TLD (.com, .net, .edu, .org) → Authoritative domains
+- **Iterative** → Client does the repeated asking | **Recursive** → Server does all the work
+- **10-Step Resolution** → Client → Resolver → Root → TLD → ANS → back to Resolver → Client → Web Server → Webpage
+- **DNS Packet** → IP Header + UDP Header + DNS Header (runs over UDP)
+- **DNS Message** → 12-byte header + Questions + Answers + Authority + Additional sections
+- **Record Types** → A (IPv4), AAAA (IPv6), NS, MX, CNAME, PTR (reverse lookup)
+- **Caching** → TTL controls how long a cached record stays valid; RFC 2136 for updates
+- **Security Notes** → DNS is unencrypted by default; DoT/DoH help fix this
+- **Tools** → `nslookup` (Windows/Linux), `dig` (Linux)
+- **DNSSEC** → Adds digital signature verification (not encryption) to prevent spoofing/MITM attacks
+
+---
