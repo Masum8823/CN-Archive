@@ -442,3 +442,35 @@ Think of caching like **saving a friend's phone number** after looking it up onc
 - Remember RFC number: **RFC 2136** for DNS updates
 
 ---
+
+<a id="10-important-notes-about-dns"></a>
+
+## 10. Important Notes About DNS
+
+#### Definition
+A few extra conceptual points about DNS's design and its security weaknesses.
+
+#### Why Important?
+These are commonly asked "why" and "conceptual" questions in viva.
+
+#### Easy Explanation
+Think about why a company has many layers of managers instead of just one person doing everything — it's for **scalability**. DNS's many layers exist for the same reason. But just like an unlocked mailbox, DNS by default isn't sealed/encrypted, which creates security risks.
+
+#### Key Points
+- **Why so many layers?** → For scalability — no single server has to store the entire internet's domain data
+- **DNS is not encrypted by default** — queries and responses travel in plain text
+- **Common attacks**: DNS hijacking, DNS poisoning (attackers can trick or redirect DNS answers)
+- **DoT / DoH**: DNS over TLS (DoT) and DNS over HTTPS (DoH) are attempts to fix this by encrypting DNS traffic
+
+#### Remember
+- DNS = insecure by default → DoT/DoH = the fix
+
+#### Memory Trick
+**"DNS Doesn't Naturally Secure"** — needs DoT/DoH for protection.
+
+#### Exam Focus
+- MCQ: Is DNS encrypted by default? → No
+- Viva: What are DoT and DoH? Why were they introduced?
+- Remember: DNS hijacking and DNS poisoning are the two major attack types to mention
+
+---
