@@ -294,3 +294,62 @@ The packet has 3 layered sections:
 - Viva: Name the 3 layers seen in a DNS packet (IP, UDP, DNS)
 
 ---
+
+<a id="7-dns-message-format"></a>
+
+## 7. DNS Message Format
+
+#### Definition
+The DNS message itself (inside the packet) has a fixed structure — a 12-byte header followed by 4 variable-length sections.
+
+#### Why Important?
+This is the actual "language" DNS servers use to talk to each other — knowing the fields helps you read real DNS query/response outputs (like from `dig`).
+
+#### Easy Explanation
+Think of the DNS message like a **form with fixed boxes at the top** (12-byte header: ID, Flags, counts) and then **attachments below** (Questions, Answers, Authority, Additional info) — each attachment can have a different number of items depending on the situation.
+
+#### Key Points
+
+**12-byte Header contains:**
+- Identification
+- Flags
+- Number of Questions
+- Number of Answer RRs (Resource Records)
+- Number of Authority RRs
+- Number of Additional RRs
+
+**Variable Sections:**
+
+| Section | Purpose |
+|---|---|
+| **Questions** | Name and type fields for the query |
+| **Answers** | Resource Records (RRs) in response to the query |
+| **Authority** | Records for authoritative servers |
+| **Additional Information** | Extra "helpful" info that may be used |
+
+#### Real Example (from an actual DNS query using `dig`)
+```
+Transaction ID: 0x91de
+Flags: 0x0100 Standard query
+Questions: 1
+Answer RRs: 0
+Authority RRs: 0
+Additional RRs: 0
+Queries
+    example.com
+    Type: A (Host Address)
+    Class: IN (0x0001)
+```
+
+#### Remember
+- Header is always **12 bytes**
+- "Type: A" here is the **DNS Record Type** (covered in Section 8)
+
+#### Memory Trick
+**"12 bytes of Basics, then Questions, Answers, Authority, Additional"** (Q-A-A-A sections in order)
+
+#### Exam Focus
+- MCQ: How many bytes is the DNS message header? → 12 bytes
+- Viva: Name the 4 variable sections of a DNS message (Questions, Answers, Authority, Additional)
+
+---
