@@ -672,3 +672,26 @@ Think of DNSSEC like a **wax seal on an important letter** — the sender signs 
 | DNSSEC | "Signed, Secured... Confirmed (not encrypted)" |
 
 ---
+
+<a id="18-last-minute-revision-sheet"></a>
+
+## 18. Last Minute Revision Sheet
+
+**10-Minute Before Exam Checklist:**
+
+- [ ] DNS = Name → IP mapping; enables abstraction + load balancing
+- [ ] 4 components: Resolver (cache) → Root → TLD → ANS
+- [ ] Hierarchy: Root → TLD (.com/.net/.edu/.org) → Authoritative domain
+- [ ] Iterative = client keeps asking | Recursive = server does everything
+- [ ] 10-step resolution process (Client → Resolver → Root → TLD → ANS → back → Webpage)
+- [ ] DNS packet = IP header + UDP header + DNS header (rides on UDP)
+- [ ] DNS message = 12-byte header + Questions + Answers + Authority + Additional
+- [ ] Record types: A (IPv4), AAAA (IPv6), NS, MX, CNAME, PTR (reverse)
+- [ ] TTL = cache lifespan; RFC 2136 = update standard
+- [ ] DNS is NOT encrypted by default; DoT/DoH fix this
+- [ ] Tools: `nslookup` (Win/Linux), `dig` (Linux)
+- [ ] DNSSEC = signs with private key, verifies with public key — prevents spoofing/MITM, but does NOT encrypt
+
+> 🔑 **Golden Rule:** DNSSEC secures **authenticity**, not **privacy** — it doesn't hide your DNS queries, it just proves the answer wasn't faked.
+
+---
