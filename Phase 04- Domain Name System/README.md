@@ -642,3 +642,15 @@ Think of DNSSEC like a **wax seal on an important letter** — the sender signs 
 - Identify: Which RFC defines DNS updates? → RFC 2136
 
 ---
+
+<a id="16-common-mistakes"></a>
+
+## 16. Common Mistakes
+
+- ❌ Confusing **iterative** and **recursive** resolution — remember: in recursive, the *server* does the work; in iterative, the *client* keeps asking.
+- ❌ Thinking DNSSEC **encrypts** DNS data — it only **verifies authenticity** using digital signatures, it does NOT hide the content.
+- ❌ Mixing up **A** and **AAAA** — A is IPv4, AAAA is IPv6 (double "A" = double length address).
+- ❌ Forgetting that **PTR** works in reverse (IP → hostname) compared to A/AAAA (hostname → IP).
+- ❌ Assuming DNS is secure by default — it is **not encrypted**, which is exactly why DNSSEC, DoT, and DoH exist.
+
+---
