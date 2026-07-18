@@ -77,3 +77,45 @@ Think about how hard it would be to visit your favorite website if you had to ty
 - Remember: Domain stays the same even if the underlying IP changes — this is the "abstraction" benefit
 
 ---
+
+
+<a id="2-how-dns-works-the-building-blocks"></a>
+
+## 2. How DNS Works — The Building Blocks
+
+#### Definition
+DNS resolution happens through **4 main components**, each with a specific job, working together like a chain of information desks.
+
+#### Why Important?
+Understanding these 4 components is the foundation for understanding the entire DNS resolution process (covered in Section 5).
+
+#### Easy Explanation
+Imagine trying to find a specific person's house in a huge country. You'd first ask a **general information desk**, then get directed to a **regional office**, then to a **local office**, and finally to the **exact house**. DNS works exactly like this chain of directions.
+
+#### Key Points
+
+| Component | Job |
+|---|---|
+| **DNS Resolver** | Frontend and cache — the first point of contact, remembers past answers |
+| **ROOT Server** | Hosts the IPs of Top-Level Domain (TLD) servers |
+| **Top Level Domain (TLD) Server** | Hosts the IPs of the Authoritative Name Servers (ANS) |
+| **Authoritative Name Server (ANS)** | Hosts the actual IP of the target server (the final answer) |
+
+#### Remember
+- Order of the chain: **Resolver → ROOT → TLD → ANS → Target Server**
+
+#### Diagram
+```
+[ Resolver ] ---> [ ROOT Server ] ---> [ TLD Server ] ---> [ ANS ] ---> [ Target Server ]
+   (asks)            (points to TLD)     (points to ANS)   (has final IP)
+```
+
+#### Memory Trick
+**"Resolver Really Tests Answers"** → Resolver, ROOT, TLD, ANS (in order).
+
+#### Exam Focus
+- MCQ: Which server hosts the IPs of TLDs? → ROOT Server
+- Viva: What's the difference between a TLD server and an ANS?
+- Remember: The Resolver is the only component that **caches** results for faster future lookups
+
+---
