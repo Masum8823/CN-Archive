@@ -612,3 +612,33 @@ Think of DNSSEC like a **wax seal on an important letter** — the sender signs 
 
 ---
 
+<a id="15-frequently-asked-exam-questions"></a>
+
+## 15. Frequently Asked Exam Questions
+
+### Short Questions
+- Why is DNS needed instead of using raw IP addresses?
+- What are the 4 main DNS components (Resolver, Root, TLD, ANS)?
+- What's the difference between iterative and recursive query resolution?
+- What is TTL in DNS caching?
+- Name any 4 DNS record types and their purpose.
+- What is DNSSEC and what does it protect against?
+
+### Broad Questions
+- Explain the complete 10-step process of how `google.com` gets resolved to an IP address.
+- Explain the DNS hierarchy with a diagram.
+- Compare iterative and recursive DNS resolution with examples.
+- Explain DNS record types with a table.
+- Explain how DNSSEC secures DNS responses using digital signatures.
+
+### Viva Questions
+- "If you change your website's IP address today, why might some users still reach the old server?" → DNS caching/TTL not yet expired
+- "Which DNS record type would you use for reverse lookup?" → PTR
+- "Is DNS traffic encrypted by default?" → No; DoT/DoH fix this
+
+### MCQ Focus
+- Match: DNS component ↔ its job (Resolver/Root/TLD/ANS)
+- Match: Record type ↔ purpose (A/AAAA/NS/MX/CNAME/PTR)
+- Identify: Which RFC defines DNS updates? → RFC 2136
+
+---
