@@ -353,3 +353,51 @@ Queries
 - Viva: Name the 4 variable sections of a DNS message (Questions, Answers, Authority, Additional)
 
 ---
+
+<a id="8-dns-record-types"></a>
+
+## 8. DNS Record Types
+
+#### Definition
+DNS records are entries stored in DNS servers that define different types of information about a domain — not just its IP address.
+
+#### Why Important?
+Different services (websites, emails, aliases) all need different types of DNS records — this is a very common table-based exam question.
+
+#### Easy Explanation
+Think of DNS records like different types of entries in a **contact card** — one field is for phone number, another for address, another for nickname. Each DNS record type stores a different kind of information about the same domain.
+
+#### Key Points — Record Types Table
+
+| Type | Full Name | Purpose |
+|---|---|---|
+| **A** | Address | Maps a hostname to an IPv4 address |
+| **AAAA** | IPv6 Address | Maps a hostname to an IPv6 address |
+| **NS** | Name Server | Delegates a domain to authoritative DNS servers |
+| **MX** | Mail Exchange | Specifies mail servers for the domain |
+| **CNAME** | Canonical Name | Creates an alias to another hostname |
+| **PTR** | Pointer | Maps an IP address to a hostname (reverse DNS lookup) |
+
+#### Remember
+- **A** = IPv4, **AAAA** = IPv6 (double the letters for double the address length, easy to remember!)
+- **PTR** works in **reverse** — IP → hostname (opposite of A record)
+
+#### Diagram
+```
+A     -> hostname → IPv4
+AAAA  -> hostname → IPv6
+NS    -> domain   → authoritative server
+MX    -> domain   → mail server
+CNAME -> hostname → another hostname (alias)
+PTR   -> IP       → hostname (reverse)
+```
+
+#### Memory Trick
+**"Ants Are Not Moving Cars Precisely"** → A, AAAA, NS, MX, CNAME, PTR
+
+#### Exam Focus
+- MCQ: Which record type is used for mail servers? → MX
+- Viva: What's the difference between A and AAAA records?
+- Remember: PTR is the ONLY record type here that goes in **reverse** (IP → Name)
+
+---
