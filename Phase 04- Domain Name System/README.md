@@ -157,3 +157,52 @@ Think of it like a **company's organization chart**: the CEO (Root) doesn't know
 
 ---
 
+## 4. Iterative vs Recursive Query Resolution
+
+#### Definition
+There are two main methods DNS servers use to resolve a query: **Iterative** and **Recursive**. These define how DNS servers interact with each other while finding an IP address.
+
+#### Why Important?
+This is one of the most commonly asked comparison topics in DNS — understanding "who does the work" is key.
+
+#### Easy Explanation
+
+**Iterative Query Resolution:**
+Think of it like asking a stranger for directions, and instead of walking you there, they just say "go that way and ask someone else." You (the querying server) have to keep asking different people yourself, step by step.
+
+**Recursive Query Resolution:**
+Think of it like calling a **travel agent** who does ALL the searching for you and just gives you the final answer — you didn't have to ask anyone else yourself.
+
+#### Key Points
+
+**Iterative:**
+- The DNS server receiving the query gives **referrals** to the querying server
+- The querying server **actively participates** — it sends the next query itself based on the referral
+
+**Recursive:**
+- The DNS server receiving the query takes **full responsibility** for finding the answer
+- It may internally use iterative queries to navigate the hierarchy until it reaches the authoritative server
+- The client just waits and gets the final answer
+
+#### Remember
+- Iterative = "You do the walking, I just point the way"
+- Recursive = "I'll do the walking for you"
+
+#### Diagram
+```
+Iterative:
+[Client] --> [Server A: "try Server B"] --> [Client asks Server B itself]
+
+Recursive:
+[Client] --> [Server A] --(Server A does everything internally)--> [Final Answer to Client]
+```
+
+#### Memory Trick
+**"Iterative = I do It myself" | "Recursive = Received completely by someone else"**
+
+#### Exam Focus
+- MCQ: In recursive resolution, who does most of the work? → The DNS server (not the client)
+- Viva: Explain iterative vs recursive with an example
+- Remember: A resolver often uses **recursive** queries from the client's side, but performs **iterative** queries internally toward Root/TLD/ANS
+
+---
