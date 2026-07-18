@@ -654,3 +654,21 @@ Think of DNSSEC like a **wax seal on an important letter** — the sender signs 
 - ❌ Assuming DNS is secure by default — it is **not encrypted**, which is exactly why DNSSEC, DoT, and DoH exist.
 
 ---
+
+<a id="17-memory-tricks"></a>
+
+## 17. Memory Tricks
+
+| Topic | Trick |
+|---|---|
+| DNS purpose | "Doesn't Need numberS" |
+| Components order | "Resolver Really Tests Answers" (Resolver, Root, TLD, ANS) |
+| Iterative vs Recursive | "Iterative = I do It myself, Recursive = Received by someone else" |
+| 10-step process | "Resolver Really Tries ANSwering, Client Gets Website" |
+| Packet layering | "IP wraps UDP, UDP wraps DNS" |
+| Message sections | "12 bytes of Basics, then Q-A-A-A" |
+| Record types | "Ants Are Not Moving Cars Precisely" (A, AAAA, NS, MX, CNAME, PTR) |
+| TTL | "Time To Leave (the cache)" |
+| DNSSEC | "Signed, Secured... Confirmed (not encrypted)" |
+
+---
