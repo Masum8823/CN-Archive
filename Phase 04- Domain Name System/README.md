@@ -206,3 +206,56 @@ Recursive:
 - Remember: A resolver often uses **recursive** queries from the client's side, but performs **iterative** queries internally toward Root/TLD/ANS
 
 ---
+
+<a id="5-full-dns-resolution-process-step-by-step"></a>
+
+## 5. Full DNS Resolution Process (Step by Step)
+
+#### Definition
+This is the complete, real-world journey of how a domain name like `google.com` gets converted to an IP address, from the moment you type it until the webpage loads.
+
+#### Why Important?
+This is the **most detailed and most commonly tested** part of the DNS chapter — you should be able to explain each step in order.
+
+#### Easy Explanation
+Imagine ordering food through multiple people: you ask the restaurant's front desk, they check with the kitchen manager, the kitchen manager checks with the specific chef, and finally the chef confirms and your food (IP address) arrives. Every step passes the request forward until someone has the final answer.
+
+#### Step-by-Step Process
+
+1. The host sends a query to the **local DNS resolver** asking to resolve `google.com`.
+2. If the resolver doesn't have the IP cached, it sends a query to a **root DNS server**.
+3. The root server, recognizing the `.com` suffix, refers the resolver to the **TLD servers** responsible for `.com`.
+4. The resolver sends a new query to one of these **TLD servers**.
+5. The TLD server refers the resolver to the **authoritative DNS server** responsible for `google.com`.
+6. The resolver sends a query to the **authoritative DNS server**.
+7. The authoritative DNS server responds with the actual **IP address** of `google.com`.
+8. The DNS resolver **caches** this IP address and returns it to the requesting host.
+9. The requesting host makes an **HTTP request** to that IP address (`www.google.com`).
+10. The web server returns the **webpage** for `www.google.com`.
+
+#### Diagram
+```
+[Client] -1-> [Resolver] -2-> [ROOT] -3-> (refers to TLD)
+[Resolver] -4-> [TLD] -5-> (refers to ANS)
+[Resolver] -6-> [ANS] -7-> (returns IP)
+[Resolver] -8-> [Client] (caches + returns IP)
+[Client] -9-> [Google Server] -10-> (returns webpage)
+```
+
+#### Key Points
+- Total of **10 steps** from query to webpage load
+- After getting the IP, a **TCP handshake** happens before the actual HTTP request
+- Caching happens at Step 8 — this speeds up future requests for the same domain
+
+#### Remember
+- The order: **Resolver → Root → TLD → ANS → back to Resolver → Client → Web Server → Webpage**
+
+#### Memory Trick
+**"Resolver Really Tries ANSwering, Client Gets Website"** (Resolver, Root, TLD, ANS, Client, Website)
+
+#### Exam Focus
+- MCQ/Broad: List and explain the 10 steps of DNS resolution — **very commonly asked in full**
+- Viva: Explain what happens after the resolver gets the IP address (caching + TCP handshake + HTTP request)
+- Remember: The **TCP handshake** happens AFTER DNS resolves the IP — DNS's job ends at Step 8
+
+---
