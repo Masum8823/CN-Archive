@@ -581,3 +581,34 @@ Think of DNSSEC like a **wax seal on an important letter** — the sender signs 
 - **DNSSEC** → Adds digital signature verification (not encryption) to prevent spoofing/MITM attacks
 
 ---
+
+<a id="14-most-important-comparisons"></a>
+
+## 14. Most Important Comparisons
+
+### Iterative vs Recursive Query
+
+| Iterative | Recursive |
+|---|---|
+| Querying server does the repeated asking | Receiving server does all the work |
+| Gets referrals, must ask again itself | Gets the final answer directly |
+| Used internally between resolver ↔ Root/TLD/ANS | Used typically between client ↔ resolver |
+
+### A vs AAAA vs PTR Records
+
+| Record | Direction | Address Type |
+|---|---|---|
+| A | Hostname → IP | IPv4 |
+| AAAA | Hostname → IP | IPv6 |
+| PTR | IP → Hostname | Reverse lookup |
+
+### DNS vs DNSSEC
+
+| DNS | DNSSEC |
+|---|---|
+| No built-in security | Adds digital signature verification |
+| Vulnerable to spoofing/poisoning | Protects against spoofing/MITM |
+| Doesn't encrypt data | Still doesn't encrypt — only verifies authenticity |
+
+---
+
