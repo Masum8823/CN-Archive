@@ -521,3 +521,44 @@ ns1.google.com.   132   IN   A     216.239.32.10
 - Viva: Identify the record type shown in a sample `dig` output
 
 ---
+
+<a id="12-dnssec-dns-security-extensions"></a>
+
+## 12. DNSSEC — DNS Security Extensions
+
+#### Definition
+DNSSEC adds a security layer on top of regular DNS by using digital signatures to verify that DNS responses are authentic and haven't been tampered with.
+
+#### Why Important?
+Since regular DNS isn't encrypted (Section 10), DNSSEC is the main defense against attacks like DNS spoofing and man-in-the-middle attacks.
+
+#### Easy Explanation
+Think of DNSSEC like a **wax seal on an important letter** — the sender signs it with their private stamp, and the receiver checks the seal using the sender's known public stamp to confirm it's genuine and untampered. If the seal is broken, the receiver knows something's wrong.
+
+#### Key Points
+- Adds a layer of **security** to a domain's DNS records
+- Every DNS zone **signs its data** with a **private key**
+- Resolvers **verify** the signature using the corresponding **public key**
+- Uses **digital signatures** and **cryptographic keys** to validate authenticity
+- Protects against attacks like:
+  - **Spoofing**
+  - **Man-in-the-middle attacks**
+
+#### Remember
+- Private key = signs (zone side) | Public key = verifies (resolver side)
+
+#### Diagram
+```
+[ DNS Zone ] --signs with private key--> [ Signed DNS Record ]
+[ Resolver ] --verifies using public key--> [ Confirms authenticity ]
+```
+
+#### Memory Trick
+**"DNSSEC = DNS + Signed, Secured, Encrypted... Confirmed"** (signatures confirm trust)
+
+#### Exam Focus
+- MCQ: DNSSEC uses which cryptographic concept? → Digital signatures / public-private key pairs
+- Viva: What attacks does DNSSEC protect against? (spoofing, man-in-the-middle)
+- Remember: DNSSEC does **NOT encrypt** the DNS data — it only **verifies authenticity** (this is a common exam trap!)
+
+---
