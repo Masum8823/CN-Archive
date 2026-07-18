@@ -474,3 +474,50 @@ Think about why a company has many layers of managers instead of just one person
 - Remember: DNS hijacking and DNS poisoning are the two major attack types to mention
 
 ---
+
+<a id="11-practical-example-nslookup-dig"></a>
+
+## 11. Practical Example — nslookup & dig
+
+#### Definition
+`nslookup` and `dig` are command-line tools used to manually query DNS servers and see the resolution results.
+
+#### Why Important?
+This is a practical/lab-based topic — you may be asked to run or explain these commands directly.
+
+#### Easy Explanation
+Think of these commands like **manually calling the phonebook operator yourself** instead of letting your phone (browser) do it automatically — you get to see the raw answer.
+
+#### Key Points
+- **Windows OS**: `nslookup –type=A google.com`
+- **Linux OS**: `dig google.com` or `nslookup –type=A google.com`
+- Root Servers can be seen visually on the map at [root-servers.org](https://root-servers.org/)
+
+#### Example Output (using `dig google.com`)
+```
+;; QUESTION SECTION:
+;google.com.            IN   A
+
+;; ANSWER SECTION:
+google.com.       132   IN   A     142.250.193.110
+
+;; AUTHORITY SECTION:
+google.com.       132   IN   NS    ns1.google.com.
+google.com.       132   IN   NS    ns2.google.com.
+
+;; ADDITIONAL SECTION:
+ns1.google.com.   132   IN   A     216.239.32.10
+```
+
+#### Remember
+- `dig` is Linux-based and gives more detailed output than `nslookup`
+- The **ANSWER SECTION** shows the actual resolved IP
+
+#### Memory Trick
+**"dig = deep info gathering"** (more detail than nslookup)
+
+#### Exam Focus
+- MCQ/Lab: What command would you use on Linux to look up a domain's A record? → `dig google.com`
+- Viva: Identify the record type shown in a sample `dig` output
+
+---
