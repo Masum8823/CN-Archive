@@ -695,3 +695,19 @@ Think of DNSSEC like a **wax seal on an important letter** — the sender signs 
 > 🔑 **Golden Rule:** DNSSEC secures **authenticity**, not **privacy** — it doesn't hide your DNS queries, it just proves the answer wasn't faked.
 
 ---
+
+<a id="19-final-exam-tips"></a>
+
+## 19. Final Exam Tips
+
+- 📌 **Most Important Topics:** The 10-step DNS resolution process and the DNS hierarchy — these show up in broad questions almost every time.
+- 📌 **Read First:** Start with Sections 2, 3, and 5 (Building Blocks, Hierarchy, Full Resolution Process) — they're the backbone of this chapter.
+- 📌 **Viva Strategy:** Use the phonebook and organization-chart analogies to explain concepts clearly and confidently.
+- 📌 **MCQ Strategy:** Focus on matching record types to purposes, and components to their jobs — easy guaranteed marks.
+- 📌 **Written Exam Strategy:** For the 10-step process, number each step clearly — examiners give marks per correct step.
+- 📌 **Where Students Lose Marks:** Mixing up iterative vs recursive, and thinking DNSSEC encrypts data (it doesn't).
+- 📌 **Short Revision Strategy:** Just go through Section 13 (Quick Revision) and Section 18 (Last Minute Sheet).
+- 📌 **One Night Before Exam:** Focus only on Section 18 (Last Minute Revision Sheet) — it's built exactly for this.
+- 📌 **Exam Hall Tip:** If a question asks about DNS "security," always separate **DNSSEC (authenticity)** from **DoT/DoH (encryption)** — they solve different problems.
+
+---
