@@ -119,3 +119,41 @@ Imagine trying to find a specific person's house in a huge country. You'd first 
 - Remember: The Resolver is the only component that **caches** results for faster future lookups
 
 ---
+
+<a id="3-dns-hierarchy"></a>
+
+## 3. DNS Hierarchy
+
+#### Definition
+DNS is organized in a **tree-like hierarchy** — starting from Root at the top, branching into Top-Level Domains, and ending at individual Authoritative domains.
+
+#### Why Important?
+This hierarchy is what makes DNS scalable — no single server needs to know every domain in the world; it just needs to know where to point next.
+
+#### Easy Explanation
+Think of it like a **company's organization chart**: the CEO (Root) doesn't know every employee personally, but knows which department head (TLD) to direct you to, and that department head knows the exact employee (Authoritative server) you need.
+
+#### Key Points
+- **Root** (top level) → Root DNS Servers
+- **Top Level Domain (TLD)** → `.com`, `.net`, `.edu`, `.org`, etc.
+- **Authoritative** (bottom level) → actual domains like `amazon.com`, `wikipedia.org`, `stanford.edu`
+
+#### Diagram
+```
+                     [ Root DNS Servers ]
+                    /       |       |       \
+                .com      .net    .edu     .org
+               /    \      |        |        |
+      amazon.com  bytebytego.com  stanford.edu  wikipedia.org
+```
+
+#### Remember
+- Hierarchy flow (top → bottom): **Root → TLD → Authoritative**
+
+#### Exam Focus
+- MCQ: Which level does `.com` belong to? → Top Level Domain (TLD)
+- Viva: Draw and explain the DNS hierarchy tree
+- Remember: `wordpress.org`, `wikipedia.org` are examples of **Authoritative** level, not TLD
+
+---
+
