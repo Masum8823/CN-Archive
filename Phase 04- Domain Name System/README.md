@@ -401,3 +401,44 @@ PTR   -> IP       → hostname (reverse)
 - Remember: PTR is the ONLY record type here that goes in **reverse** (IP → Name)
 
 ---
+
+<a id="9-dns-caching-updating-records"></a>
+
+## 9. DNS Caching & Updating Records
+
+#### Definition
+Caching means DNS servers **temporarily save** IP address answers so they don't need to repeat the entire resolution process every time.
+
+#### Why Important?
+Without caching, every single website visit would need the full 10-step resolution process every time — caching makes browsing much faster.
+
+#### Easy Explanation
+Think of caching like **saving a friend's phone number** after looking it up once — next time you don't need to search your contacts app again, you already remember it. But if your friend changes their number (TTL expires), you'll need to look it up again.
+
+#### Key Points
+- **Caching**: When a name server learns an IP for a domain, it saves this info for faster access next time
+- **TTL (Time to Live)**: Cached information has a lifespan; after TTL expires, it's removed and a fresh lookup is needed
+- **Local Caching**: Local name servers often cache TLD records too, reducing load on root servers
+- **Out-of-Date Cache**: If a domain's IP changes, cached entries can be outdated until all old caches expire
+- **Updating Standard**: **RFC 2136** is the IETF standard for updating DNS records faster across servers
+
+#### Remember
+- TTL = how long a cached answer stays valid
+- Old cached IP might be wrong until TTL expires everywhere
+
+#### Diagram
+```
+[First Lookup] ---> Result cached with TTL timer
+[Within TTL]   ---> Instant answer from cache (fast!)
+[After TTL]    ---> Cache expires, fresh lookup needed
+```
+
+#### Memory Trick
+**"TTL = Time To Leave (the cache)"**
+
+#### Exam Focus
+- MCQ: What does TTL control in DNS caching? → How long the cached record stays valid
+- Viva: Why might a website be unreachable for some users right after changing its IP? (old caches haven't expired yet)
+- Remember RFC number: **RFC 2136** for DNS updates
+
+---
