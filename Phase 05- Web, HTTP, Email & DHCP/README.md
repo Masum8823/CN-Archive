@@ -227,3 +227,27 @@ Content-Type: text/html
 - **Status Line** = HTTP version + Status Code + Status Phrase (explains the code in words).
 
 ---
+
+### 3.3 HTTP Status Codes
+
+### Easy Explanation
+Status codes are like a "report card" from the server telling you what happened to your request.
+
+| Code | Category | Meaning | Common Example |
+|------|----------|---------|-----------------|
+| **1xx** | Informational | Request received, still processing | 100 Continue |
+| **2xx** | Success | Request succeeded | 200 OK, 201 Created |
+| **3xx** | Redirection | Further action needed | 301 Moved Permanently, 302 Found |
+| **4xx** | Client Error | Client made a mistake | 400 Bad Request, 404 Not Found |
+| **5xx** | Server Error | Server failed to fulfill request | 500 Internal Server Error, 503 Service Unavailable |
+
+### Shortcut Memory Trick
+- **1 = Info**, **2 = Good**, **3 = Moved**, **4 = Your fault (Client)**, **5 = Their fault (Server)**
+
+### Remember (Very common in exams)
+- **200 OK** → Success
+- **301 Moved Permanently** → Object moved
+- **400 Bad Request** → Server didn't understand
+- **404 Not Found** → Document not found
+
+---
