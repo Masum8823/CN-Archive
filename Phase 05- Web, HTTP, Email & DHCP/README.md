@@ -251,3 +251,21 @@ Status codes are like a "report card" from the server telling you what happened 
 - **404 Not Found** → Document not found
 
 ---
+
+### 3.4 HTTP Versions
+
+### Easy Explanation
+HTTP has evolved over time to become faster and more secure.
+
+| Version | Year | Key Features | Limitations |
+|---------|------|---------------|--------------|
+| **HTTP/1.0** | 1996 | Headers, status codes, POST method | Non-persistent by default (1 request per connection) |
+| **HTTP/1.1** | 1997 | Persistent connections (Keep-Alive), pipelining, caching | Head-of-line blocking, slower for modern needs |
+| **HTTP/2** | 2015 | Binary framing, multiplexing, header compression (HPACK) | Server push adds complexity |
+| **HTTP/3** | 2022 | Built on QUIC (UDP), faster setup, encryption by default | Requires QUIC support, not yet universal |
+
+### Exam Focus
+- **HTTP/1.1 vs HTTP/2 vs HTTP/3** comparisons are commonly asked.
+- Remember: **HTTP/3 uses UDP (via QUIC)**, not TCP like the others — this is a favorite trick question!
+
+---
