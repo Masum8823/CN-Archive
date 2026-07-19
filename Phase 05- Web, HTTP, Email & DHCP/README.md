@@ -322,3 +322,36 @@ Persistent = staying on the same call and asking all your questions one after an
 | `Connection: close` | `Connection: keep-alive` |
 
 ---
+
+### 3.7 HTTP and State (Cookies & Sessions)
+
+### Definition
+**HTTP is a Stateless Protocol** — the server does **not remember** anything about you (login status, previous actions) between requests, by default.
+
+### Why Important?
+Without a way to "remember" users, you'd have to log in again every single time you click a link! That's why cookies exist.
+
+### Easy Explanation
+Think of a shop where the cashier forgets you the moment you walk out — even if you just paid. To fix this, the shop gives you a **membership card (cookie)**. Next time you show the card, they instantly know who you are.
+
+- **Session**: Server-side storage of your data, linked to a unique **Session ID**.
+- **Cookie**: Your browser stores that Session ID and sends it back with every request, so the server knows it's you.
+
+**Flow Example:**
+```
+1. Client sends normal request → Amazon server creates ID 1678 for the user
+2. Server responds: set-cookie: 1678
+3. Client stores it: cookie file → "amazon 1678"
+4. Every future request includes: cookie: 1678
+5. Server recognizes the user instantly using this cookie
+```
+
+### Key Points
+- Cookies make websites feel "personalized" (keeping you logged in, remembering your cart).
+- Without cookies, HTTP has zero memory of past visits.
+
+### Exam Focus
+- **"Why is HTTP called stateless?"** — very common short question.
+- Be ready to explain the cookie flow diagram in your own words.
+
+---
