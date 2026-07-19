@@ -49,3 +49,16 @@
 - [🎯 Final Exam Tips](#-final-exam-tips)
 
 ---
+
+## 1. Application Layer Basics
+
+### Definition
+The **Application Layer** is the top layer of a network model. It's the layer that lets you actually *use* the network — browsing websites, sending emails, transferring files, etc. When the data you want isn't on your own device, a request has to go out to fetch it.
+
+### Why Important?
+Almost every exam question about "how the internet works" starts here. This layer decides *how* two devices talk to each other to share data.
+
+### Easy Explanation
+Think of it like ordering food. You (the client) don't cook the food yourself — you ask a restaurant (the server) to prepare it and send it to you. The Application Layer defines the "menu" and "rules" for that ordering process.
+
+There are **two main ways** devices can request/share data:
