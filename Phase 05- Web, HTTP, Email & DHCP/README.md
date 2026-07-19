@@ -293,3 +293,32 @@ Imagine standing in a single queue at a shop. If the person at the front is taki
 - Explain HOL blocking with a simple queue example — this is a favorite short-answer/viva question.
 
 ---
+
+### 3.6 Persistent vs Non-Persistent Connections
+
+### Non-Persistent Connection
+- Opens a **new TCP connection for every single request-response pair**.
+- Introduced in **HTTP/1.0**.
+- Slower — repeated TCP handshakes.
+- Higher server load and network congestion.
+- Uses `Connection: close` header (or none).
+
+### Persistent Connection
+- **Reuses one TCP connection** for multiple requests.
+- Default in **HTTP/1.1** and used in **HTTP/2/3**.
+- Reduces latency and network overhead.
+- More efficient for loading multiple resources (HTML, CSS, images together).
+- Uses `Connection: keep-alive` header (optional in HTTP/1.1).
+
+### Easy Explanation
+Non-persistent = calling a friend, hanging up, then calling again for every new question.
+Persistent = staying on the same call and asking all your questions one after another.
+
+| Non-Persistent | Persistent |
+|------------------|-------------|
+| New connection every time | Same connection reused |
+| Slower | Faster |
+| HTTP/1.0 default | HTTP/1.1+ default |
+| `Connection: close` | `Connection: keep-alive` |
+
+---
