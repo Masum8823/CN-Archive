@@ -128,3 +128,31 @@ http://www.nytimes.com/tech/index.html
 URL structure questions are common in MCQs — know each part by name.
 
 ---
+
+## 3. HTTP (Hypertext Transfer Protocol)
+
+### Definition
+**HTTP** is the protocol that lets your browser fetch web pages from a web server. It's the "language" browsers and servers use to talk to each other.
+
+| Port | Transport Layer Protocol |
+|------|---------------------------|
+| **80** | **TCP** |
+
+### Why Important?
+HTTP is the backbone of the entire Web. Every time you open a website, HTTP (or HTTPS) is working behind the scenes.
+
+### Easy Explanation
+HTTP works like a **waiter taking your order** at a restaurant:
+1. You (browser) tell the waiter (HTTP) what you want — this is the **Request**.
+2. The waiter brings back your food — this is the **Response**.
+
+**Key Points:**
+- Retrieves web page content (HTML) from a web server.
+- Data is sent in **plain text** (not encrypted — this is why HTTPS exists).
+- Default port: **TCP 80**.
+
+### Remember
+HTTP = **Not secure**, plain text, port 80.
+HTTPS = **Secure**, encrypted, port 443. (Covered later)
+
+---
