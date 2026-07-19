@@ -76,3 +76,21 @@ A **Server** is like a librarian sitting in one place, holding all the books. Ev
 - Common example: Web servers, Email servers, File servers.
 
 ---
+
+### 1.2 Peer-to-Peer (P2P) Model
+
+**Definition:** Two or more computers connect directly and share resources (like files or printers) **without needing a dedicated server**.
+
+**Easy Explanation:**
+Imagine a group project where there is no "teacher" collecting and distributing homework. Instead, every student shares their part directly with everyone else. Each computer (**peer**) can act as **both a client and a server** depending on what's needed.
+
+**Key Points:**
+- No dedicated central server.
+- Every device (peer) can be a client or a server.
+- Example: File-sharing apps, torrent-style sharing.
+
+**Exam Focus:**
+- Be ready to **compare Client/Server vs P2P** (see comparison table below).
+- Remember: In P2P, a peer's role (client/server) changes depending on the situation.
+
+---
