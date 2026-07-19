@@ -94,3 +94,37 @@ Imagine a group project where there is no "teacher" collecting and distributing 
 - Remember: In P2P, a peer's role (client/server) changes depending on the situation.
 
 ---
+
+## 2. WWW and URL
+
+### Definition
+**WWW (World Wide Web)** is the system of linked web pages you access through a browser. A **URL (Uniform Resource Locator)** is the "address" you type to reach a specific web page.
+
+### Why Important?
+Every single web request starts with a URL. Understanding its parts helps you understand how HTTP requests are built later.
+
+### Easy Explanation
+A URL is like a full postal address — it tells your browser exactly which "house" (server), which "room" (path), and which "protocol/vehicle" (http/https) to use to get there.
+
+```
+https://www.computerhope.com/jargon/u/url.htm
+   |         |                  |         |
+Protocol  Subdomain      Domain+suffix   Directories/Page
+```
+
+```
+http://www.nytimes.com/tech/index.html
+  |        |       |      |       |
+ protocol  host   domain  path    file
+```
+
+### Key Points
+- **Protocol**: how to fetch (http, https, ftp).
+- **Host name**: the web server's name (www).
+- **Domain name**: the website's name + top-level domain (nytimes.com).
+- **Path/File**: exact location of the page — this part is **case-sensitive**.
+
+### Remember
+URL structure questions are common in MCQs — know each part by name.
+
+---
