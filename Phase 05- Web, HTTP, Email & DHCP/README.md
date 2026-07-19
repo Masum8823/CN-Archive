@@ -269,3 +269,27 @@ HTTP has evolved over time to become faster and more secure.
 - Remember: **HTTP/3 uses UDP (via QUIC)**, not TCP like the others — this is a favorite trick question!
 
 ---
+
+### 3.5 Head-of-Line (HOL) Blocking
+
+### Definition
+HOL blocking happens when one slow/delayed request blocks all the requests behind it, even though they're ready to go.
+
+### Easy Explanation
+Imagine standing in a single queue at a shop. If the person at the front is taking forever, **everyone behind them has to wait too** — even if their own request is quick. That's HOL blocking.
+
+**Step-by-step:**
+1. Client sends **GET 1**.
+2. **GET 2** must wait for GET 1 to finish.
+3. **GET 3** must wait for both.
+4. If GET 1 is delayed, GET 2 and GET 3 are delayed too.
+5. Once GET 1 finishes, the server can process GET 2 and GET 3 — but total time has already increased.
+
+### Key Points
+- This happens because multiple requests share **one single TCP connection**, processed one at a time.
+- It's a major reason **HTTP/2 and HTTP/3** were created — to reduce this bottleneck.
+
+### Exam Focus
+- Explain HOL blocking with a simple queue example — this is a favorite short-answer/viva question.
+
+---
