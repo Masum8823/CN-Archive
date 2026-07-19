@@ -156,3 +156,45 @@ HTTP = **Not secure**, plain text, port 80.
 HTTPS = **Secure**, encrypted, port 443. (Covered later)
 
 ---
+
+### 3.1 HTTP Request Message Format
+
+### Easy Explanation
+Every HTTP request has 4 parts, just like a formal letter:
+
+```
+Request Line   →  method, URL, HTTP version
+Headers        →  extra info (like sender's details)
+Blank line     →  separates headers from body
+Body           →  only present in some requests (like POST)
+```
+
+**Example:**
+```
+GET /somedir/page.html HTTP/1.1
+Host: www.someschool.edu
+Connection: close
+User-agent: Mozilla/5.0
+Accept-language: fr
+```
+
+**Request Line breakdown:**
+```
+Method   URL   HTTP Version
+ GET   /path    HTTP/1.1
+```
+
+**URL breakdown:**
+```
+Method :// Host : Port / Path
+```
+
+### Key Points — HTTP Methods
+- **GET** → Client wants to **retrieve** a document from the server.
+- **POST** → Client wants to **send data** to the server (e.g., submitting a form).
+
+### Shortcut Memory Trick
+- **GET = "Give me"** (asking for something)
+- **POST = "Post/send something"** (sending something)
+
+---
