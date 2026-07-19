@@ -198,3 +198,32 @@ Method :// Host : Port / Path
 - **POST = "Post/send something"** (sending something)
 
 ---
+
+### 3.2 HTTP Response Message Format
+
+### Easy Explanation
+The server replies back in a similar 4-part structure:
+
+```
+Status Line   →  HTTP version, Status code, Status phrase
+Headers       →  extra info about the response
+Blank line    →  separator
+Body          →  actual content (HTML, images, data)
+```
+
+**Example:**
+```
+HTTP/1.1 200 OK
+Connection: close
+Date: Tue, 18 Aug 2015 15:44:04 GMT
+Server: Apache/2.2.3 (CentOS)
+Last-Modified: Tue, 18 Aug 2015 15:11:03 GMT
+Content-Length: 6821
+Content-Type: text/html
+(data data data data data ...)
+```
+
+### Key Points
+- **Status Line** = HTTP version + Status Code + Status Phrase (explains the code in words).
+
+---
