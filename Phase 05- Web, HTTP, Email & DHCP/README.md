@@ -62,3 +62,17 @@ Almost every exam question about "how the internet works" starts here. This laye
 Think of it like ordering food. You (the client) don't cook the food yourself — you ask a restaurant (the server) to prepare it and send it to you. The Application Layer defines the "menu" and "rules" for that ordering process.
 
 There are **two main ways** devices can request/share data:
+
+### 1.1 Client/Server Model
+
+**Definition:** One powerful, central computer (the **Server**) provides a service, and many computers (**Clients**) request that service from it.
+
+**Easy Explanation:**
+A **Server** is like a librarian sitting in one place, holding all the books. Every student (**client**) comes to the librarian to ask for a book. The librarian doesn't go looking for a student — students come to the librarian.
+
+**Key Points:**
+- One central server, many clients.
+- Server usually stays in a fixed location.
+- Common example: Web servers, Email servers, File servers.
+
+---
