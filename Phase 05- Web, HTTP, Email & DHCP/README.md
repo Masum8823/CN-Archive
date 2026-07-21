@@ -355,3 +355,33 @@ Think of a shop where the cashier forgets you the moment you walk out — even i
 - Be ready to explain the cookie flow diagram in your own words.
 
 ---
+
+## 4. Web Cache (Proxy Server)
+
+### Definition
+A **Web Cache (Proxy Server)** is a middleman server that stores copies of web content, so future requests for the same content can be answered faster — **without contacting the original server** every time.
+
+### Why Important?
+Web caches save time, save bandwidth, and reduce load on the internet — very useful for organizations with many users (schools, ISPs, companies).
+
+### Easy Explanation
+Think of a proxy server like a **class monitor** who already has copies of common notes. If a classmate asks for those notes, the monitor just hands over the copy instead of sending the classmate all the way to the teacher (**origin server**) each time.
+
+- The Proxy Server acts as **both a client and a server**:
+  - **Server** to the original requesting client.
+  - **Client** to the origin server (when it needs fresh content).
+- Typically installed by **ISPs**, universities, or companies.
+
+### Key Points (Flow)
+1. Browser is set to access the web via a cache.
+2. All HTTP requests go to the cache first.
+3. If the object is in cache → cache returns it directly.
+4. If not → cache requests it from the origin server, then returns it to the client (and usually saves a copy).
+
+### Advantages of Web Caching
+- ✅ Reduces response time for client requests.
+- ✅ Saves bandwidth (no repeated downloads of the same content).
+- ✅ Helps log usage and block unwanted traffic.
+- ✅ Lets even "poor" content providers deliver content efficiently (similar benefit from P2P sharing).
+
+---
