@@ -434,3 +434,36 @@ Internet Delay = 2 sec (RTT)
 - Remember: **Web cache = cheap fix**, **increasing bandwidth = expensive fix**. Both reduce delay, but caching is more cost-effective.
 
 ---
+
+
+### 4.2 Conditional GET
+
+### Definition
+A mechanism that lets a cache check if its stored copy of an object is still up-to-date, **without re-downloading the whole object** unless necessary.
+
+### Why Important?
+Solves the "Stale Cache" problem — where the cached object may have changed on the real server since it was cached.
+
+### Easy Explanation
+It's like calling ahead before visiting a friend: *"Has anything changed since I last visited (date)?"* If nothing changed, they just say "Nope, same as before" — you don't need the full update. If something changed, they give you the fresh version.
+
+**How it works:**
+- Request must use the **GET method**.
+- Request includes a header: `If-Modified-Since: <date>`
+
+**Two possible outcomes:**
+
+| Situation | Server Response |
+|------------|-------------------|
+| Object **not modified** since date | `HTTP/1.0 304 Not Modified` (no object sent) |
+| Object **modified** after date | `HTTP/1.0 200 OK` + new data |
+
+### Key Points
+- Goal: Don't re-send the object if the cached version is already current.
+- Benefits: No extra transmission delay + lower link utilization.
+
+### Exam Focus
+- **"What is Conditional GET and why is it useful?"** — common short question.
+- Remember the exact header: `If-Modified-Since:` and the response code `304 Not Modified`.
+
+---
