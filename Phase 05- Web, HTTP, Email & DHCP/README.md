@@ -467,3 +467,29 @@ It's like calling ahead before visiting a friend: *"Has anything changed since I
 - Remember the exact header: `If-Modified-Since:` and the response code `304 Not Modified`.
 
 ---
+
+## 5. HTTPS
+
+### Definition
+**HTTPS (HTTP Secure)** is HTTP running over **SSL/TLS (Secure Socket Layer / Transport Layer Security)**, which encrypts the content being transferred.
+
+| Port | Transport Layer Protocol |
+|------|---------------------------|
+| **443** | **TCP** |
+
+### Why Important?
+Regular HTTP sends data in **plain text**, meaning anyone snooping on the network can read it. HTTPS fixes this security hole — critical for banking, logins, and any sensitive data.
+
+### Easy Explanation
+HTTP is like sending a postcard — anyone handling it can read the message. HTTPS is like sending a **sealed, locked envelope** — only the intended receiver (with the right key) can open and read it.
+
+### Key Points
+- Encrypts HTTP content using SSL/TLS.
+- Uses **Public Key Infrastructure (PKI)** for secure key exchange.
+- Default port: **TCP 443**.
+
+### Shortcut Memory Trick
+- HTTP → Port **80**, No lock 🔓
+- HTTPS → Port **443**, Locked 🔒
+
+---
