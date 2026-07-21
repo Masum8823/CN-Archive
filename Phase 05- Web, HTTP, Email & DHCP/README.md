@@ -385,3 +385,52 @@ Think of a proxy server like a **class monitor** who already has copies of commo
 - ✅ Lets even "poor" content providers deliver content efficiently (similar benefit from P2P sharing).
 
 ---
+
+### 4.1 Caching Example & Calculations
+
+### Assumptions
+- Avg object size: **1 Mbit**
+- Avg request rate: **15/sec**
+- Institutional Bandwidth: **100 Mbps**
+- RTT to origin server: **2 sec**
+- Access link rate: **15 Mbps**
+
+### Formula
+```
+Average response time = LAN Delay + Access Delay + Internet Delay
+```
+
+**Calculations:**
+```
+Traffic Intensity on LAN = (15 × 1,000,000) / 100,000,000 = 0.15
+Traffic Intensity on Access Link = (15 × 1,000,000) / (15 × 1,000,000) = 1
+Internet Delay = 2 sec (RTT)
+```
+
+**Result:**
+- LAN utilization: **15%** (delay in tens of milliseconds — fine)
+- Access link utilization: **100%** (delay in *minutes* — BIG problem! A fully congested link causes huge delay)
+
+### Two Possible Solutions
+
+**Solution 1 — Increase Access Link Bandwidth (15 Mbps → 100 Mbps)**
+- Access link utilization drops to **15%**.
+- LAN and Access delay become negligible.
+- **Cost:** Increasing bandwidth is **expensive**.
+
+**Solution 2 — Install a Web Cache (Proxy Server)**
+- Assumption: Average hit rate = **40%** (40% of requests are answered from cache).
+- LAN delay: within 10 ms
+- Access delay: tens of ms (in 15 Mbps link)
+- **Total Response Time:**
+```
+= 0.4(0.01 sec) + 0.6(0.01 + 2 sec)
+= 1.2 sec
+```
+- **Cost:** A web cache is **cheap** compared to upgrading bandwidth!
+
+### Exam Focus
+- This numeric example is a classic **broad/numerical question**. Practice the formula and steps.
+- Remember: **Web cache = cheap fix**, **increasing bandwidth = expensive fix**. Both reduce delay, but caching is more cost-effective.
+
+---
