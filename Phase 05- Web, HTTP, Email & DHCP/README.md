@@ -493,3 +493,16 @@ HTTP is like sending a postcard — anyone handling it can read the message. HTT
 - HTTPS → Port **443**, Locked 🔒
 
 ---
+
+## 6. DHCP (Dynamic Host Configuration Protocol)
+
+### Definition
+**DHCP** automatically assigns IP addresses (and other network settings) to devices when they join a network — so you don't have to configure it manually.
+
+### Why Important?
+Without DHCP, every device joining a network would need to be manually assigned an IP address — extremely time-consuming for large networks with many moving devices (laptops, phones).
+
+### Easy Explanation
+Think of DHCP like a **hotel check-in desk**. When you arrive (connect to the network), the front desk (DHCP server) automatically hands you a room key (IP address) for a limited time (your stay). When you check out (leave the network), the room becomes available for the next guest.
+
+---
