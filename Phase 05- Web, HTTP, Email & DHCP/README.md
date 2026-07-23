@@ -506,3 +506,24 @@ Without DHCP, every device joining a network would need to be manually assigned 
 Think of DHCP like a **hotel check-in desk**. When you arrive (connect to the network), the front desk (DHCP server) automatically hands you a room key (IP address) for a limited time (your stay). When you check out (leave the network), the room becomes available for the next guest.
 
 ---
+
+### 6.1 Why DHCP?
+
+### Key Points
+- Every device on a network needs an IP address.
+- **Static IPs** are manually assigned to devices that don't move — like routers and servers.
+- **Dynamic IPs** (via DHCP) are given to devices that move often — like laptops and phones.
+- A device can use any free address from a defined range, usually within an **IP subnet**.
+
+### DHCP Operations
+- DHCPv4 assigns IPv4 addresses and other configuration info **dynamically**.
+- A dedicated DHCP server is easy to scale and manage — but small offices can even use a **Cisco router** for this instead of a full server.
+- The server **leases** an address for a limited time (few hours to a week+).
+- When the lease is close to expiring, the client must ask to **extend** it.
+- If a client stops using the address (moves/powers off), the address returns to the pool for reuse.
+
+### Remember
+- DHCP works in **Client/Server mode**.
+- **Lease mechanism** = temporary IP assignment, must be renewed or given back.
+
+---
