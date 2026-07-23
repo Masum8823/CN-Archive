@@ -734,3 +734,53 @@ Alice → [User Agent] --SMTP--> [Alice's Mail Server] --SMTP--> [Bob's Mail Ser
 - Notice: **SMTP is used twice** (UA → server, and server → server), but the **final retrieval** always uses **POP3 or IMAP**, never SMTP.
 
 ---
+
+### 7.3 SMTP (Simple Mail Transfer Protocol)
+
+### Definition
+**SMTP [RFC 2821]** is the protocol used to **reliably transfer email messages**, using **TCP on port 25**.
+
+### Easy Explanation
+Think of SMTP as the **delivery truck** — its only job is to reliably carry the message from the sending server to the receiving server, handshake, deliver, and close the connection.
+
+### Key Points
+- Uses **TCP**, port **25** — for reliable transfer.
+- **Direct transfer:** the sending server acts like a client and talks directly to the receiving server.
+- **Three phases of transfer:**
+  1. **SMTP Handshaking (greeting)**
+  2. **SMTP Transfer of Messages**
+  3. **SMTP Closure**
+- **Command/response interaction** — just like HTTP:
+  - Commands are sent in **ASCII text**.
+  - Responses include a **status code and phrase**.
+
+### Example Handshake Flow
+```
+Client SMTP Server                     Server SMTP Server
+        |------ initiate TCP connection -------->|
+        |<----------- TCP connection initiated ---|
+        |<------------------- 220 ----------------|
+        |------------------- HELO --------------->|
+        |<----------------- 250 Hello -------------|
+        |---------- SMTP message transfer -------->|
+```
+
+### SMTP: Final Words
+- SMTP uses **persistent connections**.
+- SMTP requires the message (header & body) to be in **7-bit ASCII**.
+- The SMTP server uses **`CRLF.CRLF`** (`\r\n.\r\n`) to detect the **end of a message**.
+
+### 🆚 Comparison with HTTP
+
+| HTTP | SMTP |
+|------|------|
+| **Pull** protocol (client requests data) | **Push** protocol (sender pushes data) |
+| Server → Client (mostly) | Server → Server |
+| Both use ASCII command/response interaction and status codes | Same |
+| Each object gets its **own response message** | Multiple objects sent in a **single multipart message** |
+
+### Exam Focus
+- **"HTTP is pull, SMTP is push"** — this exact comparison line is a favorite short/viva question.
+- Remember SMTP's port: **25**, and the message-end marker: **`CRLF.CRLF`**.
+
+---
