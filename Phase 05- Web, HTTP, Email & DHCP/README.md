@@ -946,3 +946,38 @@ Then resolving that hostname to an **A record** gives the actual **mail server I
 - **"In MX records, does a lower or higher priority number get used first?"** — Answer: **Lower number = higher priority = used first.** This is a classic trick MCQ.
 
 ---
+
+
+### 7.8 Modern Email Systems & Email Security
+
+### Easy Explanation — Modern Email Systems (e.g., Gmail)
+Modern webmail like Gmail works a bit differently from the old-school pure SMTP/POP3 model:
+
+```
+Browser/App --HTTPS--> Google Mail Server --SMTP--> Recipient Server
+```
+
+- You (the user) talk to Gmail's server using **HTTPS** (secure web protocol) through your browser or app.
+- Gmail's server then talks to the **recipient's mail server** using **SMTP**, just like the classic model.
+
+### Email Security — Key Concepts
+
+| Mechanism | What It Checks |
+|-----------|------------------|
+| **SPF** (Sender Policy Framework) | *Who may send mail for my domain?* — verifies the sending server is authorized. |
+| **DKIM** (DomainKeys Identified Mail) | *Was the message modified?* — uses a digital signature to verify message integrity. |
+| **DMARC** (Domain-based Message Authentication) | *What should receivers do if SPF/DKIM fails?* — defines the policy (reject, quarantine, or allow). |
+
+### Easy Explanation
+Think of these three like **airport security layers**:
+- **SPF** checks if the plane (email) is even **allowed to take off** from that airport (domain).
+- **DKIM** checks if the **cargo (message) was tampered with** during the flight.
+- **DMARC** tells the destination airport (receiving server) **what to do** if either check fails — let it through, hold it, or reject it.
+
+### Shortcut Memory Trick
+**S-D-D → Sender (SPF), Damaged? (DKIM), Decision (DMARC)**
+
+### Exam Focus
+- **"What is the difference between SPF, DKIM, and DMARC?"** — a very likely short/viva question. Remember: SPF = sender check, DKIM = tamper check, DMARC = policy/decision.
+
+---
