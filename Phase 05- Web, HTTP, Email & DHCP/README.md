@@ -676,3 +676,21 @@ DHCP is convenient, but it can be attacked if not secured properly. Here are the
 - Know at least one mitigation technique for each threat.
 
 ---
+
+
+## 7. Electronic Mail (Email)
+
+### Definition
+**Electronic Mail (Email)** is a way of sending and receiving digital messages over a network. It relies on a few different protocols working together: **SMTP** to send mail, and **POP3/IMAP** to retrieve mail.
+
+### Why Important?
+Email is one of the oldest and most heavily-used Application Layer services. Exams love this topic because it combines protocols, message formats, and real security concepts (SPF/DKIM/DMARC) all in one place.
+
+### Easy Explanation
+Sending an email is a lot like **sending a physical letter through the postal system**:
+- You **write and address** the letter (User Agent — like Gmail, Outlook, Thunderbird).
+- The **local post office** picks it up and forwards it toward the destination post office (Mail Servers using **SMTP**).
+- The **destination post office** holds the letter until the recipient comes to collect it (Mailbox on the receiving mail server).
+- The recipient **visits the post office to collect their mail** — this final "pickup" step is done using **POP3 or IMAP**.
+
+---
