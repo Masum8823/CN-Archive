@@ -710,3 +710,27 @@ Sending an email is a lot like **sending a physical letter through the postal sy
   - **"Server"** = the **receiving** mail server
 
 ---
+
+### 7.2 Scenario: Alice Sends Email to Bob
+
+### Easy Explanation
+This is the classic exam diagram — walk through it step by step:
+
+1. Alice uses her **User Agent** to compose a message addressed to `bob@someschool.edu`.
+2. Alice's UA sends the message to **her own mail server** using **SMTP**; the message is placed in the **message queue**.
+3. The **client side of SMTP** at Alice's mail server opens a **TCP connection** with Bob's mail server.
+4. The SMTP client sends Alice's message over that TCP connection.
+5. Bob's mail server places the message into **Bob's mailbox**.
+6. Bob opens his User Agent and reads the message using **POP3 or IMAP**.
+
+> **Note:** If the connection between the two mail servers fails, the sending server **keeps retrying for a few days** before giving up.
+
+```
+Alice → [User Agent] --SMTP--> [Alice's Mail Server] --SMTP--> [Bob's Mail Server] --POP3/IMAP--> [Bob's User Agent] → Bob
+```
+
+### Exam Focus
+- This 6-step scenario is a **very common broad question** — practice drawing and explaining it in order.
+- Notice: **SMTP is used twice** (UA → server, and server → server), but the **final retrieval** always uses **POP3 or IMAP**, never SMTP.
+
+---
