@@ -898,3 +898,51 @@ While **SMTP** delivers mail **to** the receiver's mail server, a separate **mai
 - Know both port numbers: **POP3 = 110**, **IMAP = 143**.
 
 ---
+
+### 7.7 MX Records (Mail Exchange Records)
+
+### Definition
+An **MX (Mail Exchange) Record** is a **DNS record** that specifies which mail server is responsible for receiving emails for a domain.
+
+### Why Important?
+Without an MX record, the internet wouldn't know **which server** to deliver a domain's emails to — DNS is what points the way.
+
+### Easy Explanation
+Think of an MX record like a **"deliver packages here" sign** posted at a company's front gate — it tells the delivery truck (SMTP) exactly which building (mail server) to bring the mail to, even if the main company website lives on a totally different server.
+
+**Example MX Record:**
+```
+example.com   IN   MX   10   mail.example.com
+```
+
+| Component | Meaning |
+|-----------|---------|
+| `example.com` | Domain name |
+| `MX` | Mail Exchange record type |
+| `10` | **Priority** (lower value = higher priority) |
+| `mail.example.com` | Mail server hostname |
+
+### How MX Records Work — Step by Step
+1. A user sends an email to `alice@example.com`.
+2. The sender's mail server **queries DNS** for the MX record of `example.com`.
+3. DNS returns `mail.example.com`.
+4. The sender **resolves** `mail.example.com` to its IP address.
+5. An **SMTP connection** is established with that mail server.
+6. The email is delivered to the recipient's mailbox.
+
+### Real Example (NUB Mail Server via `nslookup`)
+```
+C:\Users\moinu>nslookup -type=MX nub.ac.bd
+nub.ac.bd     MX preference = 0,    mail exchanger = nub-ac-bd.mail.protection.outlook.com
+nub.ac.bd     MX preference = 3600, mail exchanger = nub-ac-bd.mail.protection.outlook.com
+```
+Then resolving that hostname to an **A record** gives the actual **mail server IP address**.
+
+### Key Points
+- **Lower priority number = higher preference** (this trips up a lot of students — it's the opposite of what you'd expect!).
+- MX records point to a **hostname**, not directly to an IP — that hostname still needs to be resolved via an **A record**.
+
+### Exam Focus
+- **"In MX records, does a lower or higher priority number get used first?"** — Answer: **Lower number = higher priority = used first.** This is a classic trick MCQ.
+
+---
