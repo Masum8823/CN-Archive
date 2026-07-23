@@ -861,3 +861,40 @@ Original File Restored
 - Know the 4 MIME headers and what each one does.
 
 ---
+
+### 7.6 Mail Access Protocols: POP3 vs IMAP
+
+### Definition
+While **SMTP** delivers mail **to** the receiver's mail server, a separate **mail access protocol** is needed to actually **retrieve** that mail from the server to the user's device. The two main options are **POP3** and **IMAP**.
+
+### Easy Explanation
+- **POP3 (Post Office Protocol)** is like **physically picking up your mail from the post office and taking it home** — once you take it, it's usually gone from the post office.
+- **IMAP (Internet Mail Access Protocol)** is like **reading your mail while it stays at the post office** — the post office keeps everything organized, and you can check it from anywhere, any device.
+
+### POP3 vs IMAP — Comparison Table
+
+| Feature | POP3 | IMAP |
+|---------|------|------|
+| **Full Name** | Post Office Protocol | Internet Message Access Protocol |
+| **Mail Location** | Downloaded to local device & deleted from server** | Keeps all mail on the server |
+| **Accessing Mail** | Only from a **single device** at a time | Accessible from **multiple devices** |
+| **Update** | Cannot create/delete/modify mailboxes on server | Can create, delete, update mailboxes & folders on server |
+| **Readability** | Can only read **after** full download | Can read **before** download finishes |
+| **Virus Risk** | Higher — mail stored on local workstation | Lower — mail stored on server |
+| **Port Number** | **110** | **143** |
+
+> **Note:** POP3 has a "download-and-keep" option too, which leaves copies of messages on multiple devices — but the default classic behavior is download-and-delete.
+
+### Remember
+- **RFC 1939** → POP3 (authorization, download).
+- **RFC 1730** → IMAP (more features, including manipulating stored messages directly on the server).
+
+### Shortcut Memory Trick
+- **POP3 = "Pick it up and leave"** (mail leaves the server)
+- **IMAP = "It stays, Manage it Anywhere"** (mail stays on server, access from anywhere)
+
+### Exam Focus
+- **POP3 vs IMAP** is one of the **most frequently asked comparison questions** in Computer Network exams — memorize the table above thoroughly.
+- Know both port numbers: **POP3 = 110**, **IMAP = 143**.
+
+---
