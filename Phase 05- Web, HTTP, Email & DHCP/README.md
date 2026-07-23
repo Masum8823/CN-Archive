@@ -819,3 +819,45 @@ Subject: Searching for the...
 - These are **not the same thing**, even though they look similar!
 
 ---
+
+### 7.5 MIME (Multipurpose Internet Mail Extensions)
+
+### Definition
+**MIME** is an extension to SMTP that allows email to carry **non-ASCII text, attachments, images, audio, and video** — overcoming SMTP's original limitation of only supporting 7-bit ASCII text.
+
+### Why Important?
+Without MIME, you could never attach a photo, PDF, or video to an email — only plain English-alphabet text!
+
+### Easy Explanation
+Imagine SMTP is a delivery truck that can **only carry paper letters** (plain text). MIME is like a **special packaging system** that converts photos, videos, and files into a "paper-safe" format (Base64 text) so the same truck can carry them too. On arrival, the receiver "unpacks" it back into the original file.
+
+### Key MIME Headers
+
+| Header | Purpose |
+|--------|---------|
+| **MIME-Version:** | Specifies the MIME standard version (usually 1.0) |
+| **Content-Type:** | Indicates the type of data being sent |
+| **Content-Transfer-Encoding:** | Specifies how binary data is encoded for transmission |
+| **Content-Disposition:** | Indicates whether content is inline or an attachment |
+
+### How MIME Works (Flow)
+```
+Attachment
+   ↓
+Base64 Encoding
+   ↓
+SMTP Transmission
+   ↓
+Receiver Decodes Base64
+   ↓
+Original File Restored
+```
+
+### Shortcut Memory Trick
+**MIME = "Making It More Expressive"** — it lets plain-text-only SMTP carry pictures, videos, and attachments.
+
+### Exam Focus
+- **"Why was MIME introduced?"** — very common short question. Answer: because SMTP alone only supports 7-bit ASCII text.
+- Know the 4 MIME headers and what each one does.
+
+---
