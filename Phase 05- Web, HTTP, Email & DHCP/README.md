@@ -694,3 +694,19 @@ Sending an email is a lot like **sending a physical letter through the postal sy
 - The recipient **visits the post office to collect their mail** — this final "pickup" step is done using **POP3 or IMAP**.
 
 ---
+
+### 7.1 Components of Email
+
+### Key Points — Three Major Components
+1. **User Agent (UA)** — Software used to compose, edit, read, and forward mail. Examples: **Outlook, Thunderbird, Gmail (web browser)**.
+2. **Mail Servers** — Store and forward messages. Each has:
+   - A **mailbox** → holds incoming messages for the user.
+   - A **message queue** → holds outgoing messages waiting to be sent.
+3. **SMTP (Simple Mail Transfer Protocol)** — The protocol used **between mail servers** to transfer messages.
+
+### Remember
+- In mail server-to-server communication:
+  - **Client** = the **sending** mail server
+  - **"Server"** = the **receiving** mail server
+
+---
