@@ -607,3 +607,48 @@ Before your lease (hotel stay) expires, you ask the front desk to extend it — 
 - Messages can be sent as unicast or broadcast, per **IETF RFC 2131**.
 
 ---
+
+### 6.5 DHCP Relay
+
+### Definition
+DHCP Relay allows a router to **forward DHCP broadcast messages** to a DHCP server on a different subnet/network.
+
+### Why Important?
+DHCP Discover messages are **broadcasts**, and broadcasts normally don't cross routers. If the DHCP server isn't on the same subnet as the client, the client would never get an IP — unless the router is configured to relay the message.
+
+### Easy Explanation
+Imagine shouting for help in one room, but the person who can help you is in another room, and the door between rooms is closed (router doesn't forward broadcasts by default). DHCP Relay is like someone standing at the door, hearing your shout, and personally walking your message to the right person.
+
+**Configuration Command:**
+```
+R1(config)# interface g0/0/0
+R1(config-if)# ip helper-address 192.168.11.6
+R1(config-if)# end
+```
+
+**Verification:**
+```
+R1# show ip interface g0/0/0
+...
+Helper address is 192.168.11.6
+```
+
+### Key Points — Other Services Relayed by `ip helper-address`
+By default, `ip helper-address` forwards **8 UDP services**:
+
+| Port | Service |
+|------|---------|
+| 37 | Time |
+| 49 | TACACS |
+| 53 | DNS |
+| 67 | DHCP/BOOTP server |
+| 68 | DHCP/BOOTP client |
+| 69 | TFTP |
+| 137 | NetBIOS name service |
+| 138 | NetBIOS datagram service |
+
+### Exam Focus
+- Memorize the `ip helper-address` command and what it does.
+- The **8 UDP ports** table is a favorite for MCQs — try to remember at least DHCP (67/68) and DNS (53).
+
+---
