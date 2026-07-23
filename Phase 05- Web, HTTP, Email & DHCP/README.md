@@ -553,3 +553,42 @@ Think of DHCP like a **hotel check-in desk**. When you arrive (connect to the ne
 - **"Gateway IP Address field stores the relay agent, NOT the client's gateway"** — this is a common trick question in exams!
 
 ---
+
+
+### 6.3 DORA Process (Getting a Lease)
+
+### Definition
+**DORA** = **D**iscover → **O**ffer → **R**equest → **A**cknowledge. The 4-step process a client follows to get an IP address from a DHCP server.
+
+### Easy Explanation
+Think of it like applying for a hostel room:
+
+1. **DHCP Discover (Broadcast)** — "Is there any DHCP server out there? I need an address!" (sent to everyone on the network)
+2. **DHCP Offer (Unicast/Broadcast)** — "I'm a DHCP server! Here's an available IP address for you."
+3. **DHCP Request (Broadcast)** — "I accept this offer!" (this also tells other servers their offers were declined)
+4. **DHCP Acknowledgment (Unicast)** — "Confirmed! This address is officially yours."
+
+```
+Client                          Server
+  |--- DHCPDISCOVER (broadcast) --->|
+  |<--- DHCPOFFER (unicast) --------|
+  |--- DHCPREQUEST (broadcast) ---->|
+  |<--- DHCPACK (unicast) ----------|
+```
+
+**Example of info received:**
+```
+IP address: 192.168.10.15
+Subnet mask: 255.255.255.0
+Default gateway: 192.168.10.1
+DNS servers: ...
+Lease Time: 3 days
+```
+
+### Shortcut Memory Trick
+**D-O-R-A** → "**D**o **O**ffer, **R**equest **A**ccepted"
+
+### Exam Focus
+- **DORA sequence** is one of the MOST asked questions — memorize the order and broadcast/unicast type for each step!
+
+---
