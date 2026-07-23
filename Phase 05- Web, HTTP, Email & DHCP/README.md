@@ -527,3 +527,29 @@ Think of DHCP like a **hotel check-in desk**. When you arrive (connect to the ne
 - **Lease mechanism** = temporary IP assignment, must be renewed or given back.
 
 ---
+
+
+### 6.2 DHCP Packet Format
+
+| Field | Description |
+|-------|--------------|
+| Operation Code | Type of message |
+| Hardware Type | Type of network hardware |
+| Hardware Length | Length of MAC address (e.g., 6 for Ethernet) |
+| Hop Count | Max number of hops the packet can travel |
+| Transaction ID (32 bits) | Set by client, matches requests & replies |
+| Number of Seconds (16 bits) | Time since client started booting |
+| Flags (16 bits) | Leftmost bit shows if broadcast reply is needed |
+| Client IP Address | Filled if client already has an IP, else 0 |
+| Your IP Address | IP assigned by server to client |
+| Server IP Address | IP of the responding DHCP server |
+| Gateway IP Address | IP of the DHCP relay agent (**not** client's default gateway) |
+| Client Hardware Address (16 bytes) | Device's MAC address |
+| Server Name (64 bytes) | Optional server hostname |
+| Boot File Name (128 bytes) | Path of boot file (for diskless clients) |
+| Options (variable) | Extra config like subnet mask, DNS, etc. |
+
+### Exam Focus
+- **"Gateway IP Address field stores the relay agent, NOT the client's gateway"** — this is a common trick question in exams!
+
+---
