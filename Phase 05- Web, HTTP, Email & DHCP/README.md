@@ -981,3 +981,30 @@ Think of these three like **airport security layers**:
 - **"What is the difference between SPF, DKIM, and DMARC?"** — a very likely short/viva question. Remember: SPF = sender check, DKIM = tamper check, DMARC = policy/decision.
 
 ---
+
+## 📌 Complete Quick Revision
+
+- **Application Layer** connects users to network services using **Client/Server** or **P2P** models.
+- **URL** = protocol + host + domain + path/file — case-sensitive after the domain.
+- **HTTP** = plain text, TCP port 80, stateless protocol.
+- **HTTPS** = encrypted (SSL/TLS), TCP port 443.
+- HTTP messages have **Request Line/Status Line + Headers + Blank Line + Body**.
+- **GET** retrieves data, **POST** sends data.
+- **Status codes**: 2xx = success, 3xx = redirect, 4xx = client error, 5xx = server error.
+- **HTTP/1.1** introduced persistent connections; **HTTP/2** added multiplexing; **HTTP/3** uses UDP (QUIC).
+- **HOL blocking** = one delayed request blocks everything behind it.
+- **Cookies + Sessions** give "memory" to the stateless HTTP protocol.
+- **Web Cache (Proxy)** reduces delay and bandwidth use by storing copies of content.
+- **Conditional GET** (`If-Modified-Since`) avoids re-sending unchanged objects (`304 Not Modified`).
+- **DHCP** dynamically assigns IP addresses via the **DORA** process (Discover, Offer, Request, Acknowledge).
+- **DHCP Relay** (`ip helper-address`) lets broadcasts cross routers to reach a DHCP server on another subnet.
+- DHCP has security risks like **Rogue Servers** and **Starvation attacks** — mitigated by **DHCP Snooping**, **Port Security**, etc.
+- **Email** has 3 components: **User Agent, Mail Server, SMTP**.
+- **SMTP** (port 25, TCP) delivers/pushes mail between mail servers; it's a **push** protocol (unlike HTTP's **pull**).
+- Mail message format (**RFC 822**) = **Header + blank line + Body**; don't confuse header's `From:`/`To:` with SMTP's `MAIL FROM`/`RCPT TO` commands.
+- **MIME** extends SMTP to support attachments, images, and non-ASCII content (via Base64 encoding).
+- **POP3** (port 110) downloads and typically removes mail from server; **IMAP** (port 143) keeps mail on the server for multi-device access.
+- **MX Records** tell DNS which mail server handles a domain's email — **lower priority number = higher preference**.
+- **SPF, DKIM, DMARC** are email security mechanisms: SPF checks sender authorization, DKIM checks message integrity, DMARC decides what to do if checks fail.
+
+---
