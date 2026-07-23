@@ -784,3 +784,38 @@ Client SMTP Server                     Server SMTP Server
 - Remember SMTP's port: **25**, and the message-end marker: **`CRLF.CRLF`**.
 
 ---
+
+### 7.4 Mail Message Format
+
+### Definition
+**RFC 822** defines the standard **text format** for email messages — separate from SMTP itself (SMTP is just the delivery protocol).
+
+### Easy Explanation
+A mail message looks like a letter with two parts:
+```
+┌───────────────┐
+│    Header      │  ← From, To, Subject, etc.
+├───────────────┤ ← blank line separates header from body
+│                │
+│     Body       │  ← the actual message (ASCII characters only)
+│                │
+└───────────────┘
+```
+
+**Example header lines:**
+```
+From: alice@crepes.fr
+To: bob@hamburger.edu
+Subject: Searching for the...
+```
+
+### Key Points
+- **Header** = From, To, Subject, etc. — this is **different** from the SMTP commands `MAIL FROM` and `RCPT TO`! Don't confuse the two.
+- **Body** = the actual message, ASCII characters only (before MIME was introduced).
+
+### Remember (Common Trick)
+- SMTP's `MAIL FROM:` / `RCPT TO:` commands are **protocol-level commands** used during the SMTP handshake.
+- The message's `From:` / `To:` header lines are **part of the message content itself** (RFC 822 format).
+- These are **not the same thing**, even though they look similar!
+
+---
