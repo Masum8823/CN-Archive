@@ -592,3 +592,18 @@ Lease Time: 3 days
 - **DORA sequence** is one of the MOST asked questions — memorize the order and broadcast/unicast type for each step!
 
 ---
+
+### 6.4 Renewing a Lease
+
+### Easy Explanation
+Before your lease (hotel stay) expires, you ask the front desk to extend it — a simpler, 2-step process (no need to "discover" again, since you already know the server).
+
+**Steps:**
+1. **DHCP Request (DHCPREQUEST)** — Sent directly (unicast) to the original DHCP server: *"I'd like to renew my lease."* If no reply comes in time, the client broadcasts again so any other DHCP server can help.
+2. **DHCP Acknowledgment (DHCPACK)** — Server confirms and extends the lease.
+
+### Key Points
+- Renewal is a **2-step process** (unlike the 4-step DORA for a fresh lease).
+- Messages can be sent as unicast or broadcast, per **IETF RFC 2131**.
+
+---
