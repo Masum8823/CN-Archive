@@ -652,3 +652,27 @@ By default, `ip helper-address` forwards **8 UDP services**:
 - The **8 UDP ports** table is a favorite for MCQs — try to remember at least DHCP (67/68) and DNS (53).
 
 ---
+
+### 6.6 DHCP Security Concerns
+
+### Easy Explanation
+DHCP is convenient, but it can be attacked if not secured properly. Here are the main threats:
+
+| Threat | Description | Mitigation |
+|--------|--------------|------------|
+| **Rogue DHCP Server** | A fake server gives clients incorrect settings (wrong gateway/DNS), hijacking their traffic | DHCP Snooping |
+| **DHCP Starvation** | Attacker floods requests with spoofed MACs to exhaust the IP pool, blocking real users | Port Security, Rate Limiting |
+| **MAC Spoofing** | Attacker fakes a device's identity | NAC (Network Access Control), Port Security |
+| **MITM (Man-in-the-Middle)** | Attacker intercepts/alters traffic via rogue DHCP-pushed gateway/DNS | DAI (Dynamic ARP Inspection), Secure DNS |
+| **DNS Misuse** | Malicious DHCP options redirect clients to unauthorized DNS servers for phishing | Secure DNS configuration |
+
+### Remember
+- **Rogue DHCP Server** = fake server giving wrong info.
+- **DHCP Starvation** = exhausting the IP pool so no one else can get an address.
+- **DHCP Snooping** is the #1 mitigation technique to remember.
+
+### Exam Focus
+- **"What is DHCP Starvation and how do you prevent it?"** is a common viva/short question.
+- Know at least one mitigation technique for each threat.
+
+---
