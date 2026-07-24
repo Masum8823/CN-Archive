@@ -1161,3 +1161,18 @@ Think of these three like **airport security layers**:
 - POP3 vs IMAP feature differences
 
 ---
+
+## 📌 Common Mistakes
+
+- ❌ Confusing **HTTP (port 80)** with **HTTPS (port 443)** — always double-check which one a question is asking about.
+- ❌ Thinking the **Gateway IP Address** field in DHCP packets is the client's default gateway — it's actually the **relay agent's** IP.
+- ❌ Mixing up **DORA steps' broadcast/unicast type** — Discover and Request are broadcast; Offer and Ack can be unicast.
+- ❌ Forgetting that **HTTP/3 runs on UDP (via QUIC)**, not TCP like other versions.
+- ❌ Thinking cookies are stored on the server — actually, the **cookie itself is stored in the browser**; the session data is stored on the server.
+- ❌ Mixing up **Conditional GET's** header name — it's `If-Modified-Since`, and the "no change" response is `304 Not Modified`.
+- ❌ Thinking a **lower MX priority number means lower preference** — it's actually the **opposite**: lower number = higher priority.
+- ❌ Confusing the message's `From:`/`To:` **header lines (RFC 822)** with SMTP's `MAIL FROM`/`RCPT TO` **commands** — they are not the same thing.
+- ❌ Thinking POP3 and IMAP are used to **send** mail — they are only for **retrieving/accessing** mail; SMTP handles sending.
+- ❌ Forgetting that **SMTP is a push protocol**, while HTTP is a pull protocol — a very common confusion in comparison questions.
+
+---
