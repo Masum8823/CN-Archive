@@ -1176,3 +1176,17 @@ Think of these three like **airport security layers**:
 - ❌ Forgetting that **SMTP is a push protocol**, while HTTP is a pull protocol — a very common confusion in comparison questions.
 
 ---
+
+## 📌 Memory Tricks
+
+- **GET = Give me**, **POST = Push/send data**
+- **1xx Info, 2xx Good, 3xx Moved, 4xx Your fault, 5xx Their fault**
+- **HTTP = 80, No Lock 🔓 | HTTPS = 443, Locked 🔒**
+- **D.O.R.A = Do Offer, Request Accepted** (DHCP lease steps)
+- **Persistent = stays on the call | Non-persistent = hangs up and calls again**
+- **POP3 = "Pick it up and leave" | IMAP = "It stays, Manage it Anywhere"**
+- **MX priority: Lower number = Higher priority** (opposite of what feels natural!)
+- **S-D-D → Sender check (SPF), Damaged? (DKIM), Decision (DMARC)**
+- **HTTP = Pull (you ask) | SMTP = Push (it sends)**
+
+---
