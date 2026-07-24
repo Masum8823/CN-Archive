@@ -1008,3 +1008,27 @@ Think of these three like **airport security layers**:
 - **SPF, DKIM, DMARC** are email security mechanisms: SPF checks sender authorization, DKIM checks message integrity, DMARC decides what to do if checks fail.
 
 ---
+
+## 📌 Most Important Definitions
+
+- **HTTP**: Protocol for browsing/retrieving web content, sent in plain text over TCP port 80.
+- **HTTPS**: HTTP secured with SSL/TLS encryption, over TCP port 443.
+- **URL**: The web address used to locate a resource.
+- **Cookie**: Small piece of data stored in the browser to identify a user across requests.
+- **Session**: Server-side data tied to a user, linked via a session ID.
+- **Web Cache (Proxy Server)**: A server that stores copies of content to reduce delay and bandwidth use.
+- **Conditional GET**: An HTTP GET request that checks if content has changed before re-downloading it.
+- **DHCP**: Protocol that automatically assigns IP addresses and network settings to devices.
+- **DORA**: The 4-step DHCP lease process — Discover, Offer, Request, Acknowledge.
+- **DHCP Relay**: A router feature that forwards DHCP broadcasts to a server on another subnet.
+- **SMTP**: Protocol (TCP, port 25) used to push/transfer email messages between mail servers.
+- **User Agent**: Software (Outlook, Thunderbird, Gmail) used to compose, read, and manage email.
+- **MIME**: Extension to SMTP that allows non-ASCII content (attachments, images, video) in emails.
+- **POP3**: Mail access protocol (port 110) that downloads mail to a device, typically removing it from the server.
+- **IMAP**: Mail access protocol (port 143) that keeps mail on the server, allowing multi-device access.
+- **MX Record**: DNS record specifying which mail server handles a domain's incoming email.
+- **SPF**: Checks whether a server is authorized to send mail for a domain.
+- **DKIM**: Digitally signs a message to verify it wasn't modified in transit.
+- **DMARC**: Defines what a receiving server should do if SPF/DKIM checks fail.
+
+---
