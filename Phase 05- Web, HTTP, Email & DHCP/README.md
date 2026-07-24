@@ -1043,3 +1043,12 @@ Think of these three like **airport security layers**:
 | Clients only request | Peers act as both client & server |
 | Easier to manage/secure | Harder to manage/secure |
 | Example: Web servers | Example: File-sharing networks |
+
+### HTTP vs HTTPS
+
+| HTTP | HTTPS |
+|------|-------|
+| Plain text (not encrypted) | Encrypted with SSL/TLS |
+| Port 80 | Port 443 |
+| Less secure | More secure |
+| Faster (no encryption overhead) | Slightly slower (encryption overhead) |
