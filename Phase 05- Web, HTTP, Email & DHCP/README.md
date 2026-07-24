@@ -1069,3 +1069,11 @@ Think of these three like **airport security layers**:
 | Retrieves data from server | Sends data to server |
 | No/limited data in request | Sends data in the body |
 | Used for viewing pages | Used for submitting forms |
+
+### DHCP Lease vs DHCP Renewal
+
+| Getting a New Lease (DORA) | Renewing a Lease |
+|-------------------------------|----------------------|
+| 4 steps: Discover, Offer, Request, Ack | 2 steps: Request, Ack |
+| Uses broadcast at start | Uses unicast (direct to known server) |
+| Happens when client is new to network | Happens before current lease expires |
