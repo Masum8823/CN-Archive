@@ -1099,3 +1099,23 @@ Think of these three like **airport security layers**:
 | Port 110 | Port 143 |
 
 ---
+
+## 📌 Most Important Port Numbers
+
+| Protocol | Port | Transport Protocol |
+|----------|------|----------------------|
+| HTTP | 80 | TCP |
+| HTTPS | 443 | TCP |
+| DHCP Server | 67 | UDP |
+| DHCP Client | 68 | UDP |
+| DNS | 53 | UDP/TCP |
+| TFTP | 69 | UDP |
+| Time | 37 | UDP |
+| TACACS | 49 | UDP |
+| NetBIOS name service | 137 | UDP |
+| NetBIOS datagram service | 138 | UDP |
+| SMTP | 25 | TCP |
+| POP3 | 110 | TCP |
+| IMAP | 143 | TCP |
+
+---
