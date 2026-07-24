@@ -1086,3 +1086,16 @@ Think of these three like **airport security layers**:
 | Server responds to client | Sender pushes to receiving server |
 | Each object in its own response message | Multiple objects sent in one multipart message |
 | Port 80 (HTTP) / 443 (HTTPS) | Port 25 |
+
+### POP3 vs IMAP
+
+| POP3 | IMAP |
+|------|------|
+| Mail downloaded & removed from server** | Mail stays on the server |
+| Access from a single device at a time | Access from multiple devices |
+| Cannot manage mailboxes on server | Can create/delete/update mailboxes on server |
+| Read only after full download | Can read before download completes |
+| Higher virus risk (local storage) | Lower virus risk (server storage) |
+| Port 110 | Port 143 |
+
+---
