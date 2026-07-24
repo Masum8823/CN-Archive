@@ -1032,3 +1032,14 @@ Think of these three like **airport security layers**:
 - **DMARC**: Defines what a receiving server should do if SPF/DKIM checks fail.
 
 ---
+
+## 📌 Most Important Comparisons
+
+### Client/Server vs Peer-to-Peer (P2P)
+
+| Client/Server | Peer-to-Peer (P2P) |
+|-----------------|----------------------|
+| Central dedicated server | No dedicated server |
+| Clients only request | Peers act as both client & server |
+| Easier to manage/secure | Harder to manage/secure |
+| Example: Web servers | Example: File-sharing networks |
