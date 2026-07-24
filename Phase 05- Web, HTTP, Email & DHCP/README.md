@@ -1214,3 +1214,52 @@ Think of these three like **airport security layers**:
 - Email Security → SPF (sender check), DKIM (integrity check), DMARC (policy/decision)
 
 ---
+
+## 🎯 Final Exam Tips
+
+**Most Important Topics (study these first):**
+1. HTTP Request/Response format + Status Codes
+2. DORA process (DHCP)
+3. HTTP vs HTTPS, GET vs POST
+4. Web Caching numerical example
+5. DHCP Relay and `ip helper-address`
+6. Alice-sends-email-to-Bob scenario (SMTP flow)
+7. POP3 vs IMAP comparison
+8. MX Records and email security (SPF/DKIM/DMARC)
+
+**For Viva:**
+- Explain concepts using the analogies in this note (waiter, hotel check-in, librarian) — examiners like simple, confident explanations.
+- If asked "why," always connect it back to a real-world reason (security, speed, convenience).
+
+**For MCQs:**
+- Memorize **port numbers** cold — they show up constantly.
+- Know the exact **DORA sequence and message types** (broadcast vs unicast).
+
+**For Written Exams:**
+- Practice drawing the **HTTP Request/Response format diagrams** and the **DORA flow diagram** — diagram-based questions are common.
+- For numerical questions (web caching), write out every formula step — partial marks matter.
+
+**Where students usually lose marks:**
+- Mixing up which DHCP messages are broadcast vs unicast.
+- Forgetting the `If-Modified-Since` header name exactly.
+- Confusing the Gateway IP Address field meaning in DHCP packets.
+- Confusing SMTP's `MAIL FROM`/`RCPT TO` commands with the message's `From:`/`To:` header lines.
+- Getting MX record priority backwards (remember: lower number wins).
+
+**Short Revision Strategy:**
+- Day before exam: Read only the "📌 Complete Quick Revision" and "📌 Last Minute Revision Sheet" sections.
+- Focus extra time on DORA and HTTP Status Codes — these are asked almost every time.
+
+**One Night Before Exam Strategy:**
+- Don't try to re-read everything. Just go through:
+  1. Complete Quick Revision
+  2. Comparisons Table
+  3. Port Numbers Table
+  4. Memory Tricks
+
+**Exam Hall Tips:**
+- If a question feels tricky, break it down using the analogies from this note (waiter, hotel, librarian) — it will help you recall the technical answer.
+- For diagram questions, label every part clearly (Request Line, Headers, Body, etc.) — partial credit is often given per label.
+- Stay calm, and always double check port numbers before writing your final answer (80 vs 443, 67 vs 68).
+
+---
