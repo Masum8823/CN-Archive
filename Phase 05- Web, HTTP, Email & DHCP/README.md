@@ -1077,3 +1077,12 @@ Think of these three like **airport security layers**:
 | 4 steps: Discover, Offer, Request, Ack | 2 steps: Request, Ack |
 | Uses broadcast at start | Uses unicast (direct to known server) |
 | Happens when client is new to network | Happens before current lease expires |
+
+### HTTP vs SMTP
+
+| HTTP | SMTP |
+|------|------|
+| Pull protocol | Push protocol |
+| Server responds to client | Sender pushes to receiving server |
+| Each object in its own response message | Multiple objects sent in one multipart message |
+| Port 80 (HTTP) / 443 (HTTPS) | Port 25 |
