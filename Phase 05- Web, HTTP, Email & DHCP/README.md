@@ -1052,3 +1052,12 @@ Think of these three like **airport security layers**:
 | Port 80 | Port 443 |
 | Less secure | More secure |
 | Faster (no encryption overhead) | Slightly slower (encryption overhead) |
+
+### Persistent vs Non-Persistent Connection
+
+| Non-Persistent | Persistent |
+|------------------|-------------|
+| New TCP connection per request | Reuses same TCP connection |
+| HTTP/1.0 default | HTTP/1.1+ default |
+| Slower, more overhead | Faster, less overhead |
+| `Connection: close` | `Connection: keep-alive` |
