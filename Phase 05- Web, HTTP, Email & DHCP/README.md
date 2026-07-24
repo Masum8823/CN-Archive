@@ -1119,3 +1119,45 @@ Think of these three like **airport security layers**:
 | IMAP | 143 | TCP |
 
 ---
+
+## 📌 Frequently Asked Exam Questions
+
+### Short Questions
+- What is the difference between Client/Server and P2P models?
+- Why is HTTP called a stateless protocol?
+- What is Conditional GET, and why is it useful?
+- What does DORA stand for in DHCP?
+- What is the purpose of `ip helper-address`?
+- What is the difference between POP3 and IMAP?
+- What is an MX record, and why is it needed?
+- Why was MIME introduced?
+
+### Broad Questions
+- Explain the HTTP request and response message format with a diagram.
+- Explain how Web Caching reduces network delay, with the numerical example.
+- Describe the DORA process in detail with a diagram.
+- Explain DHCP Relay and why it's needed in a hierarchical network.
+- Compare HTTP/1.0, HTTP/1.1, HTTP/2, and HTTP/3.
+- Describe the full scenario of Alice sending an email to Bob, step by step.
+- Compare POP3 and IMAP in detail.
+- Explain how MX records work, with an example.
+
+### Viva Questions
+- What port does HTTPS use, and why is it different from HTTP?
+- What is Head-of-Line blocking, and which HTTP version reduces it?
+- How does a cookie help HTTP "remember" a user?
+- What is DHCP Starvation, and how can it be prevented?
+- What does the Gateway IP Address field in a DHCP packet actually store?
+- Is HTTP a "pull" or "push" protocol? What about SMTP?
+- What is the difference between SPF, DKIM, and DMARC?
+- Why can't SMTP send images/attachments without MIME?
+
+### MCQ Focus
+- Port numbers (80, 443, 67, 68, 53, 25, 110, 143, etc.)
+- Status code categories (2xx, 3xx, 4xx, 5xx)
+- DORA step order and broadcast/unicast type
+- HTTP version features (especially HTTP/3 using UDP/QUIC)
+- MX record priority (lower number = higher priority)
+- POP3 vs IMAP feature differences
+
+---
