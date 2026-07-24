@@ -1190,3 +1190,27 @@ Think of these three like **airport security layers**:
 - **HTTP = Pull (you ask) | SMTP = Push (it sends)**
 
 ---
+
+## 📌 Last Minute Revision Sheet
+
+- HTTP → Port 80, TCP, plain text, stateless
+- HTTPS → Port 443, TCP, encrypted (SSL/TLS + PKI)
+- GET → retrieve; POST → send
+- Status codes: 2xx success, 3xx redirect, 4xx client error, 5xx server error
+- HTTP/1.1 = persistent connections; HTTP/2 = multiplexing; HTTP/3 = QUIC/UDP
+- Cookies + Sessions = fix HTTP's stateless nature
+- Web Cache = faster + cheaper than upgrading bandwidth
+- Conditional GET → `If-Modified-Since` → `304 Not Modified` if unchanged
+- DHCP → dynamic IP assignment via DORA (Discover, Offer, Request, Ack)
+- DHCP Relay → `ip helper-address` forwards broadcasts across routers
+- DHCP Threats → Rogue Server, Starvation, MAC Spoofing, MITM — mitigated by DHCP Snooping, Port Security, NAC, DAI
+- Email = User Agent + Mail Server + SMTP
+- SMTP → Port 25, TCP, push protocol, persistent connections, 7-bit ASCII, ends message with `CRLF.CRLF`
+- Mail format (RFC 822) → Header + blank line + Body
+- MIME → lets SMTP carry attachments/images/video via Base64 encoding
+- POP3 → Port 110, downloads & removes mail, single device
+- IMAP → Port 143, keeps mail on server, multi-device access
+- MX Record → tells DNS which server handles a domain's mail; lower priority number = higher preference
+- Email Security → SPF (sender check), DKIM (integrity check), DMARC (policy/decision)
+
+---
