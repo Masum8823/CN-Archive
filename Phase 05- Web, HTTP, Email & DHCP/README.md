@@ -1061,3 +1061,11 @@ Think of these three like **airport security layers**:
 | HTTP/1.0 default | HTTP/1.1+ default |
 | Slower, more overhead | Faster, less overhead |
 | `Connection: close` | `Connection: keep-alive` |
+
+### GET vs POST
+
+| GET | POST |
+|-----|------|
+| Retrieves data from server | Sends data to server |
+| No/limited data in request | Sends data in the body |
+| Used for viewing pages | Used for submitting forms |
