@@ -37,3 +37,39 @@
 * [24. Exam Tips](#24-exam-tips)
 
 ---
+
+<a id="1-introduction"></a>
+## 1. Introduction to Transport Layer
+
+### Definition
+The **Transport Layer** is the layer that handles communication **between processes/applications** running on two different hosts. It's not about connecting computers — it's about connecting the actual *apps* running inside those computers (like your browser talking to a web server's app).
+
+### Why Important?
+Every network exam has at least one question from this chapter. It's the foundation for understanding how apps like browsers, games, and video calls actually send and receive data reliably (or quickly).
+
+### Easy Explanation
+Think of two houses — **Ann's house** and **Bill's house**. Inside each house, there are **12 kids**. Each kid wants to send letters to a specific kid in the other house.
+
+* **Kids** = Processes (applications)
+* **Letters in envelopes** = Application messages
+* **Houses** = Hosts (computers)
+* **Ann and Bill** = Transport Layer protocol (they make sure the right letter reaches the right kid inside the house)
+* **Postal Service** = Network Layer protocol (it just delivers things house to house, doesn't care which kid)
+
+So:
+- **Network Layer** → host to host (house to house) communication
+- **Transport Layer** → process to process (kid to kid) communication
+
+The data unit at this layer is called a **Segment** (for TCP) — this is the Transport Layer's own version of a "packet".
+
+### Key Points
+- Transport Layer = logical communication between **processes**
+- Network Layer = logical communication between **hosts**
+- Two main protocols: **UDP** and **TCP**
+- Data unit (PDU) of Transport Layer = **Segment**
+
+### Exam Focus
+- Difference between Transport layer and Network layer (very common question)
+- The household analogy might come as a short question — understand it, don't just memorize it
+
+---
