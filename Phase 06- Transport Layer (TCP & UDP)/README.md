@@ -545,3 +545,42 @@ Receiver replies once     → Ack = 21  (covers both segments together)
 - What is rwnd? How does it relate to flow control?
 
 ---
+
+<a id="15-checksum-urgent-options"></a>
+
+## 15. Checksum, Urgent Pointer, Options
+
+### Checksum
+- **16-bit** field used to detect errors (flipped bits) during transmission
+- Present in **both TCP and UDP**
+- **Mandatory in TCP**, but **optional in UDP**
+- Calculated using 3 parts: **TCP/UDP Header + TCP/UDP Body + Pseudo IP Header**
+
+> The **Pseudo IP Header** is a temporary, extra header (not actually sent) used only for the checksum calculation — it includes source/destination IP, protocol type, and total length.
+
+### Urgent Pointer
+- **16-bit** field, valid **only** when the URG flag is set
+- Used when the segment contains **urgent data** that needs to jump ahead
+- The value is **added to the sequence number** to find the last byte of urgent data
+
+**Example:**
+- Sequence number = 1001, Urgent Pointer value = 1500
+- Last urgent byte = 1001 + 1500 = **2501**
+
+### Options
+- Up to **40 bytes** of optional information
+- Used to overcome limitations of the basic header
+- Most common example: **MSS (Maximum Segment Size)** — defines the largest chunk of data the sender will send in one segment
+
+### Key Points
+| Field | Size | Mandatory in TCP? | Mandatory in UDP? |
+|---|---|---|---|
+| Checksum | 16 bits | ✅ Yes | ❌ No (optional) |
+| Urgent Pointer | 16 bits | Only if URG flag set | Not present |
+| Options | up to 40 bytes | Optional | Not present |
+
+### Exam Focus
+- Checksum is mandatory in TCP but optional in UDP — common comparison question
+- MSS example question — know what MSS stands for and its purpose
+
+---
