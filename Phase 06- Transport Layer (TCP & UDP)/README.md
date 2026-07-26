@@ -501,3 +501,47 @@ Receiver replies once     → Ack = 21  (covers both segments together)
 - Cumulative acknowledgment concept is a favorite short question
 
 ---
+
+
+<a id="14-hlen-control-window"></a>
+
+## 14. Header Length, Control Bits, Window Size
+
+### Header Length (HLEN)
+- **4 bits** field
+- Indicates the header size in units of **4-byte words**
+- Total header length ranges from **20 to 60 bytes**
+
+### Control Bits (Flags)
+- **6 bits** field, each bit is a flag
+- More than one flag can be set at the same time
+
+| Flag | Meaning |
+|---|---|
+| **URG** | Urgent pointer is valid |
+| **ACK** | Acknowledgment is valid |
+| **PSH** | Request for push (send data immediately) |
+| **RST** | Reset the connection |
+| **SYN** | Synchronize sequence numbers (used to start connection) |
+| **FIN** | Terminate/finish the connection |
+
+### Shortcut Memory Trick
+**"Uncle Ate Pizza, Refused Silly Fries"** → URG, ACK, PSH, RST, SYN, FIN (in order!) 😄
+
+### Window Size
+- **16 bits** field
+- Defines how many bytes the sender is allowed to send before needing an acknowledgment
+- Maximum window size = **65,535 bytes**
+- Also called **rwnd (receiving window)**
+- The **sender must obey the receiver's window size** — this is how TCP does **flow control**
+
+### Key Points
+- HLEN → tells where the header ends and data begins
+- Control bits → manage connection state (open, close, reset, push)
+- Window Size → controls flow so sender doesn't overwhelm receiver
+
+### Exam Focus
+- List all 6 control flags and their meaning (very common MCQ/short question)
+- What is rwnd? How does it relate to flow control?
+
+---
