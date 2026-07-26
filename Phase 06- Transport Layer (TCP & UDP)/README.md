@@ -128,3 +128,49 @@ This "Only TCP" vs "Both" distinction is a favorite viva/MCQ question. TCP does 
 - Be ready to explain *why* TCP needs connection setup but UDP doesn't
 
 ---
+
+<a id="4-udp"></a>
+
+## 4. UDP — User Datagram Protocol
+
+### Definition
+UDP (RFC 768) is a **"Best Effort"** transport protocol. It just sends data without checking if it arrived, without ordering it, and without any handshake. It's the scaled-down, no-frills version of TCP.
+
+### Why Important?
+Some apps (like video calls or online games) care more about **speed** than **perfection**. UDP exists exactly for these apps.
+
+### Easy Explanation
+Imagine sending postcards without registering them — you just drop them in the mailbox and hope they arrive. You don't get a receipt, you don't know the order they'll arrive in, and if one gets lost, nobody resends it. That's UDP.
+
+**Why is UDP fast?**
+- No connection setup delay (no handshake before sending)
+- Small header size (only 8 bytes)
+- No error control, no flow control, no congestion control — it just blasts data as fast as it can
+
+### Key Points
+- Connectionless & Unreliable
+- No retransmission of lost data
+- Smaller header → faster than TCP
+- Favors **low latency** over **guaranteed delivery**
+
+### Where is UDP used?
+| Category | Examples |
+|---|---|
+| Streaming multimedia | Live video, live audio (loss-tolerant, speed-sensitive) |
+| Network management | SNMP, DHCP, NTP |
+| Naming service | DNS |
+| Gaming | Online multiplayer games |
+| Newer protocols | HTTP/3 (built on top of UDP, adds its own reliability) |
+
+> **Note:** Even though DNS and HTTP/3 use UDP, they add their **own reliability at the application layer** — UDP itself still stays unreliable. This is called "reliable transfer over UDP."
+
+### Shortcut Memory Trick
+**UDP = Fast, Connectionless, Unreliable**
+Remember: **"U Don't Promise"** (UDP doesn't promise delivery) 😄
+
+### Exam Focus
+- Why is UDP faster than TCP? (connection, header size, no control mechanisms)
+- Name 4-5 real applications that use UDP
+- DNS/HTTP3 exception — reliability added at application layer, not transport layer
+
+---
