@@ -245,3 +245,40 @@ TCP header carries much more information because it needs to guarantee reliabili
 - Memorize exact header sizes: **UDP = 8 bytes fixed**, **TCP = 20–60 bytes**
 
 ---
+
+<a id="7-ports-sockets"></a>
+
+## 7. Function 3 — Ports and Sockets
+
+### Definition
+**Ports** identify which application/process on a computer should receive the data. A port number is **16 bits**, so it ranges from **0 to 65535**.
+
+A **Socket** = **IP Address + Port Number** together. Example: `192.168.1.1:80`
+
+### Why Important?
+A computer usually has only **one IP address**, but it can run many applications at once (browser, Spotify, email). Ports let the Transport Layer know exactly which app the data belongs to.
+
+### Easy Explanation
+Think of an apartment building:
+- The **building address** = IP Address
+- Each **apartment/flat number** = Port Number
+- The full delivery address (building + flat) = **Socket**
+
+So when data arrives at your computer's IP, the port number tells it "go to apartment 443" (HTTPS) or "go to apartment 25" (Email/SMTP).
+
+### Example
+- **80** → Web/HTTP
+- **25** → SMTP (Email)
+- **4070** → Spotify
+
+### Key Points
+- Ports = 16-bit numbers (0–65535)
+- Socket = IP Address : Port
+- Because a computer has multitasking apps, ports keep everything separated
+
+### Exam Focus
+- Define Port and Socket clearly (short viva-type question)
+- Be ready to write a socket example: `IP:Port`
+
+---
+
