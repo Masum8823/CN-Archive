@@ -374,3 +374,32 @@ Since the socket includes the IP address too, even if two different PCs use the 
 - `netstat -a -n` command usage might appear in viva
 
 ---
+
+<a id="10-mux-demux"></a>
+
+## 10. Function 4 — Multiplexing & Demultiplexing
+
+### Definition
+**Multiplexing**: Combining data from multiple applications (Skype, browser, Netflix) into a single stream to send over the network.
+
+**Demultiplexing**: On the receiving end, splitting that single incoming stream back out to the correct applications.
+
+### Easy Explanation
+Think of a highway:
+- **Multiplexing** = many cars from different roads merging into one highway
+- **Demultiplexing** = cars exiting the highway at different exits to reach their own destinations
+
+### How is demultiplexing decided?
+| Protocol | Demultiplexing uses |
+|---|---|
+| **UDP** | Destination port number **only** |
+| **TCP** | **4-tuple**: Source IP, Destination IP, Source Port, Destination Port |
+
+### Key Points
+- TCP needs more information (4-tuple) because it must track each individual **connection**, not just the port
+- UDP is simpler — it only cares about which port the data should go to
+
+### Exam Focus
+- Difference in demultiplexing: UDP (port only) vs TCP (4-tuple) — **very common exam question**
+
+---
