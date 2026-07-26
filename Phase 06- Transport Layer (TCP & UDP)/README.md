@@ -403,3 +403,30 @@ Think of a highway:
 - Difference in demultiplexing: UDP (port only) vs TCP (4-tuple) — **very common exam question**
 
 ---
+
+<a id="11-tcp-header-detailed"></a>
+
+## 11. TCP Segment Header (Detailed)
+
+### Definition
+The TCP header is much bigger and more detailed than UDP's because TCP has to guarantee reliable, ordered delivery.
+
+### Diagram (ASCII layout)
+```
+| Source Port (16)         | Destination Port (16)      |
+| Sequence Number (32 bits)                              |
+| Acknowledgment Number (32 bits)                        |
+| HLEN(4) | Reserved(6) | Flags(6) | Window Size (16)     |
+| Checksum (16)             | Urgent Pointer (16)        |
+| Options and Padding (0–40 bytes)                        |
+```
+
+### Key Points
+- Total header size: **20 bytes minimum, 60 bytes maximum**
+- Extra size compared to UDP mostly comes from Sequence Number, Ack Number, Flags, and Options
+
+### Exam Focus
+- Draw the TCP header layout from memory
+- Know each field's **bit size** (this is commonly asked)
+
+---
