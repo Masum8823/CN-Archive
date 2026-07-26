@@ -465,3 +465,39 @@ Imagine every byte you send has its own ID card. The very first byte's ID number
 - This is a **guaranteed numerical problem** in exams. Practice both example patterns above — they are asked almost exactly like this.
 
 ---
+
+<a id="13-ack-number"></a>
+
+## 13. Acknowledgment Number
+
+### Definition
+The Acknowledgment Number tells the sender **which byte the receiver expects next** — not how many bytes were received.
+
+### Easy Explanation
+If the receiver sends back Ack = **1001**, it means:
+> "I've received everything up to byte 1000. Please send me starting from byte 1001 next."
+
+This is called **Expectational Acknowledgment** — because it announces what's *expected next*, not what was *already received*.
+
+### Important Note
+> ⚠️ Ack Number = 1001 does **NOT** mean "I received 1000 bytes of data." It only means "I'm ready for byte 1001 onward." (This distinction is a common trick question!)
+
+### Cumulative Acknowledgment
+TCP's acknowledgment is **cumulative** — meaning the receiver can acknowledge multiple segments with just **one** Ack number.
+
+**Example:**
+```
+Sender sends bytes 1–10   → Ack = 1  (before sending)
+Sender sends bytes 11–20  → Ack = 1
+Receiver replies once     → Ack = 21  (covers both segments together)
+```
+
+### Key Points
+- Ack Number = next expected byte, NOT count of received bytes
+- One Ack can confirm multiple segments (cumulative)
+
+### Exam Focus
+- "What does Ack = X mean?" → always answer: "next expected byte", never "X bytes received"
+- Cumulative acknowledgment concept is a favorite short question
+
+---
