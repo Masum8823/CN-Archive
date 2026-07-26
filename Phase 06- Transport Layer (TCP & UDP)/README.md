@@ -584,3 +584,51 @@ Receiver replies once     → Ack = 21  (covers both segments together)
 - MSS example question — know what MSS stands for and its purpose
 
 ---
+
+<a id="16-three-way-handshake"></a>
+
+## 16. TCP Connection Establishment (3-Way Handshake)
+
+### Definition
+Before TCP sends any real data, it sets up a connection using a process called the **Three-Way Handshake**. This guarantees both sides are ready and agree on starting sequence numbers.
+
+### Why Important?
+This is **the single most important TCP diagram** in the whole chapter — almost guaranteed in every exam (written + viva).
+
+### Easy Explanation
+Think of it like a phone call:
+1. You call and say "Hello, can you hear me?" (**SYN**)
+2. The other person replies "Yes I can hear you, can you hear me?" (**SYN + ACK**)
+3. You confirm "Yes I can hear you too!" (**ACK**)
+
+Only after this 3-step "conversation," the real talking (data) begins.
+
+### Step-by-Step Diagram
+```
+Client                                   Server
+ (Active open)                        (Passive open)
+
+  seq: 8000, flag: SYN            ------------->
+                                  
+                       <----------  seq: 15000, ack: 8001, flags: SYN+ACK, rwnd: 5000
+
+  seq: 8001, ack: 15001, flag: ACK ------------->
+
+           "Connection opened" on both sides
+```
+
+### Key Points
+- Step 1: Client sends **SYN** with its own initial sequence number (e.g., seq = 8000)
+- Step 2: Server replies with **SYN + ACK** — it sends its own sequence number AND acknowledges the client's (ack = 8001, meaning "expecting your next byte at 8001")
+- Step 3: Client sends final **ACK** confirming the server's sequence number (ack = 15001)
+- After this exchange, both sides mark the connection as **"opened"**
+
+### Shortcut Memory Trick
+**"SYN, SYN-ACK, ACK"** — 3 steps, 3 words. Easy to remember as: *"Can we talk? Yes we can, let's talk!"*
+
+### Exam Focus
+- Draw the full 3-way handshake diagram with exact seq/ack numbers
+- Explain **Active Open** (client) vs **Passive Open** (server)
+- Very likely viva question: "Why does TCP need 3 steps and not 2?" → Because both sides need to confirm they can send AND receive — a 2-step handshake can't guarantee this in both directions
+
+---
