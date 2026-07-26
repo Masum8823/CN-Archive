@@ -632,3 +632,34 @@ Client                                   Server
 - Very likely viva question: "Why does TCP need 3 steps and not 2?" → Because both sides need to confirm they can send AND receive — a 2-step handshake can't guarantee this in both directions
 
 ---
+
+<a id="17-data-transfer"></a>
+
+## 17. TCP Data Transfer & Connection Termination
+
+### Easy Explanation
+Once the handshake is done, real data transfer begins. Each segment carries a **sequence number** (its own byte range) and an **acknowledgment number** (confirming what was received and requesting the next expected byte).
+
+### Example Flow
+```
+Client sends: seq: 8001, ack: 15001, flags: A,P, data bytes: 8001–9000  ---> Server receives
+Client sends: seq: 9001, ack: 15001, flags: A,P, data bytes: 9001–10000 ---> Server receives
+Server sends: seq: 15001, ack: 10001, flag: A, rwnd: 3000, data bytes: 15001–17000 ---> Client receives
+Client sends: seq: 10001, ack: 17001, flag: A, rwnd: 10000  ---> (acknowledges server's data)
+```
+
+### Key Points
+- **P (PSH) flag** → tells the receiver to push data immediately to the application, don't wait/buffer
+- **A (ACK) flag** → this segment carries a valid acknowledgment
+- Each side keeps updating its **rwnd (receiving window)** to tell the other side how much more it can accept
+
+### Connection Termination
+- After all data is transferred, the connection must be properly **closed**
+- This uses the **FIN** flag (and ACK) in a similar handshake-style exchange
+- Ensures both sides agree the conversation is truly over before closing resources
+
+### Exam Focus
+- Follow a data-transfer diagram and identify seq/ack values at each step (numeric practice — very likely in written exam)
+- Know that connection termination also needs a proper handshake-like process (using FIN), similar spirit to connection establishment
+
+---
