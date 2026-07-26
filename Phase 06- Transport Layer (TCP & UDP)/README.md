@@ -90,3 +90,41 @@ The data unit at this layer is called a **Segment** (for TCP) — this is the Tr
 If a question asks "what's the difference between transport and network layer" — always mention **process-to-process vs host-to-host**. This is the #1 keyword examiners look for.
 
 ---
+
+<a id="3-functions"></a>
+
+## 3. Functions of the Transport Layer
+
+### Definition
+The Transport Layer has several core jobs. Some are done by **both TCP and UDP**, and some are done **only by TCP** (because TCP is the "reliable" one).
+
+### Easy Explanation
+Here are all 7 functions:
+
+1. **Segmenting the data** and managing each piece
+2. **Reassembling** the segments back into a stream of application data
+3. **Identifying the different applications** (using port numbers)
+4. **Multiplexing** (combining multiple app data into one line for sending)
+5. **Establishing and terminating a session/connection**
+6. **Enabling error recovery** (only TCP does this properly)
+7. **Performing flow control** between end users (only TCP)
+
+### Key Points
+| Function | Done by |
+|---|---|
+| Segmentation & Reassembly | UDP & TCP |
+| Identifying Applications (Ports) | UDP & TCP |
+| Multiplexing | UDP & TCP |
+| Connection Establishment & Termination | **Only TCP** |
+| Error Recovery / Control | **Only TCP** |
+| Flow Control | **Only TCP** |
+
+### Remember
+This "Only TCP" vs "Both" distinction is a favorite viva/MCQ question. TCP does extra work because it promises **reliability**; UDP skips these to stay **fast**.
+
+### Exam Focus
+- List the 7 functions
+- Mark which ones are TCP-only
+- Be ready to explain *why* TCP needs connection setup but UDP doesn't
+
+---
