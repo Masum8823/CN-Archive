@@ -39,6 +39,7 @@
 ---
 
 <a id="1-introduction"></a>
+
 ## 1. Introduction to Transport Layer
 
 ### Definition
@@ -71,5 +72,21 @@ The data unit at this layer is called a **Segment** (for TCP) — this is the Tr
 ### Exam Focus
 - Difference between Transport layer and Network layer (very common question)
 - The household analogy might come as a short question — understand it, don't just memorize it
+
+---
+
+<a id="2-transport-vs-network"></a>
+
+## 2. Transport Layer vs Network Layer
+
+### Easy Explanation
+| Transport Layer | Network Layer |
+|---|---|
+| Talks between **processes** (apps) | Talks between **hosts** (devices) |
+| Example: Chrome talking to a web server app | Example: Your PC talking to the destination server machine |
+| Analogy: Ann & Bill sorting letters for the right kid | Analogy: Postal service delivering between houses |
+
+### Remember
+If a question asks "what's the difference between transport and network layer" — always mention **process-to-process vs host-to-host**. This is the #1 keyword examiners look for.
 
 ---
