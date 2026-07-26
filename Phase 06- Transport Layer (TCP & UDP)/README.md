@@ -333,3 +333,44 @@ Ports are divided into 3 categories based on their number range.
 - Memorize well-known ports table (very high chance in MCQ/short questions)
 
 ---
+
+
+<a id="9-ports-in-action"></a>
+
+## 9. Port Numbers in Action
+
+### Easy Explanation
+Let's say you open `www.cisco.com` in your browser.
+
+**Step 1 — Client sends a request:**
+- Source Port = `49650` (a random dynamic port your browser picked)
+- Destination Port = `80` (server listens here for HTTP)
+
+**Step 2 — Server replies:**
+- Source Port = `80` (server's own port)
+- Destination Port = `49650` (sends it back to exactly where the request came from)
+
+### Why can't servers use random ports?
+- **Clients** can use any random (dynamic) port — no problem, because the client already knows who it's talking to.
+- **Servers** must use a fixed, **well-known port number** — otherwise, clients won't know where to send their request in the first place!
+
+### What if you open 2 tabs to the same website?
+Each tab gets a **different dynamic source port** (e.g., 49650 and 49655), even though the destination is the same (port 80). This keeps the two browser sessions separate on the server side.
+
+### How does the server tell sessions apart?
+Using the **socket** — the full combination of IP + Port:
+```
+172.16.230.5:49650  <-->  207.22.146.33:80   (Tab 1 / PC 1)
+172.16.230.6:49650  <-->  207.22.146.33:80   (PC 2, same port but different IP)
+```
+Since the socket includes the IP address too, even if two different PCs use the same source port number, the server can still tell them apart.
+
+### Tool: Netstat
+`netstat -a -n` command shows active connections on your PC — Source IP, Source Port, Destination IP, Destination Port, and Connection State (LISTENING, ESTABLISHED, TIME_WAIT, etc.)
+
+### Exam Focus
+- Explain why servers must use well-known ports but clients don't
+- Explain how sockets keep multiple sessions separate
+- `netstat -a -n` command usage might appear in viva
+
+---
