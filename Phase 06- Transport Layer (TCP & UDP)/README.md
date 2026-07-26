@@ -214,3 +214,34 @@ This is a classic exam diagram question: "Show how UDP vs TCP handle out-of-orde
 - Key phrase: TCP **re-orders**, UDP does **not**
 
 ---
+
+<a id="6-headers-overview"></a>
+
+## 6. TCP and UDP Headers (Overview)
+
+### Easy Explanation
+Both protocols attach a header in front of the data before sending. But the header sizes are very different:
+
+| Header | Size |
+|---|---|
+| **UDP Header** | Fixed **8 bytes** |
+| **TCP Header** | **20 bytes minimum**, up to **60 bytes maximum** (with options) |
+
+### UDP Header Fields (simple, only 4 fields)
+```
+| Source Port Number (16 bits) | Destination Port Number (16 bits) |
+| Total Length (16 bits)       | Checksum (16 bits)                |
+```
+
+### TCP Header Fields (much more detailed — see section 11)
+TCP header carries much more information because it needs to guarantee reliability: sequence numbers, acknowledgment numbers, control flags, window size, etc.
+
+### Key Points
+- UDP header = lightweight, 4 fields only
+- TCP header = heavy, up to 10+ fields, because it must track connection state
+- This size difference is **the main reason** UDP is faster than TCP
+
+### Exam Focus
+- Memorize exact header sizes: **UDP = 8 bytes fixed**, **TCP = 20–60 bytes**
+
+---
