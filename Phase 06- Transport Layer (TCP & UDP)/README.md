@@ -174,3 +174,43 @@ Remember: **"U Don't Promise"** (UDP doesn't promise delivery) 😄
 - DNS/HTTP3 exception — reliability added at application layer, not transport layer
 
 ---
+
+<a id="5-segmentation-reassembly"></a>
+
+## 5. Function 1 & 2 — Segmentation and Reassembly
+
+### Definition
+Before sending, Transport Layer breaks application data into small **pieces**, adds a **header** to each piece, and sends them out. On the receiving side, these pieces are **reassembled** back into the original data.
+
+### Easy Explanation
+Think of sending a big cake by post — you can't send the whole cake in one box, so you cut it into slices, put each slice in its own box with a label (header), and ship them. The receiver puts the slices back together using the labels.
+
+- **UDP** → creates a **UDP Datagram** (Header + Piece)
+- **TCP** → creates a **TCP Segment** (Header + Piece)
+
+### Diagram (ASCII)
+```
+APPLICATION LAYER DATA
+   [ Piece 1 ][ Piece 2 ][ Piece 3 ]
+
+UDP Datagram:                     TCP Segment:
+[Header][Piece 1]                 [Header][Piece 1]
+[Header][Piece 2]                 [Header][Piece 2]
+[Header][Piece 3]                 [Header][Piece 3]
+```
+
+### The Big Difference in Reassembly
+| UDP (Connectionless & Unreliable) | TCP (Reliable) |
+|---|---|
+| Datagrams may take different routes and arrive **out of order** | Segments may take different routes but TCP **re-orders** them at destination |
+| Out-of-order datagrams are **NOT re-ordered** | Segments are re-ordered using sequence numbers |
+| Lost datagrams are **NOT re-sent** | Lost segments **are re-sent** |
+
+### Remember
+This is a classic exam diagram question: "Show how UDP vs TCP handle out-of-order delivery." UDP just delivers in whatever order it receives; TCP fixes the order.
+
+### Exam Focus
+- Draw/explain the difference in how UDP and TCP handle out-of-order segments/datagrams
+- Key phrase: TCP **re-orders**, UDP does **not**
+
+---
