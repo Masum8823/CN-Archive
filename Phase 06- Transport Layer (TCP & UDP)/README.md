@@ -282,3 +282,54 @@ So when data arrives at your computer's IP, the port number tells it "go to apar
 
 ---
 
+<a id="8-port-types"></a>
+
+## 8. Port Number Types
+
+### Definition
+Ports are divided into 3 categories based on their number range.
+
+### Easy Explanation & Table
+
+| Port Type | Range | Description |
+|---|---|---|
+| **Well-Known Ports** | 0 – 1023 | Assigned & controlled by **IANA**, used by standard services |
+| **Registered Ports** | 1024 – 49,151 | Registered by IANA for specific vendor apps (not as strict as well-known) |
+| **Dynamic (Private/Ephemeral) Ports** | 49,152 – 65,535 | Never assigned by IANA, used temporarily by clients |
+
+> Total available ports in TCP/IP = **65,536**
+
+### Well-Known Ports (memorize these!)
+| Port | Service |
+|---|---|
+| 25 | SMTP |
+| 53 | DNS |
+| 67 & 68 | DHCP |
+| 80 | HTTP |
+| 110 | POP3 |
+| 123 | NTP |
+| 143 | IMAP |
+| 443 | HTTPS |
+
+### Registered Ports (examples)
+| Port | Service |
+|---|---|
+| 3306 | MySQL |
+| 4070 | Spotify |
+| 5060 | SIP (VoIP) |
+| 8008 / 8080 | Alternate HTTP |
+| 23399 | Skype |
+
+### Dynamic Ports
+- Also called **private** or **ephemeral** ports
+- Used by client applications as a **temporary source port** when connecting to a server
+- Some systems (older Linux kernels, some enterprise firewalls) use the **32768 to 61000** sub-range specifically for these
+
+### Shortcut Memory Trick
+**"0 to 1023 = Well Known, Others are Not"** — just remember 1023 as the cutoff, and everything above splits into Registered (up to ~49k) and Dynamic (rest).
+
+### Exam Focus
+- Memorize the three ranges exactly: 0-1023, 1024-49151, 49152-65535
+- Memorize well-known ports table (very high chance in MCQ/short questions)
+
+---
