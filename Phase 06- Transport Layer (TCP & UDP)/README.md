@@ -430,3 +430,38 @@ The TCP header is much bigger and more detailed than UDP's because TCP has to gu
 - Know each field's **bit size** (this is commonly asked)
 
 ---
+
+<a id="12-sequence-number"></a>
+
+## 12. Byte Number & Sequence Number
+
+### Definition
+TCP numbers **every single byte** of data in a connection — not the whole message, but each individual byte. This is called the **Byte Number**.
+
+### Easy Explanation
+Imagine every byte you send has its own ID card. The very first byte's ID number is random — this is called the **ISN (Initial Sequence Number)**. Every following segment's sequence number = previous segment's sequence number + number of bytes it carried.
+
+### Example 1 — Byte Number
+> If the first byte number is **1067**, and total data = **3000 bytes**, what is the last byte number?
+
+- First Byte Number = **1067**
+- Last Byte Number = 1067 + 3000 − 1 = **4066**
+
+### Example 2 — Sequence Number of Segments
+> A TCP connection transfers 5,000 bytes. First byte = 10,001. Data sent in five segments, each carrying 1,000 bytes. Find the sequence number of each segment.
+
+| Segment | Sequence Number | Byte Range |
+|---|---|---|
+| 1 | 10001 | 10001 – 11000 |
+| 2 | 11001 | 11001 – 12000 |
+| 3 | 12001 | 12001 – 13000 |
+| 4 | 13001 | 13001 – 14000 |
+| 5 | 14001 | 14001 – 15000 |
+
+### Shortcut Memory Trick
+**Sequence Number of next segment = Previous Sequence Number + Previous segment's byte count**
+
+### Exam Focus
+- This is a **guaranteed numerical problem** in exams. Practice both example patterns above — they are asked almost exactly like this.
+
+---
