@@ -765,3 +765,14 @@ Client sends: seq: 10001, ack: 17001, flag: A, rwnd: 10000  ---> (acknowledges s
 - ❌ Forgetting that TCP demultiplexes using the full 4-tuple, not just port number
 
 ---
+
+<a id="23-memory-tricks"></a>
+
+## 23. Memory Tricks
+
+- **UDP = "U Don't Promise"** (no delivery guarantee)
+- **TCP flags order: "Uncle Ate Pizza, Refused Silly Fries"** = URG, ACK, PSH, RST, SYN, FIN
+- **3-Way Handshake = "Can we talk? Yes we can, let's talk!"** = SYN, SYN+ACK, ACK
+- **Port ranges: 1023 → 49151 → 65535** (just remember these 3 boundary numbers)
+
+---
