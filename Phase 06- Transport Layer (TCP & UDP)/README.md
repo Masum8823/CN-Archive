@@ -680,3 +680,24 @@ Client sends: seq: 10001, ack: 17001, flag: A, rwnd: 10000  ---> (acknowledges s
 | Use Cases | Web (HTTP), Email, File Transfer | Streaming, Gaming, DNS, DHCP, VoIP |
 
 ---
+
+<a id="19-quick-revision"></a>
+
+## 19. Quick Revision (Whole Chapter)
+
+- Transport layer = process-to-process; Network layer = host-to-host
+- 7 core functions; only TCP does connection setup, error recovery, flow control
+- UDP = fast, connectionless, unreliable, 8-byte header
+- TCP = reliable, connection-oriented, 20-60 byte header
+- Port = identifies an app; Socket = IP + Port
+- Port ranges: Well-Known (0-1023), Registered (1024-49151), Dynamic (49152-65535)
+- Demultiplexing: UDP uses port only, TCP uses 4-tuple
+- Sequence Number = byte numbering; Ack Number = next expected byte (not count received)
+- Ack is cumulative — one Ack can confirm multiple segments
+- Control flags: URG, ACK, PSH, RST, SYN, FIN
+- Window size = flow control mechanism, max 65,535 bytes
+- Checksum mandatory in TCP, optional in UDP
+- 3-Way Handshake: SYN → SYN+ACK → ACK
+- Connection termination also uses a handshake-like process (FIN based)
+
+---
