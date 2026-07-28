@@ -776,3 +776,19 @@ Client sends: seq: 10001, ack: 17001, flag: A, rwnd: 10000  ---> (acknowledges s
 - **Port ranges: 1023 → 49151 → 65535** (just remember these 3 boundary numbers)
 
 ---
+
+<a id="24-exam-tips"></a>
+
+## 24. Exam Tips
+
+* **সবচেয়ে বেশি গুরুত্বপূর্ণ Topic:** 3-Way Handshake, TCP header fields, Sequence/Ack number numerical problems, Port ranges
+* **আগে যা পড়া উচিত:** TCP vs UDP comparison table + 3-way handshake diagram — এই দুইটা না পড়ে exam hall-এ যেও না
+* **Viva-তে ভালো Impression পেতে:** Analogy দিয়ে বুঝাও (যেমন postal service, phone call handshake) — এতে Examiner বুঝবে তুমি concept বুঝেছো, শুধু মুখস্থ করোনি
+* **MCQ-এর জন্য মনে রাখো:** সব Port Number range এবং well-known ports, Header size (TCP 20-60, UDP 8)
+* **Written Exam-এর জন্য:** Sequence Number আর Acknowledgment Number-এর numerical problem practice করে যাও — এগুলো প্রায় hobohu (exactly) slide-এর মতোই আসে
+* **কোথায় Student-রা বেশি ভুল করে:** Ack Number-কে "received bytes" ভেবে ভুল করে — মনে রাখো এটা **next expected byte**
+* **Short Revision Strategy:** Section 19 (Quick Revision) আরেকবার পড়ে নাও exam-এর ঠিক আগে
+* **One Night Before Exam:** শুধু Section 18 (TCP vs UDP table), Section 16 (3-way handshake), আর Section 19 (Quick Revision) পড়লেই যথেষ্ট
+* **Exam Hall Tips:** Diagram আঁকার সময় Sequence/Ack Number গুলো clearly label করো — Examiner এটাই বেশি দেখে
+
+---
