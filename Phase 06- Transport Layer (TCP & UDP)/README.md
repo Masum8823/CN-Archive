@@ -663,3 +663,20 @@ Client sends: seq: 10001, ack: 17001, flag: A, rwnd: 10000  ---> (acknowledges s
 - Know that connection termination also needs a proper handshake-like process (using FIN), similar spirit to connection establishment
 
 ---
+
+<a id="18-tcp-vs-udp"></a>
+## 18. TCP vs UDP — Full Comparison
+
+| Feature | TCP | UDP |
+|---|---|---|
+| Connection | Connection-oriented (3-way handshake) | Connectionless |
+| Reliability | Reliable (retransmits lost data) | Unreliable (no retransmission) |
+| Speed | Slower | Faster |
+| Header Size | 20–60 bytes | 8 bytes (fixed) |
+| Ordering | Reorders out-of-order segments | Does NOT reorder |
+| Flow Control | Yes (window size / rwnd) | No |
+| Error Control | Yes | Checksum only (optional) |
+| Demultiplexing | Uses 4-tuple (src IP, dst IP, src port, dst port) | Uses destination port only |
+| Use Cases | Web (HTTP), Email, File Transfer | Streaming, Gaming, DNS, DHCP, VoIP |
+
+---
