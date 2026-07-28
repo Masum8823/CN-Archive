@@ -754,3 +754,14 @@ Client sends: seq: 10001, ack: 17001, flag: A, rwnd: 10000  ---> (acknowledges s
 - Well-known port numbers (80, 443, 25, 53, etc.)
 
 ---
+
+<a id="22-common-mistakes"></a>
+
+## 22. Common Mistakes
+
+- ❌ Thinking Ack Number = number of bytes received → ✅ It's actually the **next expected byte**
+- ❌ Mixing up Well-Known vs Registered port ranges → ✅ Well-Known ends at 1023, Registered ends at 49151
+- ❌ Thinking UDP has no checksum at all → ✅ UDP has a checksum field, it's just **optional**, not missing
+- ❌ Forgetting that TCP demultiplexes using the full 4-tuple, not just port number
+
+---
