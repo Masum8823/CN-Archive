@@ -724,3 +724,33 @@ Client sends: seq: 10001, ack: 17001, flag: A, rwnd: 10000  ---> (acknowledges s
 | 8080 | Alternate HTTP |
 
 ---
+
+<a id="21-faq"></a>
+
+## 21. Frequently Asked Exam Questions
+
+### Short Questions
+- What is the difference between Transport layer and Network layer?
+- Define Port and Socket.
+- What does an Ack Number of X actually mean?
+- Why is TCP header bigger than UDP header?
+
+### Broad Questions
+- Explain the 3-way handshake with a diagram.
+- Explain the functions of the Transport Layer, and identify which are TCP-only.
+- Compare TCP and UDP in detail.
+- Explain multiplexing and demultiplexing with examples.
+
+### Viva Questions
+- Why can't a server use a random port number?
+- What happens if two browser tabs connect to the same server?
+- Why is UDP's checksum optional but TCP's mandatory?
+- What is MSS and why is it needed?
+
+### MCQ Focus
+- Port ranges (memorize exact numbers: 1023, 49151, 65535)
+- Header sizes (UDP = 8 bytes, TCP = 20–60 bytes)
+- Control flag names and meanings (URG, ACK, PSH, RST, SYN, FIN)
+- Well-known port numbers (80, 443, 25, 53, etc.)
+
+---
