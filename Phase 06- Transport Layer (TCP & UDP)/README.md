@@ -701,3 +701,26 @@ Client sends: seq: 10001, ack: 17001, flag: A, rwnd: 10000  ---> (acknowledges s
 - Connection termination also uses a handshake-like process (FIN based)
 
 ---
+
+<a id="20-important-ports"></a>
+
+## 20. Important Port Numbers (Table)
+
+| Port | Service |
+|---|---|
+| 20/21 | FTP |
+| 23 | Telnet |
+| 25 | SMTP |
+| 53 | DNS |
+| 67/68 | DHCP |
+| 80 | HTTP |
+| 110 | POP3 |
+| 123 | NTP |
+| 143 | IMAP |
+| 443 | HTTPS |
+| 3306 | MySQL |
+| 4070 | Spotify |
+| 5060 | SIP (VoIP) |
+| 8080 | Alternate HTTP |
+
+---
