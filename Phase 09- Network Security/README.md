@@ -202,3 +202,29 @@ A **DMZ (Demilitarized Zone)** is a separate secure network area sitting between
 > Analogy: think of it as the reception area of an office. Visitors (internet traffic) can enter reception, but they can't just walk into the private offices (internal network) behind it.
 
 ---
+
+<a id="crypto-fundamentals"></a>
+
+## 10. Cryptography Fundamentals
+
+**Cryptography** = converting data into a secure form so unauthorized people can't understand it.
+
+**🔑 Symmetric Key**
+- One shared key does both encryption and decryption.
+- Fast, but risky — if that one key leaks, everything's exposed.
+- Examples: **AES, DES**
+
+**🔑🔑 Asymmetric Key**
+- Two keys: **Public Key** (encrypts) and **Private Key** (decrypts).
+- Examples: **RSA, ECC**
+
+**#️⃣ Hash Function**
+- One-way function — creates a unique "fingerprint" of data.
+- Used to verify integrity (data hasn't been altered).
+- Example: **SHA-256**
+
+**✍️ Digital Signature**
+- Confirms the sender's identity and that data hasn't been changed.
+
+**📜 Digital Certificate**
+- Confirms the identity of a website/user/organization — builds trust.
