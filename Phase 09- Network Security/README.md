@@ -178,3 +178,16 @@ Network security isn't abstract — it's everywhere:
 > Analogy: Pharming is like someone secretly changing the street signs so you drive into a fake store that looks exactly like the real one.
 
 ---
+<a id="ids-ips"></a>
+
+## 8. IDS vs IPS
+
+| | IDS | IPS |
+|---|---|---|
+| Full Form | Intrusion Detection System | Intrusion Prevention System |
+| Action | Detects & alerts only | Detects **and** blocks |
+| Analogy | Security camera (watches, records) | Security guard (watches **and** stops) |
+
+🧠 **Memory Trick:** **IDS = Detect only. IPS = Detect + Prevent.**
+
+---
