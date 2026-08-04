@@ -45,3 +45,34 @@ To achieve this, network security relies on a mix of **policies, tools, and tech
 Everything from here on (CIA Triad, cryptography, attacks, IDS/IPS, etc.) is really just different pieces of this one big puzzle: **keeping data safe, correct, and available.**
 
 ---
+
+<a id="cia-triad"></a>
+
+## 1. The CIA Triad — The Foundation of Everything
+
+Whenever someone talks about network security, this is the first thing they mean. Think of it as the "three pillars" that everything else is built on.
+
+**🔒 Confidentiality**
+Only the right people get to see the data — nobody else.
+> Analogy: it's like a locked diary. Only you (and whoever you allow) can read it.
+- Example: encrypting passwords so even if someone steals the database, they just see gibberish.
+
+**✅ Integrity**
+The data must arrive exactly as it was sent — no tampering, no changes.
+> Analogy: imagine mailing a sealed letter. Integrity means nobody opened it and rewrote a sentence along the way.
+- Example: digital signatures — they prove the message wasn't altered.
+
+**⚡ Availability**
+The service has to be up and working whenever authorized users need it.
+> Analogy: a shop that's supposed to be open 24/7 — if it randomly shuts down, that's an availability failure.
+- Example: defending against DoS attacks so the server doesn't go down.
+
+| Pillar | Protects Against | Real Example |
+|---|---|---|
+| Confidentiality | Unauthorized viewing | Password encryption |
+| Integrity | Data being changed | Digital signatures |
+| Availability | Service downtime | Anti-DoS protection |
+
+🧠 **Memory Trick:** **C**an **I** **A**ccess → **C**onfidentiality, **I**ntegrity, **A**vailability.
+
+---
