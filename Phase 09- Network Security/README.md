@@ -76,3 +76,19 @@ The service has to be up and working whenever authorized users need it.
 🧠 **Memory Trick:** **C**an **I** **A**ccess → **C**onfidentiality, **I**ntegrity, **A**vailability.
 
 ---
+
+<a id="basic-principles"></a>
+
+## 2. Basic Working Principles
+
+These are the everyday mechanisms that actually *do* the securing:
+
+- **Authentication** — proves who you are (password, OTP, biometrics). Like showing ID at the door.
+- **Authorization** — decides what you're allowed to touch once you're in. Like having a key that only opens certain rooms, not the whole building.
+- **Encryption** — scrambles readable data into unreadable cipher text during transmission.
+- **Filtering** — firewalls and IDS/IPS block harmful traffic before it causes damage.
+- **Regular Updates** — patching holes before attackers find them.
+
+🧠 **Memory Trick:** Authentication asks "who are you?" — Authorization asks "what can you do?" Don't mix these two up, it's a classic exam trap.
+
+---
