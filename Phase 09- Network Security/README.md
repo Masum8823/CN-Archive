@@ -125,3 +125,20 @@ Network security isn't abstract — it's everywhere:
 - Saves time and money in the long run
 
 ---
+
+<a id="malware"></a>
+
+## 5. Malware — The Common Threats
+
+| Malware | What It Does | Quick Analogy |
+|---|---|---|
+| **Virus** | Attaches to files, spreads when file runs | A cold — spreads when you "touch" (open) the infected file |
+| **Worm** | Spreads automatically across a network | Doesn't need you to do anything — spreads itself, like wildfire |
+| **Trojan Horse** | Looks legit, but is harmful | A gift box with something dangerous inside |
+| **Ransomware** | Locks/encrypts files, demands money | A kidnapper holding your files hostage |
+| **Spyware** | Secretly collects your data | A hidden camera in the room |
+| **Rootkit** | Hides malware, gives attacker admin access | A secret master key the attacker made for themselves |
+
+🧠 **Memory Trick:** Trojan = disguise. Ransomware = ransom. Spyware = spying. The names basically tell you the story.
+
+---
