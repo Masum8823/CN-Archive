@@ -191,3 +191,14 @@ Network security isn't abstract — it's everywhere:
 🧠 **Memory Trick:** **IDS = Detect only. IPS = Detect + Prevent.**
 
 ---
+
+## 9. DMZ — The Buffer Zone
+
+A **DMZ (Demilitarized Zone)** is a separate secure network area sitting between the internet and your internal network.
+
+- Used to host public-facing servers (Web Server, Mail Server).
+- If attackers breach the public server, the internal network stays protected because it's isolated behind the DMZ.
+
+> Analogy: think of it as the reception area of an office. Visitors (internet traffic) can enter reception, but they can't just walk into the private offices (internal network) behind it.
+
+---
