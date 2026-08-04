@@ -228,3 +228,15 @@ A **DMZ (Demilitarized Zone)** is a separate secure network area sitting between
 
 **📜 Digital Certificate**
 - Confirms the identity of a website/user/organization — builds trust.
+
+| Concept | Purpose | Example |
+|---|---|---|
+| Symmetric Key | Fast encryption, shared key | AES, DES |
+| Asymmetric Key | Secure key exchange, two keys | RSA, ECC |
+| Hash Function | Checks integrity | SHA-256 |
+| Digital Signature | Verifies sender + integrity | — |
+| Digital Certificate | Confirms identity/trust | — |
+
+🧠 **Memory Trick:** Symmetric = **one** key (shared secret). Asymmetric = **two** keys (public locks it, private opens it).
+
+---
