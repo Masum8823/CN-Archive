@@ -92,3 +92,21 @@ These are the everyday mechanisms that actually *do* the securing:
 🧠 **Memory Trick:** Authentication asks "who are you?" — Authorization asks "what can you do?" Don't mix these two up, it's a classic exam trap.
 
 ---
+
+<a id="use-cases"></a>
+
+## 3. Real-Life Use Cases
+
+Network security isn't abstract — it's everywhere:
+
+| Sector | What's Being Protected |
+|---|---|
+| Online Banking | Customer accounts & money |
+| E-commerce | Payment & personal info |
+| Hospitals | Patient records |
+| Schools/Universities | Student data, online learning |
+| Companies | Business files, employee data |
+| Wi-Fi Networks | Blocking unauthorized access |
+| Government | Confidential/sensitive data |
+
+---
