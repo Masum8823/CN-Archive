@@ -23,9 +23,14 @@ Simple, human-language notes on Network Security — written the way you'd expla
 - [10. Cryptography Fundamentals](#crypto-fundamentals)
 - [11. Stream Cipher vs Block Cipher](#stream-block)
 - [12. Modern Authentication & Cloud Security](#modern-auth)
+- [Quick Revision (Whole Chapter)](#quick-revision)
+- [Frequently Asked Exam Questions](#faq)
+- [Common Mistakes](#common-mistakes)
+- [Memory Tricks — All in One Place](#memory-tricks)
 - [Exam Tips (বাংলা)](#exam-tips)
 
 ---
+
 
 <a id="intro"></a>
 
