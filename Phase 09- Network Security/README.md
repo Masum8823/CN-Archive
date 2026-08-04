@@ -162,3 +162,19 @@ Network security isn't abstract — it's everywhere:
 🧠 **Memory Trick:** Passive = just watching (no damage). Active = actually doing damage.
 
 ---
+
+<a id="advanced-attacks"></a>
+
+## 7. Advanced Cyber Attacks
+
+| Attack | What It Means |
+|---|---|
+| **Zero-Day Attack** | Exploits a vulnerability nobody has patched yet (literally "zero days" of warning) |
+| **Pharming (DNS Spoofing)** | Redirects you from the real website to a fake one without you noticing |
+| **Phishing** | Tricks you into handing over sensitive info via fake messages/sites |
+| **SQL Injection** | Sneaks malicious SQL code into a database query to steal/change data |
+| **Cross-Site Scripting (XSS)** | Injects malicious scripts that run in a victim's browser |
+
+> Analogy: Pharming is like someone secretly changing the street signs so you drive into a fake store that looks exactly like the real one.
+
+---
