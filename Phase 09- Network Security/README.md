@@ -142,3 +142,23 @@ Network security isn't abstract — it's everywhere:
 🧠 **Memory Trick:** Trojan = disguise. Ransomware = ransom. Spyware = spying. The names basically tell you the story.
 
 ---
+
+<a id="active-passive"></a>
+
+## 6. Active vs Passive Attacks
+
+**Passive Attacks** — the attacker just *watches*, doesn't touch anything.
+- **Eavesdropping** — secretly listening in on communication.
+- **Traffic Analysis** — studying traffic patterns to gather intel.
+
+**Active Attacks** — the attacker actually *changes or disrupts* things.
+- **DoS/DDoS** — floods a server so it can't respond to real users.
+- **Man-in-the-Middle (MITM)** — secretly sits between two people and intercepts/alters their conversation.
+- **Phishing** — fake emails/websites tricking you into giving up info.
+- **Session Hijacking** — takes over your already-logged-in session.
+
+> Analogy: Passive attack = someone eavesdropping on your phone call. Active attack = someone jumping into the call and pretending to be you.
+
+🧠 **Memory Trick:** Passive = just watching (no damage). Active = actually doing damage.
+
+---
