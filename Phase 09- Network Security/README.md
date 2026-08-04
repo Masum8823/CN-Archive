@@ -321,3 +321,17 @@ A: A security model where no user or device is automatically trusted — everyon
 A: A virus needs a file to be run/opened to spread, while a worm spreads automatically across a network without needing user action.
 
 ---
+<a id="common-mistakes"></a>
+
+## ⚠️ Common Mistakes (Don't Fall for These)
+
+- Confusing **Authentication** (who are you) with **Authorization** (what you're allowed to do) — these are two separate steps, not the same thing.
+- Mixing up **IDS and IPS** — remember, IDS never blocks anything, only IPS does.
+- Thinking **Passive attacks** cause damage — they don't, they only observe/collect info silently.
+- Confusing **Symmetric vs Asymmetric** by key count — Symmetric = 1 key, Asymmetric = 2 keys, not the other way around.
+- Forgetting that **Phishing** appears in both the "Active Attacks" list and the "Advanced Cyber Attacks" list — it's the same concept, just mentioned in two contexts.
+- Mixing up **Stream Cipher vs Block Cipher** speed/security tradeoff — Stream is faster but Block is more secure.
+- Thinking a **Hash Function** can be reversed — it's a strictly one-way function, that's the whole point.
+- Assuming **DMZ** is part of the internal network — it's actually a separate, isolated buffer zone.
+
+---
