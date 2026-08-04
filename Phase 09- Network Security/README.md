@@ -350,3 +350,16 @@ A: A virus needs a file to be run/opened to spread, while a worm spreads automat
 - **MFA/Biometrics/OAuth/ZTA shortcuts** → MFA = Password + OTP | Biometrics = Fingerprint/Face | OAuth = Login with Google/FB | ZTA = Never Trust, Always Verify
 
 ---
+<a id="exam-tips"></a>
+
+## 🎯 Exam Tips (বাংলা)
+
+- CIA Triad টা সবার আগে ভালো করে মুখস্থ রাখবি — এইটা প্রায় সব চ্যাপ্টারের বেসিক।
+- IDS vs IPS আর Stream vs Block Cipher — এই দুইটা comparison MCQ তে খুবই কমন আসে, টেবিল দুইটা মাথায় রাখ।
+- Active vs Passive attack এর example গুলা (DoS, MITM, Phishing vs Eavesdropping, Traffic Analysis) গুলিয়ে ফেলিস না — passive মানে শুধু দেখা, active মানে ক্ষতি করা।
+- Symmetric vs Asymmetric key এর "কয়টা key লাগে" এইটা কনফিউজ করে অনেকে — এক key হলে Symmetric, দুই key হলে Asymmetric।
+- শেষ মুহূর্তে শুধু Memory Trick গুলা রিভিশন দিলেই বেশিরভাগ MCQ কভার হয়ে যাবে।
+
+---
+
+*Notes compiled for personal exam prep — feel free to fork and add your own examples.*
