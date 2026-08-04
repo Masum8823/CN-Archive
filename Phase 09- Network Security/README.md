@@ -335,3 +335,18 @@ A: A virus needs a file to be run/opened to spread, while a worm spreads automat
 - Assuming **DMZ** is part of the internal network — it's actually a separate, isolated buffer zone.
 
 ---
+
+<a id="memory-tricks"></a>
+
+## 🧠 Memory Tricks — All in One Place
+
+- **CIA Triad** → **C**an **I** **A**ccess → Confidentiality, Integrity, Availability
+- **Auth vs Author** → Authentication = "who are you?" | Authorization = "what can you do?"
+- **IDS vs IPS** → IDS = Detect only | IPS = Detect + Prevent
+- **Passive vs Active** → Passive = just watching | Active = actually doing damage
+- **Symmetric vs Asymmetric** → 1 key = Symmetric | 2 keys = Asymmetric
+- **Stream vs Block** → Stream = Bit/Byte (fast) | Block = Fixed-size Block (AES, secure)
+- **Malware names basically explain themselves** → Trojan = disguise, Ransomware = ransom, Spyware = spying
+- **MFA/Biometrics/OAuth/ZTA shortcuts** → MFA = Password + OTP | Biometrics = Fingerprint/Face | OAuth = Login with Google/FB | ZTA = Never Trust, Always Verify
+
+---
