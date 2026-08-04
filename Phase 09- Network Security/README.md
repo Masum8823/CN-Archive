@@ -255,3 +255,20 @@ A **DMZ (Demilitarized Zone)** is a separate secure network area sitting between
 🧠 **MCQ Shortcut:** Stream Cipher → think **Bit/Byte**. Block Cipher → think **Fixed-size Block (AES)**.
 
 ---
+
+## 12. Modern Authentication & Cloud Security
+
+- **MFA (Multi-Factor Authentication)** — two or more verification methods. Example: Password + OTP.
+- **Biometrics** — verifies you using fingerprint, face, or iris.
+- **OAuth** — log in using a trusted account (Google, Facebook) instead of creating a new password.
+- **Cloud Security** — protecting data/services stored in the cloud.
+- **Zero Trust Architecture (ZTA)** — "Never Trust, Always Verify." Every user/device is verified every time, no automatic trust just because they're "inside" the network.
+
+🧠 **MCQ Shortcut:**
+- MFA → Password + OTP
+- Biometrics → Fingerprint/Face
+- OAuth → Login with Google/Facebook
+- Cloud Security → Protect cloud data
+- ZTA → Never Trust, Always Verify
+
+---
