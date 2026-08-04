@@ -26,3 +26,22 @@ Simple, human-language notes on Network Security — written the way you'd expla
 - [Exam Tips (বাংলা)](#exam-tips)
 
 ---
+
+<a id="intro"></a>
+
+## Introduction — What is Network Security?
+
+Imagine your house has doors, windows, and valuables inside. **Network Security** is basically the locks, alarms, and guards you put in place — except instead of a house, it's a computer network, and instead of jewelry, it's data.
+
+In simple words: **Network Security is the practice of protecting a network (and everything flowing through it) from unauthorized access, misuse, modification, or destruction.**
+
+Why does it matter so much?
+- Every day, huge amounts of personal, financial, and confidential data travel across networks — emails, bank transactions, medical records, business files.
+- If a network isn't secured, attackers can steal data, corrupt it, or simply crash the whole service.
+- So network security isn't just "a chapter to memorize" — it's literally what keeps the internet usable and trustworthy.
+
+To achieve this, network security relies on a mix of **policies, tools, and technologies** — firewalls, encryption, authentication systems, monitoring tools (IDS/IPS), and more — all working together so that only the right people can access the right data, at the right time, without it being tampered with.
+
+Everything from here on (CIA Triad, cryptography, attacks, IDS/IPS, etc.) is really just different pieces of this one big puzzle: **keeping data safe, correct, and available.**
+
+---
