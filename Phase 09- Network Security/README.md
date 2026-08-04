@@ -110,3 +110,18 @@ Network security isn't abstract — it's everywhere:
 | Government | Confidential/sensitive data |
 
 ---
+
+<a id="benefits"></a>
+
+## 4. Benefits of Network Security
+
+- Protects data from unauthorized access
+- Keeps data safe and accurate
+- Prevents cyberattacks and malware
+- Reduces risk of data loss
+- Keeps services available
+- Protects user privacy
+- Builds trust with users and customers
+- Saves time and money in the long run
+
+---
