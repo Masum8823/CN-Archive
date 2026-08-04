@@ -291,3 +291,33 @@ A one-shot summary — read this the night before the exam if you're short on ti
 - **Modern Auth** → MFA (password + OTP), Biometrics (fingerprint/face), OAuth (login via Google/FB), Cloud Security (protect cloud data), ZTA (never trust, always verify).
 
 ---
+
+<a id="faq"></a>
+
+## ❓ Frequently Asked Exam Questions
+
+**Q1. What is the CIA Triad? Explain with examples.**
+A: The three core goals of network security — Confidentiality (encrypting passwords), Integrity (digital signatures), and Availability (protecting against DoS attacks).
+
+**Q2. Differentiate between IDS and IPS.**
+A: IDS only detects and alerts (like a security camera); IPS detects **and** blocks the threat automatically (like a security guard).
+
+**Q3. What is the difference between Symmetric and Asymmetric key cryptography?**
+A: Symmetric uses one shared key for both encryption and decryption (fast, but risky if leaked — AES, DES). Asymmetric uses two keys, a public key to encrypt and a private key to decrypt (more secure, slower — RSA, ECC).
+
+**Q4. Differentiate between Active and Passive attacks.**
+A: Passive attacks only observe data without altering it (Eavesdropping, Traffic Analysis). Active attacks change, damage, or interrupt data (DoS, MITM, Phishing, Session Hijacking).
+
+**Q5. What is a DMZ and why is it used?**
+A: A DMZ is a buffer network zone between the internet and the internal network, used to safely host public-facing servers (web/mail) so that even if they're compromised, the internal network stays protected.
+
+**Q6. Differentiate between Stream Cipher and Block Cipher.**
+A: Stream cipher encrypts data one bit/byte at a time (fast, used in real-time comms — RC4). Block cipher encrypts fixed-size blocks (more secure, used for files/HTTPS — AES).
+
+**Q7. What is Zero Trust Architecture?**
+A: A security model where no user or device is automatically trusted — everyone must be verified every time, regardless of whether they're inside or outside the network ("Never Trust, Always Verify").
+
+**Q8. What is the difference between a Virus and a Worm?**
+A: A virus needs a file to be run/opened to spread, while a worm spreads automatically across a network without needing user action.
+
+---
