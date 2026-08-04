@@ -240,3 +240,18 @@ A **DMZ (Demilitarized Zone)** is a separate secure network area sitting between
 🧠 **Memory Trick:** Symmetric = **one** key (shared secret). Asymmetric = **two** keys (public locks it, private opens it).
 
 ---
+
+<a id="stream-block"></a>
+
+## 11. Stream Cipher vs Block Cipher
+
+| | Stream Cipher | Block Cipher |
+|---|---|---|
+| Encrypts | 1 bit/byte at a time | Fixed-size blocks (64-bit, 128-bit) |
+| Speed | Fast | Slower but more secure |
+| Used For | Real-time comms (voice, video) | Files, databases, HTTPS |
+| Example | RC4 | AES |
+
+🧠 **MCQ Shortcut:** Stream Cipher → think **Bit/Byte**. Block Cipher → think **Fixed-size Block (AES)**.
+
+---
