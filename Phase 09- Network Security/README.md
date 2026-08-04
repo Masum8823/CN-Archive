@@ -272,3 +272,22 @@ A **DMZ (Demilitarized Zone)** is a separate secure network area sitting between
 - ZTA → Never Trust, Always Verify
 
 ---
+
+<a id="quick-revision"></a>
+
+## ⚡ Quick Revision (Whole Chapter)
+
+A one-shot summary — read this the night before the exam if you're short on time:
+
+- **CIA Triad** → Confidentiality (only right people see it), Integrity (data unchanged), Availability (service always up).
+- **Principles** → Authentication (who are you), Authorization (what can you do), Encryption (scramble data), Filtering (firewall/IDS-IPS), Updates (patch holes).
+- **Malware** → Virus (spreads via file), Worm (spreads itself), Trojan (disguised), Ransomware (locks + demands money), Spyware (secretly watches), Rootkit (hides + gives admin access).
+- **Attacks** → Passive = just watching (Eavesdropping, Traffic Analysis). Active = causes damage (DoS/DDoS, MITM, Phishing, Session Hijacking).
+- **Advanced Attacks** → Zero-Day (unpatched flaw), Pharming (fake site redirect), SQL Injection (malicious DB code), XSS (malicious script in browser).
+- **IDS vs IPS** → IDS only detects (camera). IPS detects + blocks (guard).
+- **DMZ** → Buffer zone between internet and internal network, hosts public servers safely.
+- **Cryptography** → Symmetric (1 key, fast — AES/DES), Asymmetric (2 keys — RSA/ECC), Hash (one-way fingerprint — SHA-256), Digital Signature (verifies sender + integrity), Digital Certificate (confirms identity).
+- **Ciphers** → Stream (bit/byte, fast, real-time — RC4), Block (fixed blocks, more secure — AES).
+- **Modern Auth** → MFA (password + OTP), Biometrics (fingerprint/face), OAuth (login via Google/FB), Cloud Security (protect cloud data), ZTA (never trust, always verify).
+
+---
